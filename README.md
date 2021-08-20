@@ -7,6 +7,28 @@ Libreria de Angular con componentes de bootstrap 5
 
 
 
+## Descripción
+
+Esta libreria esta aun en proceso.
+
+## Modo de uso
+
+#### Button
+
+```html
+<ngb-button [class]="['btn', 'btn-success']" (clickEvent)="sendToConsole($event)">hola mundo</ngb-button>
+```
+
+
+
+```javascript
+sendToConsole(value: string) {
+    console.log(value);
+  }
+```
+
+
+
 ## Contributors
 
 [![hector](imag/avatar-hector.svg)](https://www.linkedin.com/in/hector-orlando-25124a18a/)  [![sergio](imag/avatar-sergio.svg)](https://www.linkedin.com/in/sergio-ridaura/)
@@ -16,3 +38,4 @@ Libreria de Angular con componentes de bootstrap 5
 Versión 01.08.2021
 
 Documento léeme
+

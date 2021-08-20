@@ -1,20 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+
 
 @Component({
-  selector: 'anbs-anglBstpUI',
+  selector: 'ngb-anglBstpUI',
   template: `
-    <p>
-      angl-bstp-ui works!
-    </p>
   `,
   styles: [
+    ``
   ]
 })
 export class AnglBstpUIComponent implements OnInit {
-
+  @ViewChild('modal') div!: ElementRef;
   constructor() { }
-
+  
   ngOnInit(): void {
   }
+
+
 
 }
