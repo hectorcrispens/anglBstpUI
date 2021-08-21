@@ -1,0 +1,186 @@
+[
+  {
+    "abrv": "abrv",
+    "text": "abreviation"
+  },
+  {
+    "abrv": "alis",
+    "text": "alias"
+  },
+  {
+    "abrv": "angl",
+    "text": "angular"
+  },
+  {
+    "abrv": "apcr",
+    "text": "acceptance criteria"
+  },
+  {
+    "abrv": "asa_",
+    "text": "as a"
+  },
+  {
+    "abrv": "auth",
+    "text": "author"
+  },
+  {
+    "abrv": "bklg",
+    "text": "backlog"
+  },
+  {
+    "abrv": "bstp",
+    "text": "bootstrap"
+  },
+  {
+    "abrv": "clos",
+    "text": "close"
+  },
+  {
+    "abrv": "cmmt",
+    "text": "commentary"
+  },
+  {
+    "abrv": "code",
+    "text": "code"
+  },
+  {
+    "abrv": "conf",
+    "text": "configuration"
+  },
+  {
+    "abrv": "date",
+    "text": "date"
+  },
+  {
+    "abrv": "dock",
+    "text": "Docker"
+  },
+  {
+    "abrv": "done",
+    "text": "done"
+  },
+  {
+    "abrv": "dong",
+    "text": "doing"
+  },
+  {
+    "abrv": "dscr",
+    "text": "description"
+  },
+  {
+    "abrv": "dvlp",
+    "text": "develop"
+  },
+  {
+    "abrv": "enen",
+    "text": "english"
+  },
+  {
+    "abrv": "eses",
+    "text": "spanish"
+  },
+  {
+    "abrv": "ffrt",
+    "text": "effort"
+  },
+  {
+    "abrv": "high",
+    "text": "high"
+  },
+  {
+    "abrv": "itrt",
+    "text": "iteration"
+  },
+  {
+    "abrv": "iwnt",
+    "text": "i want"
+  },
+  {
+    "abrv": "lang",
+    "text": "language"
+  },
+  {
+    "abrv": "low_",
+    "text": "low"
+  },
+  {
+    "abrv": "mail",
+    "text": "email"
+  },
+  {
+    "abrv": "medm",
+    "text": "medium"
+  },
+  {
+    "abrv": "mpty",
+    "text": "empty"
+  },
+  {
+    "abrv": "msql",
+    "text": "MySQL"
+  },
+  {
+    "abrv": "open",
+    "text": "open"
+  },
+  {
+    "abrv": "php_",
+    "text": "PHP"
+  },
+  {
+    "abrv": "prjc",
+    "text": "project"
+  },
+  {
+    "abrv": "prrt",
+    "text": "priority"
+  },
+  {
+    "abrv": "smfn",
+    "text": "Symfony"
+  },
+  {
+    "abrv": "stht",
+    "text": "so that"
+  },
+  {
+    "abrv": "stmt",
+    "text": "estimate"
+  },
+  {
+    "abrv": "stts",
+    "text": "status"
+  },
+  {
+    "abrv": "test",
+    "text": "test"
+  },
+  {
+    "abrv": "titl",
+    "text": "title"
+  },
+  {
+    "abrv": "todo",
+    "text": "to do"
+  },
+  {
+    "abrv": "ursr",
+    "text": "user stories"
+  },
+  {
+    "abrv": "user",
+    "text": "user"
+  },
+  {
+    "abrv": "vcbl",
+    "text": "vocabulary"
+  },
+  {
+    "abrv": "vrsn",
+    "text": "version"
+  },
+  {
+    "abrv": "trsl",
+    "text": "translate"
+  }
+]

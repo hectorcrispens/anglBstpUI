@@ -1,0 +1,113 @@
+{
+  "titl": {
+    "eses": "Docker Symfony 5.3"
+  },
+  "vrsn": "21081608",
+  "stts": "open",
+  "dscr": {
+    "asa_": {
+      "eses": "desarrollador de framework Symfony 3.5"
+    },
+    "iwnt": {
+      "eses": "imagen de Docker"
+    },
+    "stht": {
+      "eses": "el desarrollo de framework Symfony 3.5"
+    },
+    "apcr": {
+      "eses": [
+        "Carpetas para el desarrollo de framework Symfony 3.5",
+        "Documentación con ayuda para la implementación de un nuevo proyecto.",
+        "Documentación con ayuda para las tareas más utilizadas en Docker."
+      ]
+    },
+    "auth": [
+      "hcrispens"
+    ]
+  },
+  "ursr": [
+    {
+      "titl": "Creación de una librería de angular.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "un proyecto de libreria de angular."
+      },
+      "stht": {
+        "eses": "el desarrollo de componentes basados en el css de boostrap."
+      },
+      "apcr": {
+        "eses": [
+          "Una carpeta de proyecto de libreria en estado limpio",
+          "Documentación inicial con la descripción general del proyecto.",
+          "Documentación para desarrolladores."
+        ]
+      },
+      "itrt": 1,
+      "stts": "todo",
+      "prrt": "high",
+      "stmt": 4,
+      "ffrt": 4,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de componente BUTTON.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "desarrollar un componente para un botón."
+      },
+      "stht": {
+        "eses": "pueda ser utilizado en cualquier vista utilizando solo el selector <ngb-button>."
+      },
+      "apcr": {
+        "eses": [
+          "El componente acepte el nombre de la clase de boostrap.",
+          "El componente emita un evento click hacia el componente padre."
+        ]
+      },
+      "itrt": 2,
+      "stts": "todo",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 1,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de componente MODAL.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "desarrollar un componente para un modal."
+      },
+      "stht": {
+        "eses": "siempre que se requiera pueda ser utilizado usando el selector <ngb-modal>."
+      },
+      "apcr": {
+        "eses": [
+          "El componente modal debe ser invocado a partir de un modalService.",
+          "El componente hacer las transiciones de forma animada.",
+          "El contenido del modal debe quedar a criterio del usuario, se acepta solo el contenedor."
+        ]
+      },
+      "itrt": 2,
+      "stts": "todo",
+      "prrt": "high",
+      "stmt": 4,
+      "ffrt": 4,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    }
+  ]
+}
