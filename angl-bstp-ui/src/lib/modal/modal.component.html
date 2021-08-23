@@ -1,7 +1,8 @@
-<div [ngClass]="state" tabindex="-1">
-    <div class="modal-dialog">
+<div [@stateModal]="isOpen ? 'show' : 'hide'" class="modal" [ngStyle]="isOpen ? {display: 'block'} : {display:'none'}">
+    <div  [ngClass]="dialogType == undefined ? dialogBase : dialogBase.concat(dialogType)">
       <div class="modal-content">
         <ng-content></ng-content>        
       </div>
     </div>
 </div>
+<div #backdrop class="modal-backdrop" style="display: none;"></div>

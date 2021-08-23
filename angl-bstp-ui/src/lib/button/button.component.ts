@@ -9,20 +9,22 @@ export class ButtonComponent implements OnInit {
   /**
    * El imput class permite ingresar un array de string con las classes de bootstrap para el boton
    */
-  @Input("class") clase!: string[];
-  constructor() { }
+  @Input("clss") clase!: string[];
 
   /**
    * Cuando se hace click en el boton, se ejecuta el evento Emitt
    */
-  @Output() clickEvent = new EventEmitter<string>();
+  @Output() clck = new EventEmitter();
+
+
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  clickButton(value:string)
+  clckBttn()
   {
-    this.clickEvent.emit(value);
+    this.clck.emit();
   }
 
 }

@@ -35,7 +35,114 @@ Esta es una librería creada con **Angular** v12.2.0, la misma incluye el docume
 
 En cuanto al **javascript** no fue posible su reutilización dado el paradigma de desarrollo del proyecto **Boostrap**.
 
- 
+##  Guia de instalación 
+
+Este proyecto esta disponible para su instalación en, puede ser descargado siguiendo las instrucciónes de instalación en el siguiente [enlace](https://www.npmjs.com/package/angl-bstp-ui).
+
+Sin embargo si desea trabajar con el proyecto sin compilar, es posible clonar este proyecto y trabajar directamente sobre los componentes.
+
+A continuación se muestra una guía de instalación desde github, teniendo presente que ya cuenta con una aplicación de angular creada con `ng new <name>`.
+
+#### Crear la carpeta projects
+
+El primer paso es crear una carpeta llamada *projects* en la raiz del proyecto. Debería quedar la siguiente estructura.
+
+```
+├── node_modules
+├── projects
+├── src
+├── angular.json
+├── karma.conf.js
+├── package-lock.json
+├── package.json
+├── README.md
+├── tsconfig.app.json
+├── tsconfig.json
+└── tsconfig.spec.json
+```
+
+
+
+#### Clonar el proyecto
+
+Ingresar al directorio *projects* y clonar el proyecto ahi dentro.
+
+```bash
+cd projects
+git clone https://github.com/hectorcrispens/anglBstpUI.git
+```
+
+
+
+#### Agregar el proyecto al angular.json
+
+Con esto ya está disponible la libreria para ser importada desde el directorio *projects*, lo siguiente es importar el proyecto en el `angular.json`.
+
+```json
+"projects":{
+    "BootUI": {
+      "projectType": "library",
+      "root": "projects/angl-bstp-ui",
+      "sourceRoot": "projects/angl-bstp-ui/src",
+      "prefix": "btUI",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/angl-bstp-ui/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/angl-bstp-ui/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/angl-bstp-ui/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/angl-bstp-ui/src/test.ts",
+            "tsConfig": "projects/angl-bstp-ui/tsconfig.spec.json",
+            "karmaConfig": "projects/angl-bstp-ui/karma.conf.js"
+          }
+        }
+      }
+    }
+}
+```
+
+
+
+#### Instalar ng-packagr
+
+Es importante tambien tener instalado el paquete de node `ng-packagr`.
+
+```bash
+npm install -D ng-packagr
+```
+
+la opción `-D` le indica a npm que ng-package se instalará como una dependencia de desarrollo (lo cual esta bien) y no como una dependencia de producción.
+
+
+
+#### app.module.ts
+
+El último paso para utilizar la libreria es importar `AnglBstpUIModule` en el `AppModule` desde la `public-api`. Para ello en el **app.module.json**:
+
+```tsx
+import { AnglBstpUIModule } from 'projects/angl-bstp-ui/src/public-api';
+...
+imports: [
+    AnglBstpUIModule
+  ],
+```
+
+Con esto ya estaría diponible para ser utlizada sin compilar desde **github**.
+
+
 
 ## Modo de uso
 
