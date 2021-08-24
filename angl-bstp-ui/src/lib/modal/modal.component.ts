@@ -52,12 +52,6 @@ export class ModalComponent implements OnInit {
   }
 
   tgle() {
-    this.render.setStyle(this.backdrop.nativeElement, 'display', 'none');
-    this.render.removeClass(this.backdrop.nativeElement, 'show');
-    if (!this.isOpen) {
-      this.render.setStyle(this.backdrop.nativeElement, 'display', 'block');
-      this.render.addClass(this.backdrop.nativeElement, "show");
-    }
     this.isOpen = !this.isOpen;
   }
 

@@ -5,4 +5,4 @@
       </div>
     </div>
 </div>
-<div #backdrop class="modal-backdrop" style="display: none;"></div>
+<div #backdrop [ngClass]="isOpen ? ['modal-backdrop', 'show'] : ['modal-backdrop']" [ngStyle]="isOpen ? {display: 'block'} : {display:'none'}"></div>
