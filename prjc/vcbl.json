@@ -182,5 +182,17 @@
   {
     "abrv": "trsl",
     "text": "translate"
+  },
+  {
+    "abrv": "dlog",
+    "text": "dialog"
+  },
+  {
+    "abrv": "tgle",
+    "text": "toggle"
+  },
+  {
+    "abrv": "stte",
+    "text": "stte"
   }
 ]

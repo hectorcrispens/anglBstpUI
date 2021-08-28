@@ -9,7 +9,9 @@ import {
 } from '@angular/animations';
 
 
-type dialogTypes = 'modal-dialog-scrollable' | 'modal-dialog-centered' | 'modal-xl' | 'modal-lg' | 'modal-sm' | 'modal-fullscreen' | 'modal-fullscreen-sm-down' | 'modal-fullscreen-md-down' | 'modal-fullscreen-lg-down' | 'modal-fullscreen-xl-down' | 'modal-fullscreen-xxl-down';
+type modalclss = 'modal-dialog-scrollable' | 'modal-dialog-centered' | 'modal-xl' | 'modal-lg' | 'modal-sm' | 'modal-fullscreen' 
+                        | 'modal-fullscreen-sm-down' | 'modal-fullscreen-md-down' | 'modal-fullscreen-lg-down' | 'modal-fullscreen-xl-down' 
+                        | 'modal-fullscreen-xxl-down';
 
 @Component({
   selector: 'ngb-modal',
@@ -34,8 +36,8 @@ type dialogTypes = 'modal-dialog-scrollable' | 'modal-dialog-centered' | 'modal-
 export class ModalComponent implements OnInit {
 
   @ViewChild('backdrop') backdrop!: ElementRef
-  @Input("dlog") dialogType!: dialogTypes[]
-  @Output() stat = new EventEmitter();
+  @Input("dlog") dialogType!: modalclss[]
+  @Output() stte = new EventEmitter();
   dialogBase: any[] = ["modal-dialog"]
   isOpen: boolean = false
 
@@ -56,7 +58,7 @@ export class ModalComponent implements OnInit {
   }
 
   _getStat(){
-    this.stat.emit(this.isOpen ? 'open': 'close');
+    this.stte.emit(this.isOpen ? 'open': 'close');
   }
 
 }

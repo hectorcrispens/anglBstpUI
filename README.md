@@ -114,6 +114,30 @@ Con esto ya está disponible la libreria para ser importada desde el directorio 
 }
 ```
 
+También se requiere agregar un archivo de estilos para  aquellos componentes de **Bootstrap** que no tienen un componente específico de **Angular**, como por ejemplo el sistema de grillas.
+
+Para ello en el archivo `angular.json` dentro del proyecto principal y en la parte de architect/ build/styles se debe agregar el mismo.
+
+```json
+"projects": {
+    "angl": {
+      ...
+      "architect": {
+        "build": {
+          ...
+          "options": {
+              ...          
+            "styles": [
+              "src/styles.css",
+              "projects/angl-bstp-ui/styles.css"
+            ]
+          }
+        }
+      }
+    }
+}
+```
+
 
 
 #### Instalar ng-packagr
