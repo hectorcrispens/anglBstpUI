@@ -1,0 +1,105 @@
+<!-- 
+    Los botones admiten un conjunto de clases que le dan personalización, las clases admitidas son las mismas que se utilizan en **Bootstrap**
+    -->
+    <div class="row text-left">
+        <h2>Buttons</h2>
+        <hr>
+    </div>
+    <!-- botones Ejemplo -->
+    <div class="row">
+        <ngb-card>
+            <div class="card-body">
+                <h5 class="card-title">Ejemplos</h5>
+                <div class="row ">
+                    <div class="col-lg-12">
+                        <ngb-button [clss]="['btn', 'btn-primary']">Primary</ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-secondary']" class="example-button">Secondary</ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-success']" class="example-button">Success</ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-danger']" class="example-button">Danger</ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-warning']" class="example-button">Warning</ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-info']" class="example-button">Info</ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-light']" class="example-button">Light</ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-dark']" class="example-button">Dark</ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-link']" class="example-button">Link</ngb-button>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="card-footer">
+    
+                <code *ngFor="let bttn of bttnXmpl">&lt;{{ bttn.sltr }}
+                    <span class="code-gray">[clss]</span>=<span class="code-blue">"{{ bttn.clss }}"</span> &gt;<span style="color: black;"> {{ bttn.vlue }}</span> &lt;/{{ bttn.sltr }}&gt;
+                    <br>
+                </code>
+            </div>
+        </ngb-card>
+    </div>
+    <!-- #end botones ejemplo -->
+    <br>
+    <!-- botones outlines -->
+    <div class="row">
+        <ngb-card>
+            <div class="card-body">
+                <h5 class="card-title">Botones Outlines</h5>
+                <div class="row ">
+                    <div class="col-lg-12">
+                        <ngb-button [clss]="['btn', 'btn-outline-primary']">Primary</ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-outline-secondary']" class="example-button">Secondary</ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-outline-success']" class="example-button">Success</ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-outline-danger']" class="example-button">Danger</ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-outline-warning']" class="example-button">Warning</ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-outline-info']" class="example-button">Info</ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-outline-light']" class="example-button">Light</ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-outline-dark']" class="example-button">Dark</ngb-button>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="card-footer">
+                <code *ngFor="let bttn of bttnOtln">&lt;{{ bttn.sltr }}
+                <span class="code-gray">[clss]</span>=<span class="code-blue">"{{ bttn.clss }}"</span> &gt;<span style="color: black;"> {{ bttn.vlue }}</span> &lt;/{{ bttn.sltr }}&gt;
+                <br>
+            </code>
+            </div>
+        </ngb-card>
+    </div>
+    <!-- #end botones outlines-->
+    <br>
+    
+    
+    <!-- botones sizes -->
+    <div class="row">
+        <ngb-card>
+            <div class="card-body">
+                <h5 class="card-title">Botones Tamaños y Disabled</h5>
+                <div class="row">
+                    <div class="col-lg-12" style="display: flex; align-items: flex-end;">
+                        <ngb-button [clss]="['btn', 'btn-primary', 'btn-sm']">Small button</ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-secondary', 'btn-sm']" class="example-button">Small button
+                        </ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-primary', 'btn-lg']" class="example-button">Large button
+                        </ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-secondary', 'btn-lg']" class="example-button">Large button
+                        </ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-lg', 'btn-primary']" [dsbl]="true" class="example-button">Disabled
+                        </ngb-button>
+                        <ngb-button [clss]="['btn', 'btn-secondary', 'btn-lg']" [dsbl]="true" class="example-button">
+                            Disabled</ngb-button>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="card-footer">
+                <code *ngFor="let bttn of bttnSize">&lt;{{ bttn.sltr }}
+                <span class="code-gray">[clss]</span>=<span class="code-blue">"{{ bttn.clss }}"</span> &gt;
+                <span style="color: black;"> {{ bttn.vlue }}</span> &lt;/{{ bttn.sltr }}&gt;
+                <br></code>
+                <code *ngFor="let bttn of bttnDsbl">&lt;{{ bttn.sltr }}
+                    <span class="code-gray">[clss]</span>=<span class="code-blue">"{{ bttn.clss }}"</span> <span class="code-gray"> [dsbl]</span>=<span class="code-blue">"true"</span> &gt;
+                    <span style="color: black;"> {{ bttn.vlue }}</span> &lt;/{{ bttn.sltr }}&gt;
+                    <br>
+                </code>
+            </div>
+        </ngb-card>
+    </div>
+    <!-- #end botones sizes-->
