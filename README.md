@@ -25,6 +25,12 @@ Documento léeme
 >
 > Al momento que esta leyenda desaparezca, la librería estara disponible para su uso, como también un documento de como implementarla. 
 
+## ¡Últimas novedades!
+
+> De momento este proyecto se encuentra aún en vías de desarrollo, aunque ya este disponible para la descarga en **NPM** no es posible utilizar esta librería
+>
+> Al momento que esta leyenda desaparezca, la librería estara disponible para su uso, como también un documento de como implementarla. 
+
 
 
 ## Descripción
