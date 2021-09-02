@@ -36,7 +36,7 @@ type modalclss = 'modal-dialog-scrollable' | 'modal-dialog-centered' | 'modal-xl
 export class ModalComponent implements OnInit {
 
   @ViewChild('backdrop') backdrop!: ElementRef
-  @Input("dlog") dialogType!: modalclss[]
+  @Input("clss") dialogType!: modalclss[]
   @Output() stte = new EventEmitter();
   dialogBase: any[] = ["modal-dialog"]
   isOpen: boolean = false

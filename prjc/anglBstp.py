@@ -1,6 +1,6 @@
 import re
 
-tags ='<ngb-card [clss]="[text-dark, bg-info, mb-3]"><div class="card-header">Header</div><div class="card-body"><h5 class="card-title">Info card title</h5><p class="card-text">Some quick example text to build on the card title and make up the bulkof the cards content.</p></div></ngb-card>'
+tags ='<ngb-card><div class="row g-0"><div class="col-md-8"><div class="card-body"><h5 class="card-title">Card title</h5><p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p><p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p></div></div><div class="col-md-4"><img style="width: 100%; height: 100%;" src="imag03.jpg" class="img-fluid rounded-start" alt="..."></div></div></ngb-card>'
 
 # Reemplazar mayor y menor
 tags=tags.replace('<', '&lt;').replace('>','&gt;')
@@ -11,7 +11,7 @@ ttle = [x.replace('&lt;','').replace('&gt;','') for x in ttle]
 ttle = list(set(ttle))
 
 # Obtener los nombres de clases
-clss= re.findall(r'\"[a-z-,\[\]\s]+\"', tags)
+clss= re.findall(r'\"[a-z0-9-,\[\]%;:\s]+\"', tags)
 clss=list(set(clss))
 
 # Obtener los inputs

@@ -1,5 +1,11 @@
 # anglBstpUI
 
+Libreria de Angular con componentes de bootstrap 5
+
+[![](https://img.shields.io/badge/angular-12.2.0-red?style=flat-square&logo=angular)](https://angular.io/) [![](https://img.shields.io/badge/bootstrap-5.1.0-green?style=flat-square&logo=bootstrap)](https://getbootstrap.com/) ![](https://img.shields.io/badge/npm-6.14.13-cb3837?style=flat-square&logo=npm)
+
+
+
 Version 21.09.01
  Documento léeme
 

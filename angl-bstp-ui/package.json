@@ -1,9 +1,9 @@
 {
   "name": "angl-bstp-ui",
-  "version": "21.08.19",
+  "version": "21.09.01",
   "description":"libreria que incorpora bootstrap bajo el formato de componentes",
   "keywords": ["angular","bootstrap"],
-  "homepage": "https://github.com/hectorcrispens/anglBstpUI#readme",
+  "homepage": "https://github.com/hectorcrispens/anglBstpUI#NPM",
   "license": "GNU",
   "contributors": [
     {

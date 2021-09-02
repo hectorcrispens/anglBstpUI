@@ -98,7 +98,7 @@ Similar functionality to those components is available as modifier classes for c
 <div class="row">
     <ngb-card>
         <div class="card-body">
-            <h5 class="card-title">Ejemplos: titulos, subtitulos, links, header, footer, list</h5>
+            <h5 class="card-title">Imagenes en card</h5>
             <div class="row g-2">
                 <div class="col-4">
                     <ngb-card>
@@ -180,6 +180,93 @@ Similar functionality to those components is available as modifier classes for c
 </div>
 <!-- #end card images-->
 <br>
+<!-- card images left right-->
+<div class="row">
+    <ngb-card>
+        <div class="card-body">
+            <h5 class="card-title">Imagenes laterales</h5>
+            <div class="row g-2">
+                <div class="col-6">
+                    <ngb-card>
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                              <img style="width: 100%; height: 100%;" src="https://raw.githubusercontent.com/hectorcrispens/anglBstpUI/master/angl-bstp-ui/src/assets/imag/imag06.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                          </div>
+                    </ngb-card>
+                </div>
+                <div class="col-6">
+                    <ngb-card>
+                        <div class="row g-0">
+
+                            <div class="col-md-8">
+                              <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img style="width: 100%; height: 100%;" src="https://raw.githubusercontent.com/hectorcrispens/anglBstpUI/master/angl-bstp-ui/src/assets/imag/imag03.jpg" class="img-fluid rounded-start" alt="...">
+                              </div>
+                          </div>
+                    </ngb-card>
+                </div>
+               
+            </div>
+        </div>
+        <div class="card-footer">
+            <code>
+                &lt;ngb-card&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"row g-0"</span>&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"col-md-4"</span>&gt;<br>
+                &lt;img <span class="code-gray">style</span>=<span class="code-blue">"width: 100%; height: 100%;"</span> <span class="code-gray">src</span>="imag06.jpg" <span class="code-gray">class</span>=<span class="code-blue">"img-fluid rounded-start"</span> <span class="code-gray">alt</span>="..."&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"col-md-8"</span>&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Card title</span>&lt;/h5&gt;<br>
+                &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</span>&lt;/p&gt;<br>
+                &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<br>
+                &lt;small <span class="code-gray">class</span>=<span class="code-blue">"text-muted"</span>&gt;<span class="code-black">Last updated 3 mins ago</span>&lt;/small&gt;<br>
+                &lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-card&gt;
+            <br></code>
+            <hr>
+            <code>
+                &lt;ngb-card&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"row g-0"</span>&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"col-md-8"</span>&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Card title</span>&lt;/h5&gt;<br>
+                &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</span>&lt;/p&gt;<br>
+                &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<br>
+                &lt;small <span class="code-gray">class</span>=<span class="code-blue">"text-muted"</span>&gt;<span class="code-black">Last updated 3 mins ago</span>&lt;/small&gt;<br>
+                &lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"col-md-4"</span>&gt;<br>
+                &lt;img <span class="code-gray">style</span>=<span class="code-blue">"width: 100%; height: 100%;"</span> <span class="code-gray">src</span>="imag03.jpg" <span class="code-gray">class</span>=<span class="code-blue">"img-fluid rounded-start"</span> <span class="code-gray">alt</span>="..."&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-card&gt;
+            <br></code>
+            
+        </div>
+    </ngb-card>
+</div>
+<!-- #end card images left right-->
+
+<br>
 <!-- card background color-->
 <div class="row">
     <ngb-card>
@@ -252,24 +339,24 @@ Similar functionality to those components is available as modifier classes for c
         </div>
         <div class="card-footer">
             <code>
-&lt;ngb-card <span class="code-gray">[clss]</span>="['text-white', 'bg-primary', 'mb-3']"&gt;<br>
-&lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-header"</span>&gt;<span class="code-black">Header</span>&lt;/div&gt;<br>
-&lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body"</span>&gt;<br>
-&lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Primary card title</span>&lt;/h5&gt;<br>
-&lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">Some quick example text to build on the card title and make up the bulkof the cards content.</span>&lt;/p&gt;<br>
-&lt;/div&gt;<br>
-&lt;/ngb-card&gt;
+                &lt;ngb-card <span class="code-gray">[clss]</span>="['text-white', 'bg-primary', 'mb-3']"&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-header"</span>&gt;<span class="code-black">Header</span>&lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Primary card title</span>&lt;/h5&gt;<br>
+                &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">Some quick example text to build on the card title and make up the bulkof the cards content.</span>&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-card&gt;
             <br>
         </code>
             <hr>
             <code>
                 &lt;ngb-card <span class="code-gray">[clss]</span>="['text-white', 'bg-secondary', 'mb-3']"&gt;<br>
-&lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-header"</span>&gt;<span class="code-black">Header</span>&lt;/div&gt;<br>
-&lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body"</span>&gt;<br>
-&lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Secondary card title</span>&lt;/h5&gt;<br>
-&lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">Some quick example text to build on the card title and make up the bulkof the cards content.</span>&lt;/p&gt;<br>
-&lt;/div&gt;<br>
-&lt;/ngb-card&gt;
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-header"</span>&gt;<span class="code-black">Header</span>&lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Secondary card title</span>&lt;/h5&gt;<br>
+                &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">Some quick example text to build on the card title and make up the bulkof the cards content.</span>&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-card&gt;              
             <br>
         </code>
             <hr>
@@ -283,40 +370,177 @@ Similar functionality to those components is available as modifier classes for c
                 &lt;/ngb-card&gt;
             <br>
         </code>
-        <hr>
-        <code>
-            &lt;ngb-card <span class="code-gray">[clss]</span>="['text-white', 'bg-danger', 'mb-3']"&gt;<br>
-            &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-header"</span>&gt;<span class="code-black">Header</span>&lt;/div&gt;<br>
-            &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body"</span>&gt;<br>
-            &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Danger card title</span>&lt;/h5&gt;<br>
-            &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">Some quick example text to build on the card title and make up the bulkof the cards content.</span>&lt;/p&gt;<br>
-            &lt;/div&gt;<br>
-            &lt;/ngb-card&gt;
+            <hr>
+            <code>
+                &lt;ngb-card <span class="code-gray">[clss]</span>="['text-white', 'bg-danger', 'mb-3']"&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-header"</span>&gt;<span class="code-black">Header</span>&lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Danger card title</span>&lt;/h5&gt;<br>
+                &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">Some quick example text to build on the card title and make up the bulkof the cards content.</span>&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-card&gt;           
         <br>
     </code>
-    <hr>
-    <code>
-        &lt;ngb-card <span class="code-gray">[clss]</span>="['text-dark', 'bg-warning', 'mb-3']"&gt;<br>
-        &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-header"</span>&gt;<span class="code-black">Header</span>&lt;/div&gt;<br>
-        &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body"</span>&gt;<br>
-        &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Warning card title</span>&lt;/h5&gt;<br>
-        &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">Some quick example text to build on the card title and make up the bulkof the cards content.</span>&lt;/p&gt;<br>
-        &lt;/div&gt;<br>
-        &lt;/ngb-card&gt;
+            <hr>
+            <code>
+                &lt;ngb-card <span class="code-gray">[clss]</span>="['text-dark', 'bg-warning', 'mb-3']"&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-header"</span>&gt;<span class="code-black">Header</span>&lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Warning card title</span>&lt;/h5&gt;<br>
+                &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">Some quick example text to build on the card title and make up the bulkof the cards content.</span>&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-card&gt;       
     <br>
 </code>
-<hr>
-<code>
-    &lt;ngb-card <span class="code-gray">[clss]</span>="['text-dark', 'bg-info', 'mb-3']"&gt;<br>
-    &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-header"</span>&gt;<span class="code-black">Header</span>&lt;/div&gt;<br>
-    &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body"</span>&gt;<br>
-    &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Info card title</span>&lt;/h5&gt;<br>
-    &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">Some quick example text to build on the card title and make up the bulkof the cards content.</span>&lt;/p&gt;<br>
-    &lt;/div&gt;<br>
-    &lt;/ngb-card&gt;
+            <hr>
+            <code>
+                &lt;ngb-card <span class="code-gray">[clss]</span>="['text-dark', 'bg-info', 'mb-3']"&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-header"</span>&gt;<span class="code-black">Header</span>&lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Info card title</span>&lt;/h5&gt;<br>
+                &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">Some quick example text to build on the card title and make up the bulkof the cards content.</span>&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-card&gt;
 <br>
 </code>
         </div>
     </ngb-card>
 </div>
 <!-- #end card backround color-->
+<br>
+<!-- card border color-->
+<div class="row">
+    <ngb-card>
+        <div class="card-body">
+            <h5 class="card-title">Border color</h5>
+            <div class="row g-2">
+                <div class="col-4">
+                    <ngb-card [clss]="['text-dark', 'border-primary', 'mb-3']">
+                        <div class="card-header">Header</div>
+                        <div class="card-body text-primary">
+                            <h5 class="card-title">Primary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </ngb-card>
+                </div>
+                <div class="col-4">
+                    <ngb-card [clss]="['text-dark', 'border-secondary', 'mb-3']">
+                        <div class="card-header">Header</div>
+                        <div class="card-body text-secondary">
+                            <h5 class="card-title">Secondary card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </ngb-card>
+                </div>
+                <div class="col-4">
+                    <ngb-card [clss]="['text-dark', 'border-success', 'mb-3']">
+                        <div class="card-header">Header</div>
+                        <div class="card-body text-success">
+                            <h5 class="card-title">Success card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </ngb-card>
+                </div>
+            </div>
+            <div class="row g-2">
+                <div class="col-4">
+                    <ngb-card [clss]="['text-dark', 'border-danger', 'mb-3']">
+                        <div class="card-header">Header</div>
+                        <div class="card-body text-danger">
+                            <h5 class="card-title">Danger card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </ngb-card>
+                </div>
+                <div class="col-4">
+                    <ngb-card [clss]="['text-dark', 'border-warning', 'mb-3']">
+                        <div class="card-header">Header</div>
+                        <div class="card-body text-warning">
+                            <h5 class="card-title">Warning card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </ngb-card>
+                </div>
+                <div class="col-4">
+                    <ngb-card [clss]="['text-dark', 'border-info', 'mb-3']">
+                        <div class="card-header">Header</div>
+                        <div class="card-body text-info">
+                            <h5 class="card-title">Info card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                        </div>
+                    </ngb-card>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <code>
+                &lt;ngb-card <span class="code-gray">[clss]</span>="['text-dark', 'border-primary', 'mb-3']"&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-header"</span>&gt;<span class="code-black">Header</span>&lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body text-primary"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Primary card title</span>&lt;/h5&gt;<br>
+                &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">Some quick example text to build on the card title and make up the bulkof the cards content.</span>&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-card&gt;
+            <br>
+        </code>
+            <hr>
+            <code>
+                &lt;ngb-card <span class="code-gray">[clss]</span>="['text-dark', 'border-secondary', 'mb-3']"&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-header"</span>&gt;<span class="code-black">Header</span>&lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body text-secondary"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Primary card title</span>&lt;/h5&gt;<br>
+                &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">Some quick example text to build on the card title and make up the bulkof the cards content.</span>&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-card&gt;
+            <br>
+        </code>
+            <hr>
+            <code>
+                &lt;ngb-card <span class="code-gray">[clss]</span>="['text-dark', 'border-success', 'mb-3']"&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-header"</span>&gt;<span class="code-black">Header</span>&lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body text-success"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Primary card title</span>&lt;/h5&gt;<br>
+                &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">Some quick example text to build on the card title and make up the bulkof the cards content.</span>&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-card&gt;                
+
+            <br>
+        </code>
+            <hr>
+            <code>
+                &lt;ngb-card <span class="code-gray">[clss]</span>="['text-dark', 'border-danger', 'mb-3']"&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-header"</span>&gt;<span class="code-black">Header</span>&lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body text-danger"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Primary card title</span>&lt;/h5&gt;<br>
+                &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">Some quick example text to build on the card title and make up the bulkof the cards content.</span>&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-card&gt;
+ 
+        <br>
+    </code>
+            <hr>
+            <code>
+                &lt;ngb-card <span class="code-gray">[clss]</span>="['text-dark', 'border-warning', 'mb-3']"&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-header"</span>&gt;<span class="code-black">Header</span>&lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"card-body text-warning"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"card-title"</span>&gt;<span class="code-black">Primary card title</span>&lt;/h5&gt;<br>
+                &lt;p <span class="code-gray">class</span>=<span class="code-blue">"card-text"</span>&gt;<span class="code-black">Some quick example text to build on the card title and make up the bulkof the cards content.</span>&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-card&gt;
+    <br>
+</code>
+            <hr>
+            <code>
+
+<br>
+</code>
+        </div>
+    </ngb-card>
+</div>
+<!-- #end card border color-->

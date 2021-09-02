@@ -1,6 +1,47 @@
 # Button
 
+
+
+## Tabla de contenido
+
+- [Button](#button)
+  - [Tabla de contenido](#tabla-de-contenido)
+  - [Ilustración](#ilustración)
+  - [Estructura de cajas](#estructura-de-cajas)
+  - [Template de angular](#template-de-angular)
+  - [Clases](#clases)
+  - [Uso del button](#uso-del-button)
+  - [Inputs](#inputs)
+  - [Output](#output)
+  - [Métodos](#métodos)
+
+
+
+## Ilustración
+
 ![button](Images/button.svg)
+
+
+
+## Estructura de cajas
+
+![caja](Images/cajas_button.svg)
+
+
+
+
+
+## Template de angular
+
+```html
+<button type="button" [ngClass]="disabled ? ['disabled'].concat(clase) : clase" (click)="clckBttn()" [disabled]="disabled">
+    <ng-content></ng-content>
+</button>
+```
+
+
+
+
 
 ## Clases
 
@@ -38,75 +79,11 @@ A continuación se detallan las clases posibles:
 
 ## Uso del button
 
-Se ilustra a continuación el uso del button con cada una de las clases de **bootstrap**
-
-#### Button examples
-
-![button](Images/button.svg)
+El boton tiene un único input y un unico output que es el evento click, con ese evento posteriormente decidimos que función es invocada.
 
 ```html
-<ngb-button [clss]="['btn', 'btn-primary']">Primary</ngb-button>
-<ngb-button [clss]="['btn', 'btn-secondary']">Secondary</ngb-button>
-<ngb-button [clss]="['btn', 'btn-success']">Success</ngb-button>
-<ngb-button [clss]="['btn', 'btn-danger']">Danger</ngb-button>
-<ngb-button [clss]="['btn', 'btn-warning']">Warning</ngb-button>
-<ngb-button [clss]="['btn', 'btn-info']">Info</ngb-button>
-<ngb-button [clss]="['btn', 'btn-light']">Light</ngb-button>
-<ngb-button [clss]="['btn', 'btn-dark']">Dark</ngb-button>
-<ngb-button [clss]="['btn', 'btn-link']">Link</ngb-button>
+ <ngb-button [clss]="['btn', 'btn-danger']" [dsbl]="false" (clck)="function()" style="border-color:blue" >Danger</ngb-button>
 ```
-
-
-
-#### Outline buttons
-
-![outlines](Images/button_outline.svg)
-
-```html
-<ngb-button [clss]="['btn', 'btn-outline-primary']">Primary</ngb-button>
-<ngb-button [clss]="['btn', 'btn-outline-secondary']">Secondary</ngb-button>
-<ngb-button [clss]="['btn', 'btn-outline-success']">Success</ngb-button>
-<ngb-button [clss]="['btn', 'btn-outline-danger']">Danger</ngb-button>
-<ngb-button [clss]="['btn', 'btn-outline-warning']">Warning</ngb-button>
-<ngb-button [clss]="['btn', 'btn-outline-info']">Info</ngb-button>
-<ngb-button [clss]="['btn', 'btn-outline-light']">Light</ngb-button>
-<ngb-button [clss]="['btn', 'btn-outline-dark']">Dark</ngb-button>
-```
-
-
-
-#### Sizes
-
-Los botones admiten dos tipos de tamaño, con las clases **sm** y **lg** respectivamente.
-
-![small](Images/button_small.svg)
-
-```html
-<ngb-button [clss]="['btn', 'btn-primary', 'btn-sm']">Small button</ngb-button>
-<ngb-button [clss]="['btn', 'btn-secondary', 'btn-sm']">Small button</ngb-button>
-```
-
-
-
-![large](Images/button_large.svg)
-
-```html
-<ngb-button [clss]="['btn', 'btn-primary', 'btn-lg']">Large button</ngb-button>
-<ngb-button [clss]="['btn', 'btn-secondary', 'btn-lg']">Large button</ngb-button>
-```
-
-
-
-#### Disabled
-
-![disabled](Images/button_disabled.svg)
-
-```html
-<ngb-button [clss]="['btn', 'btn-lg', 'btn-primary']" [dsbl]="true">Primary button</ngb-button>
-<ngb-button [clss]="['btn', 'btn-secondary', 'btn-lg']" [dsbl]="true">Button</ngb-button>
-```
-
-
 
 
 
@@ -124,7 +101,7 @@ El `button` tiene dos inputs, la clase por un lado y si es disabled.
 
 ## Output
 
-Tiene un único output, en el cual notifica cuando el boton es presionado
+Tiene un único output, en el cuál notifica cuando el boton es presionado
 
 ```jsx
 (clck)="function()"
@@ -132,7 +109,7 @@ Tiene un único output, en el cual notifica cuando el boton es presionado
 
 
 
-## Metodos
+## Métodos
 
 El button no expone métodos.
 

@@ -1,30 +1,9 @@
 {
   "titl": {
-    "eses": "Docker Symfony 5.3"
+    "eses": "Angular Bootstrap UI"
   },
-  "vrsn": "21081608",
+  "vrsn": "210901",
   "stts": "open",
-  "dscr": {
-    "asa_": {
-      "eses": "desarrollador de framework Symfony 3.5"
-    },
-    "iwnt": {
-      "eses": "imagen de Docker"
-    },
-    "stht": {
-      "eses": "el desarrollo de framework Symfony 3.5"
-    },
-    "apcr": {
-      "eses": [
-        "Carpetas para el desarrollo de framework Symfony 3.5",
-        "Documentación con ayuda para la implementación de un nuevo proyecto.",
-        "Documentación con ayuda para las tareas más utilizadas en Docker."
-      ]
-    },
-    "auth": [
-      "hcrispens"
-    ]
-  },
   "ursr": [
     {
       "titl": "Creación de una librería de angular.",
@@ -72,10 +51,68 @@
         ]
       },
       "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de una página BUTTON.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear una página que muestre los distintos tipos de botones y forma de usarlo"
+      },
+      "stht": {
+        "eses": "el usuario de la librería sepa como usar el componente button"
+      },
+      "apcr": {
+        "eses": [
+          "que se muestren los distintos tipos de botones",
+          "el codigo de los botones que se muestran"
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de un documento sobre componente BUTTON.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear un documento que explique de forma detallada todas las características del componente button"
+      },
+      "stht": {
+        "eses": "documentar los aspectos tecnicos de cada componente"
+      },
+      "apcr": {
+        "eses": [
+          "dbe",
+          "debe contener una imagen ilustrativa",
+          "debe contener una imagen de la estructura de cajas",
+          "debe contener una descripcion del template",
+          "una especificacion completa del uso",
+          "un detalle de los Inputs, Outputs y Metodos del componente"
+        ]
+      },
+      "itrt": 2,
       "stts": "todo",
       "prrt": "high",
       "stmt": 1,
-      "ffrt": 1,
+      "ffrt": 2,
       "auth": [
         "sergrida",
         "hcrispen"
@@ -94,13 +131,12 @@
       },
       "apcr": {
         "eses": [
-          "El componente modal debe ser invocado a partir de un modalService.",
           "El componente hacer las transiciones de forma animada.",
           "El contenido del modal debe quedar a criterio del usuario, se acepta solo el contenedor."
         ]
       },
       "itrt": 2,
-      "stts": "todo",
+      "stts": "done",
       "prrt": "high",
       "stmt": 4,
       "ffrt": 4,

@@ -1,6 +1,20 @@
 # Modal
 
 
+## Tabla de contenido
+
+- [Modal](#modal)
+  - [Tabla de contenido](#tabla-de-contenido)
+  - [Ilustración](#ilustración)
+  - [Estructura de cajas](#estructura-de-cajas)
+  - [Template de angular](#template-de-angular)
+  - [clases](#clases)
+  - [uso del modal](#uso-del-modal)
+  - [Inputs](#inputs)
+  - [Output](#output)
+  - [Metodos](#metodos)
+
+## Ilustración
 
 ![modal](Images/modal.png)
 
@@ -31,7 +45,7 @@ La clase `.modal-backdrop` es una caja que cubre toda la pantalla con una `opaci
 
 
 
-## .modal-dialog
+## clases
 
 La caja de `.modal-dialog` admite varias clases adicionales que permiten el scroll, o que el modal ocupe toda la pantalla.
 
@@ -59,26 +73,26 @@ Un boton puede abrir y cerrar el modal
 
 ```html
 <!-- boton para abrir el modal-->
-<ngb-button [class]="['btn', 'btn-primary']" (clickEvent)="modal.tgle()">Toggle</ngb-button>
+<ngb-button [clss]="['btn', 'btn-primary']" (clck)="modal.tgle()">Toggle</ngb-button>
 
 <!-- boton para obtener el estado del modal -->
 <!-- a traves del output (stat) -->
-  <ngb-button [class]="['btn', 'btn-danger']" (clickEvent)="modal._getStat()">cerrar</ngb-button>
+  <ngb-button [clss]="['btn', 'btn-danger']" (clck)="modal._getStat()">cerrar</ngb-button>
 ```
 
 
 
 ```html
-<ngb-modal #modal [dlog]="['modal-dialog-scrollable','modal-dialog-centered']" (stat)="mostrarEstado($event)">
+<ngb-modal #modal [c]="['modal-dialog-scrollable','modal-dialog-centered']" (stat)="mostrarEstado($event)">
     <div class="modal-header">
       <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-      <ngb-button [clss]="['btn-close']" (clickEvent)="modal.tgle()"></ngb-button>
+      <ngb-button [clss]="['btn-close']" (clck)="modal.tgle()"></ngb-button>
     </div>
     <div class="modal-body">
     ...
     </div>
     <div class="modal-footer">
-      <ngb-button [clss]="['btn btn-secondary']" (clickEvent)="modal.tgle()">Close</ngb-button>
+      <ngb-button [clss]="['btn btn-secondary']" (clck)="modal.tgle()">Close</ngb-button>
       <ngb-button [clss]="['btn btn-primary']">Save changes</ngb-button>
     </div>
     </ngb-modal>
