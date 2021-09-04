@@ -10,8 +10,9 @@ import { CardComponent } from './card/card.component';
 //endregion Components
 
 //region Pages
-import { CardPageComponent } from './pages/card/card.page';
-import { ButtonPageComponent } from './pages/button/button.page';
+import { CardPageComponent } from './pages/card-page/card.page';
+import { ButtonPageComponent } from './pages/button-page/button.page';
+import { ModalPageComponent } from './pages/modal-page/modal.page';
 //endregion Pages
 
 
@@ -22,7 +23,8 @@ import { ButtonPageComponent } from './pages/button/button.page';
     ModalComponent,
     CardComponent,
     CardPageComponent,
-    ButtonPageComponent
+    ButtonPageComponent,
+    ModalPageComponent
   ],
   imports: [
     CommonModule,

@@ -1,0 +1,309 @@
+<!--
+Below is a static modal example (meaning its position and display have been overridden). 
+Included are the modal header, modal body (required for padding), and modal footer (optional). 
+We ask that you include modal headers with dismiss actions whenever possible, or provide another explicit dismiss action.
+-->
+<div class="row text-left">
+    <h2>Modal</h2>
+    <hr>
+</div>
+
+<!-- modal estandard-->
+<div class="row">
+    <ngb-card>
+        <div class="card-body">
+            <h5 class="card-title">Ejemplo modal estandar</h5>
+            <div class="row g-2">
+                <div class="col">
+                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="demoModal.tgle()">Launch demo modal</ngb-button>
+                    <ngb-modal #demoModal>
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <ngb-button [clss]="['btn-close']" (clck)="demoModal.tgle()"></ngb-button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                          <div class="modal-footer">
+                            <ngb-button [clss]="['btn', 'btn-secondary']" (clck)="demoModal.tgle()" >Close</ngb-button>
+                            <ngb-button [clss]="['btn', 'btn-primary']" class="example-button">Save changes</ngb-button>
+
+                          </div>
+                    </ngb-modal>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <code>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">(clck)</span>="demoModal.tgle()"&gt;<span class="code-black">Launch demo modal</span>&lt;/ngb-button&gt;
+                <br><br>
+                &lt;ngb-modal <span class="code-blue">#demoModal</span> &gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-header"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"modal-title"</span> <span class="code-gray">id</span>="exampleModalLabel"&gt;<span class="code-black">Modal title</span>&lt;/h5&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn-close']"</span> <span class="code-gray">(clck)</span>="demoModal.tgle()"&gt;<br>
+                &lt;/ngb-button&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-body"</span>&gt;<span class="code-black">...</span>&lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-footer"</span>&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-secondary']"</span> <span class="code-gray">(clck)</span>="demoModal.tgle()" &gt;<span class="code-black">Close</span>&lt;/ngb-button&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">class</span>=<span class="code-blue">"example-button"</span>&gt;<span class="code-black">Save changes</span>&lt;/ngb-button&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-modal&gt;
+            <br></code>
+          
+        </div>
+    </ngb-card>
+</div>
+<!-- #end modal estandar-->
+<br>
+
+<!-- modal scrolleable-->
+<div class="row">
+    <ngb-card>
+        <div class="card-body">
+            <h5 class="card-title"> modal centrado y scroll en modal</h5>
+            <div class="row g-2">
+                <div class="col">
+                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="centerModal.tgle()">Launch centered modal</ngb-button>
+                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="scrollModal.tgle()" class="example-button">Launch scrollable modal</ngb-button>
+                    <ngb-modal #centerModal [clss]="['modal-dialog-centered']">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Center modal</h5>
+                            <ngb-button [clss]="['btn-close']" (clck)="centerModal.tgle()"></ngb-button>
+                          </div>
+                          <div class="modal-body">
+                           ...
+                          </div>
+                          <div class="modal-footer">
+                            <ngb-button [clss]="['btn', 'btn-secondary']" (clck)="centerModal.tgle()" >Close</ngb-button>
+                            <ngb-button [clss]="['btn', 'btn-primary']" class="example-button">Save changes</ngb-button>
+
+                          </div>
+                    </ngb-modal>
+                    <ngb-modal #scrollModal [clss]="['modal-dialog-scrollable']">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal title</h5>
+                            <ngb-button [clss]="['btn-close']" (clck)="scrollModal.tgle()"></ngb-button>
+                          </div>
+                          <div class="modal-body">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nisi urna, rhoncus et sagittis eu, venenatis id sapien. Donec ut ipsum eu enim dapibus scelerisque. In sit amet orci interdum nisi tincidunt tristique. Morbi pellentesque, sapien a feugiat tempus, orci diam scelerisque est, id vehicula augue neque sit amet enim. Nam dignissim commodo augue nec tincidunt. Morbi varius arcu metus, nec mollis massa fermentum ut. Quisque facilisis leo vel neque lacinia semper. Nulla efficitur nisl sapien, quis suscipit metus placerat in. Curabitur varius, erat sed bibendum pretium, ex ipsum tempus nisi, luctus tempor neque ex vel odio.
+
+                            Donec accumsan in diam et tincidunt. Nullam purus libero, accumsan vehicula ligula vel, aliquet vehicula libero. Aenean dignissim vel tortor eu aliquet. Quisque venenatis lorem et metus maximus, vitae consequat leo hendrerit. Duis eget diam ut neque maximus molestie. Mauris ac semper turpis, nec pellentesque nibh. Integer et dui consectetur, elementum purus nec, facilisis nunc. Nulla vitae laoreet eros, quis commodo mauris. Vestibulum a odio tellus. Vivamus vitae lacus at lectus bibendum porttitor in eu elit. Praesent porttitor enim eu lacinia convallis. Fusce elit arcu, gravida non dapibus vitae, iaculis non massa. Donec non ligula faucibus, sollicitudin eros ut, porttitor turpis. Pellentesque dignissim venenatis dolor.
+                            
+                            Nunc sollicitudin erat libero, et imperdiet nibh fermentum id. Quisque lacinia magna facilisis ligula faucibus, non malesuada orci varius. Nam sed velit maximus, tempus dolor lacinia, ultrices nisi. Curabitur porta sagittis ipsum nec consequat. Donec lobortis, est euismod venenatis viverra, erat erat venenatis tellus, sit amet tincidunt massa augue at leo. Integer nec scelerisque metus. Aenean ullamcorper bibendum felis, sed sodales odio mollis sed. Nunc non sodales enim, a semper purus. Curabitur dignissim justo ut massa viverra, quis gravida ante feugiat. Phasellus vel enim eget elit rutrum interdum. Nunc est dolor, sollicitudin scelerisque varius ornare, mattis sit amet purus. Ut tellus justo, gravida rhoncus dolor at, feugiat tincidunt massa. Morbi gravida iaculis diam. Suspendisse vel magna commodo, efficitur arcu non, tempus lacus. 
+                          </div>
+                          <div class="modal-footer">
+                            <ngb-button [clss]="['btn', 'btn-secondary']" (clck)="scrollModal.tgle()" >Close</ngb-button>
+                            <ngb-button [clss]="['btn', 'btn-primary']" class="example-button">Save changes</ngb-button>
+
+                          </div>
+                    </ngb-modal>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <code>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">(clck)</span>="centerModal.tgle()"&gt;<span class="code-black">Launch centered modal</span>&lt;/ngb-button&gt;
+                <br><br>
+                &lt;ngb-modal <span class="code-blue">#centerModal </span> <span class="code-gray">[clss]</span>=<span class="code-blue">"['modal-dialog-centered']"</span>&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-header"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"modal-title"</span>&gt;<span class="code-black">Center modal</span>&lt;/h5&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn-close']"</span> <span class="code-gray">(clck)</span>="centerModal.tgle()"&gt;<br>
+                &lt;/ngb-button&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-body"</span>&gt;<span class="code-black"> ...</span>&lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-footer"</span>&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-secondary']"</span> <span class="code-gray">(clck)</span>="centerModal.tgle()" &gt;<span class="code-black">Close</span>&lt;/ngb-button&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">class</span>=<span class="code-blue">"example-button"</span>&gt;<span class="code-black">Save changes</span>&lt;/ngb-button&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-modal&gt;
+            <br>
+        </code>
+            <hr>
+            <code>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">(clck)</span>="scrollModal.tgle()"&gt;<span class="code-black">Launch scrollable modal</span>&lt;/ngb-button&gt;
+                <br><br>
+                &lt;ngb-modal <span class="code-blue">#scrollModal </span> <span class="code-gray">[clss]</span>=<span class="code-blue">"['modal-dialog-scrollable']"</span>&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-header"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"modal-title"</span>&gt;<span class="code-black">Modal title</span>&lt;/h5&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn-close']"</span> <span class="code-gray">(clck)</span>="scrollModal.tgle()"&gt;<br>
+                &lt;/ngb-button&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-body"</span>&gt;Lorem ipsum dolor sit amet... &lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-footer"</span>&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-secondary']"</span> <span class="code-gray">(clck)</span>="scrollModal.tgle()" &gt;<span class="code-black">Close</span>&lt;/ngb-button&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">class</span>=<span class="code-blue">"example-button"</span>&gt;<span class="code-black">Save changes</span>&lt;/ngb-button&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-modal&gt;
+                <br>
+            </code>
+          
+        </div>
+    </ngb-card>
+</div>
+<!-- #end modal scrolleable-->
+
+<br>
+
+<!-- modal tamaños -->
+<div class="row">
+    <ngb-card>
+        <div class="card-body">
+            <h5 class="card-title"> modal centrado y scroll en modal</h5>
+            <div class="row g-2">
+                <div class="col">
+                    
+                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="xlModal.tgle()">Extra large modal</ngb-button>
+                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="lgModal.tgle()" class="example-button">Large modal</ngb-button>
+                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="smModal.tgle()" class="example-button">Small modal</ngb-button>
+                   
+                    
+                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="fxModal.tgle()" class="example-button">Full screen modal</ngb-button>
+
+                    <!-- modal xl -->
+                    <ngb-modal #xlModal [clss]="['modal-xl']">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Extra large modal</h5>
+                            <ngb-button [clss]="['btn-close']" (clck)="xlModal.tgle()"></ngb-button>
+                          </div>
+                          <div class="modal-body">
+                           ...
+                          </div>
+                          <div class="modal-footer">
+                            <ngb-button [clss]="['btn', 'btn-secondary']" (clck)="xlModal.tgle()" >Close</ngb-button>
+                            <ngb-button [clss]="['btn', 'btn-primary']" class="example-button">Save changes</ngb-button>
+
+                          </div>
+                    </ngb-modal>
+
+
+                    <!-- modal lg -->
+                    <ngb-modal #lgModal [clss]="['modal-lg']">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Large modal</h5>
+                            <ngb-button [clss]="['btn-close']" (clck)="lgModal.tgle()"></ngb-button>
+                          </div>
+                          <div class="modal-body">
+                           ...
+                          </div>
+                          <div class="modal-footer">
+                            <ngb-button [clss]="['btn', 'btn-secondary']" (clck)="lgModal.tgle()" >Close</ngb-button>
+                            <ngb-button [clss]="['btn', 'btn-primary']" class="example-button">Save changes</ngb-button>
+
+                          </div>
+                    </ngb-modal>
+
+
+                    <!-- modal sm -->
+                    <ngb-modal #smModal [clss]="['modal-sm']">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Small modal</h5>
+                            <ngb-button [clss]="['btn-close']" (clck)="smModal.tgle()"></ngb-button>
+                          </div>
+                          <div class="modal-body">
+                           ...
+                          </div>
+                          <div class="modal-footer">
+                            <ngb-button [clss]="['btn', 'btn-secondary']" (clck)="smModal.tgle()" >Close</ngb-button>
+                            <ngb-button [clss]="['btn', 'btn-primary']" class="example-button">Save changes</ngb-button>
+
+                          </div>
+                    </ngb-modal>
+
+
+                    <!-- modal fx -->
+                    <ngb-modal #fxModal [clss]="['modal-fullscreen']">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Full screen modal</h5>
+                            <ngb-button [clss]="['btn-close']" (clck)="fxModal.tgle()"></ngb-button>
+                          </div>
+                          <div class="modal-body">
+                           ...
+                          </div>
+                          <div class="modal-footer">
+                            <ngb-button [clss]="['btn', 'btn-secondary']" (clck)="fxModal.tgle()" >Close</ngb-button>
+                            <ngb-button [clss]="['btn', 'btn-primary']" class="example-button">Save changes</ngb-button>
+
+                          </div>
+                    </ngb-modal>
+    
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <code>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">(clck)</span>="xlModal.tgle()"&gt;<span class="code-black">Extra large modal</span>&lt;/ngb-button&gt;
+                <br><br>
+                &lt;ngb-modal <span class="code-blue">#xlModal </span> <span class="code-gray">[clss]</span>=<span class="code-blue">"['modal-xl']"</span>&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-header"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"modal-title"</span>&gt;<span class="code-black">Extra large modal</span>&lt;/h5&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn-close']"</span> <span class="code-gray">(clck)</span>="xlModal.tgle()"&gt;<br>
+                &lt;/ngb-button&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-body"</span>&gt;<span class="code-black"> ...</span>&lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-footer"</span>&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-secondary']"</span> <span class="code-gray">(clck)</span>="xlModal.tgle()" &gt;<span class="code-black">Close</span>&lt;/ngb-button&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">class</span>=<span class="code-blue">"example-button"</span>&gt;<span class="code-black">Save changes</span>&lt;/ngb-button&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-modal&gt;
+            <br>
+        </code>
+            <hr>
+            <code>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">(clck)</span>="lgModal.tgle()"&gt;<span class="code-black">Large modal</span>&lt;/ngb-button&gt;
+                <br><br>
+                &lt;ngb-modal <span class="code-blue">#lgModal </span> <span class="code-gray">[clss]</span>=<span class="code-blue">"['modal-lg']"</span>&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-header"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"modal-title"</span>&gt;<span class="code-black">Large modal</span>&lt;/h5&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn-close']"</span> <span class="code-gray">(clck)</span>="lgModal.tgle()"&gt;<br>
+                &lt;/ngb-button&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-body"</span>&gt;<span class="code-black"> ...</span>&lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-footer"</span>&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-secondary']"</span> <span class="code-gray">(clck)</span>="lgModal.tgle()" &gt;<span class="code-black">Close</span>&lt;/ngb-button&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">class</span>=<span class="code-blue">"example-button"</span>&gt;<span class="code-black">Save changes</span>&lt;/ngb-button&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-modal&gt;
+                <br>
+            </code>
+            <hr>
+            <code>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">(clck)</span>="smModal.tgle()"&gt;<span class="code-black">Small modal</span>&lt;/ngb-button&gt;
+                <br><br>
+                &lt;ngb-modal <span class="code-blue">#smModal </span> <span class="code-gray">[clss]</span>=<span class="code-blue">"['modal-sm']"</span>&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-header"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"modal-title"</span>&gt;<span class="code-black">Small modal</span>&lt;/h5&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn-close']"</span> <span class="code-gray">(clck)</span>="smModal.tgle()"&gt;<br>
+                &lt;/ngb-button&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-body"</span>&gt;<span class="code-black"> ...</span>&lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-footer"</span>&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-secondary']"</span> <span class="code-gray">(clck)</span>="smModal.tgle()" &gt;<span class="code-black">Close</span>&lt;/ngb-button&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">class</span>=<span class="code-blue">"example-button"</span>&gt;<span class="code-black">Save changes</span>&lt;/ngb-button&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-modal&gt;
+                <br>
+            </code>
+            <hr>
+            <code>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">(clck)</span>="fxModal.tgle()"&gt;<span class="code-black">Full screen modal</span>&lt;/ngb-button&gt;
+                <br><br>
+                &lt;ngb-modal <span class="code-blue">#fxModal </span> <span class="code-gray">[clss]</span>=<span class="code-blue">"['modal-fullscreen']"</span>&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-header"</span>&gt;<br>
+                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"modal-title"</span>&gt;<span class="code-black">Full screen modal</span>&lt;/h5&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn-close']"</span> <span class="code-gray">(clck)</span>="fxModal.tgle()"&gt;<br>
+                &lt;/ngb-button&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-body"</span>&gt;<span class="code-black"> ...</span>&lt;/div&gt;<br>
+                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-footer"</span>&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-secondary']"</span> <span class="code-gray">(clck)</span>="fxModal.tgle()" &gt;<span class="code-black">Close</span>&lt;/ngb-button&gt;<br>
+                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">class</span>=<span class="code-blue">"example-button"</span>&gt;<span class="code-black">Save changes</span>&lt;/ngb-button&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-modal&gt;
+                <br>
+            </code>
+          
+        </div>
+    </ngb-card>
+</div>
+<!-- #end modal tamaños -->
