@@ -26,7 +26,7 @@ We ask that you include modal headers with dismiss actions whenever possible, or
                           </div>
                           <div class="modal-footer">
                             <ngb-button [clss]="['btn', 'btn-secondary']" (clck)="demoModal.tgle()" >Close</ngb-button>
-                            <ngb-button [clss]="['btn', 'btn-primary']" class="example-button">Save changes</ngb-button>
+                            <ngb-button [clss]="['btn', 'btn-primary']" class="ngb-btn-spce">Save changes</ngb-button>
 
                           </div>
                     </ngb-modal>
@@ -35,18 +35,18 @@ We ask that you include modal headers with dismiss actions whenever possible, or
         </div>
         <div class="card-footer">
             <code>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">(clck)</span>="demoModal.tgle()"&gt;<span class="code-black">Launch demo modal</span>&lt;/ngb-button&gt;
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-primary']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="demoModal.tgle()"&gt;<span class="ngb-dcmt-ttle">Launch demo modal</span>&lt;/ngb-button&gt;
                 <br><br>
-                &lt;ngb-modal <span class="code-blue">#demoModal</span> &gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-header"</span>&gt;<br>
-                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"modal-title"</span> <span class="code-gray">id</span>="exampleModalLabel"&gt;<span class="code-black">Modal title</span>&lt;/h5&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn-close']"</span> <span class="code-gray">(clck)</span>="demoModal.tgle()"&gt;<br>
+                &lt;ngb-modal <span class="ngb-dcmt-drtv-vlue">#demoModal</span> &gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-header"</span>&gt;<br>
+                &lt;h5 <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-title"</span> <span class="ngb-dcmt-drtv">id</span>="exampleModalLabel"&gt;<span class="ngb-dcmt-ttle">Modal title</span>&lt;/h5&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn-close']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="demoModal.tgle()"&gt;<br>
                 &lt;/ngb-button&gt;<br>
                 &lt;/div&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-body"</span>&gt;<span class="code-black">...</span>&lt;/div&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-footer"</span>&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-secondary']"</span> <span class="code-gray">(clck)</span>="demoModal.tgle()" &gt;<span class="code-black">Close</span>&lt;/ngb-button&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">class</span>=<span class="code-blue">"example-button"</span>&gt;<span class="code-black">Save changes</span>&lt;/ngb-button&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-body"</span>&gt;<span class="ngb-dcmt-ttle">...</span>&lt;/div&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-footer"</span>&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-secondary']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="demoModal.tgle()" &gt;<span class="ngb-dcmt-ttle">Close</span>&lt;/ngb-button&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-primary']"</span> <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"ngb-btn-spce"</span>&gt;<span class="ngb-dcmt-ttle">Save changes</span>&lt;/ngb-button&gt;<br>
                 &lt;/div&gt;<br>
                 &lt;/ngb-modal&gt;
             <br></code>
@@ -65,7 +65,7 @@ We ask that you include modal headers with dismiss actions whenever possible, or
             <div class="row g-2">
                 <div class="col">
                     <ngb-button [clss]="['btn', 'btn-primary']" (clck)="centerModal.tgle()">Launch centered modal</ngb-button>
-                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="scrollModal.tgle()" class="example-button">Launch scrollable modal</ngb-button>
+                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="scrollModal.tgle()" class="ngb-btn-spce">Launch scrollable modal</ngb-button>
                     <ngb-modal #centerModal [clss]="['modal-dialog-centered']">
                         <div class="modal-header">
                             <h5 class="modal-title">Center modal</h5>
@@ -76,7 +76,7 @@ We ask that you include modal headers with dismiss actions whenever possible, or
                           </div>
                           <div class="modal-footer">
                             <ngb-button [clss]="['btn', 'btn-secondary']" (clck)="centerModal.tgle()" >Close</ngb-button>
-                            <ngb-button [clss]="['btn', 'btn-primary']" class="example-button">Save changes</ngb-button>
+                            <ngb-button [clss]="['btn', 'btn-primary']" class="ngb-btn-spce">Save changes</ngb-button>
 
                           </div>
                     </ngb-modal>
@@ -94,7 +94,7 @@ We ask that you include modal headers with dismiss actions whenever possible, or
                           </div>
                           <div class="modal-footer">
                             <ngb-button [clss]="['btn', 'btn-secondary']" (clck)="scrollModal.tgle()" >Close</ngb-button>
-                            <ngb-button [clss]="['btn', 'btn-primary']" class="example-button">Save changes</ngb-button>
+                            <ngb-button [clss]="['btn', 'btn-primary']" class="ngb-btn-spce">Save changes</ngb-button>
 
                           </div>
                     </ngb-modal>
@@ -103,36 +103,36 @@ We ask that you include modal headers with dismiss actions whenever possible, or
         </div>
         <div class="card-footer">
             <code>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">(clck)</span>="centerModal.tgle()"&gt;<span class="code-black">Launch centered modal</span>&lt;/ngb-button&gt;
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-primary']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="centerModal.tgle()"&gt;<span class="ngb-dcmt-ttle">Launch centered modal</span>&lt;/ngb-button&gt;
                 <br><br>
-                &lt;ngb-modal <span class="code-blue">#centerModal </span> <span class="code-gray">[clss]</span>=<span class="code-blue">"['modal-dialog-centered']"</span>&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-header"</span>&gt;<br>
-                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"modal-title"</span>&gt;<span class="code-black">Center modal</span>&lt;/h5&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn-close']"</span> <span class="code-gray">(clck)</span>="centerModal.tgle()"&gt;<br>
+                &lt;ngb-modal <span class="ngb-dcmt-drtv-vlue">#centerModal </span> <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['modal-dialog-centered']"</span>&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-header"</span>&gt;<br>
+                &lt;h5 <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-title"</span>&gt;<span class="ngb-dcmt-ttle">Center modal</span>&lt;/h5&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn-close']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="centerModal.tgle()"&gt;<br>
                 &lt;/ngb-button&gt;<br>
                 &lt;/div&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-body"</span>&gt;<span class="code-black"> ...</span>&lt;/div&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-footer"</span>&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-secondary']"</span> <span class="code-gray">(clck)</span>="centerModal.tgle()" &gt;<span class="code-black">Close</span>&lt;/ngb-button&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">class</span>=<span class="code-blue">"example-button"</span>&gt;<span class="code-black">Save changes</span>&lt;/ngb-button&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-body"</span>&gt;<span class="ngb-dcmt-ttle"> ...</span>&lt;/div&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-footer"</span>&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-secondary']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="centerModal.tgle()" &gt;<span class="ngb-dcmt-ttle">Close</span>&lt;/ngb-button&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-primary']"</span> <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"ngb-btn-spce"</span>&gt;<span class="ngb-dcmt-ttle">Save changes</span>&lt;/ngb-button&gt;<br>
                 &lt;/div&gt;<br>
                 &lt;/ngb-modal&gt;
             <br>
         </code>
             <hr>
             <code>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">(clck)</span>="scrollModal.tgle()"&gt;<span class="code-black">Launch scrollable modal</span>&lt;/ngb-button&gt;
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-primary']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="scrollModal.tgle()"&gt;<span class="ngb-dcmt-ttle">Launch scrollable modal</span>&lt;/ngb-button&gt;
                 <br><br>
-                &lt;ngb-modal <span class="code-blue">#scrollModal </span> <span class="code-gray">[clss]</span>=<span class="code-blue">"['modal-dialog-scrollable']"</span>&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-header"</span>&gt;<br>
-                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"modal-title"</span>&gt;<span class="code-black">Modal title</span>&lt;/h5&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn-close']"</span> <span class="code-gray">(clck)</span>="scrollModal.tgle()"&gt;<br>
+                &lt;ngb-modal <span class="ngb-dcmt-drtv-vlue">#scrollModal </span> <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['modal-dialog-scrollable']"</span>&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-header"</span>&gt;<br>
+                &lt;h5 <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-title"</span>&gt;<span class="ngb-dcmt-ttle">Modal title</span>&lt;/h5&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn-close']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="scrollModal.tgle()"&gt;<br>
                 &lt;/ngb-button&gt;<br>
                 &lt;/div&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-body"</span>&gt;Lorem ipsum dolor sit amet... &lt;/div&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-footer"</span>&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-secondary']"</span> <span class="code-gray">(clck)</span>="scrollModal.tgle()" &gt;<span class="code-black">Close</span>&lt;/ngb-button&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">class</span>=<span class="code-blue">"example-button"</span>&gt;<span class="code-black">Save changes</span>&lt;/ngb-button&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-body"</span>&gt;Lorem ipsum dolor sit amet... &lt;/div&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-footer"</span>&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-secondary']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="scrollModal.tgle()" &gt;<span class="ngb-dcmt-ttle">Close</span>&lt;/ngb-button&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-primary']"</span> <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"ngb-btn-spce"</span>&gt;<span class="ngb-dcmt-ttle">Save changes</span>&lt;/ngb-button&gt;<br>
                 &lt;/div&gt;<br>
                 &lt;/ngb-modal&gt;
                 <br>
@@ -154,11 +154,11 @@ We ask that you include modal headers with dismiss actions whenever possible, or
                 <div class="col">
                     
                     <ngb-button [clss]="['btn', 'btn-primary']" (clck)="xlModal.tgle()">Extra large modal</ngb-button>
-                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="lgModal.tgle()" class="example-button">Large modal</ngb-button>
-                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="smModal.tgle()" class="example-button">Small modal</ngb-button>
+                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="lgModal.tgle()" class="ngb-btn-spce">Large modal</ngb-button>
+                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="smModal.tgle()" class="ngb-btn-spce">Small modal</ngb-button>
                    
                     
-                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="fxModal.tgle()" class="example-button">Full screen modal</ngb-button>
+                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="fxModal.tgle()" class="ngb-btn-spce">Full screen modal</ngb-button>
 
                     <!-- modal xl -->
                     <ngb-modal #xlModal [clss]="['modal-xl']">
@@ -171,7 +171,7 @@ We ask that you include modal headers with dismiss actions whenever possible, or
                           </div>
                           <div class="modal-footer">
                             <ngb-button [clss]="['btn', 'btn-secondary']" (clck)="xlModal.tgle()" >Close</ngb-button>
-                            <ngb-button [clss]="['btn', 'btn-primary']" class="example-button">Save changes</ngb-button>
+                            <ngb-button [clss]="['btn', 'btn-primary']" class="ngb-btn-spce">Save changes</ngb-button>
 
                           </div>
                     </ngb-modal>
@@ -188,7 +188,7 @@ We ask that you include modal headers with dismiss actions whenever possible, or
                           </div>
                           <div class="modal-footer">
                             <ngb-button [clss]="['btn', 'btn-secondary']" (clck)="lgModal.tgle()" >Close</ngb-button>
-                            <ngb-button [clss]="['btn', 'btn-primary']" class="example-button">Save changes</ngb-button>
+                            <ngb-button [clss]="['btn', 'btn-primary']" class="ngb-btn-spce">Save changes</ngb-button>
 
                           </div>
                     </ngb-modal>
@@ -205,7 +205,7 @@ We ask that you include modal headers with dismiss actions whenever possible, or
                           </div>
                           <div class="modal-footer">
                             <ngb-button [clss]="['btn', 'btn-secondary']" (clck)="smModal.tgle()" >Close</ngb-button>
-                            <ngb-button [clss]="['btn', 'btn-primary']" class="example-button">Save changes</ngb-button>
+                            <ngb-button [clss]="['btn', 'btn-primary']" class="ngb-btn-spce">Save changes</ngb-button>
 
                           </div>
                     </ngb-modal>
@@ -222,7 +222,7 @@ We ask that you include modal headers with dismiss actions whenever possible, or
                           </div>
                           <div class="modal-footer">
                             <ngb-button [clss]="['btn', 'btn-secondary']" (clck)="fxModal.tgle()" >Close</ngb-button>
-                            <ngb-button [clss]="['btn', 'btn-primary']" class="example-button">Save changes</ngb-button>
+                            <ngb-button [clss]="['btn', 'btn-primary']" class="ngb-btn-spce">Save changes</ngb-button>
 
                           </div>
                     </ngb-modal>
@@ -232,72 +232,72 @@ We ask that you include modal headers with dismiss actions whenever possible, or
         </div>
         <div class="card-footer">
             <code>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">(clck)</span>="xlModal.tgle()"&gt;<span class="code-black">Extra large modal</span>&lt;/ngb-button&gt;
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-primary']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="xlModal.tgle()"&gt;<span class="ngb-dcmt-ttle">Extra large modal</span>&lt;/ngb-button&gt;
                 <br><br>
-                &lt;ngb-modal <span class="code-blue">#xlModal </span> <span class="code-gray">[clss]</span>=<span class="code-blue">"['modal-xl']"</span>&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-header"</span>&gt;<br>
-                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"modal-title"</span>&gt;<span class="code-black">Extra large modal</span>&lt;/h5&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn-close']"</span> <span class="code-gray">(clck)</span>="xlModal.tgle()"&gt;<br>
+                &lt;ngb-modal <span class="ngb-dcmt-drtv-vlue">#xlModal </span> <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['modal-xl']"</span>&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-header"</span>&gt;<br>
+                &lt;h5 <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-title"</span>&gt;<span class="ngb-dcmt-ttle">Extra large modal</span>&lt;/h5&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn-close']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="xlModal.tgle()"&gt;<br>
                 &lt;/ngb-button&gt;<br>
                 &lt;/div&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-body"</span>&gt;<span class="code-black"> ...</span>&lt;/div&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-footer"</span>&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-secondary']"</span> <span class="code-gray">(clck)</span>="xlModal.tgle()" &gt;<span class="code-black">Close</span>&lt;/ngb-button&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">class</span>=<span class="code-blue">"example-button"</span>&gt;<span class="code-black">Save changes</span>&lt;/ngb-button&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-body"</span>&gt;<span class="ngb-dcmt-ttle"> ...</span>&lt;/div&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-footer"</span>&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-secondary']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="xlModal.tgle()" &gt;<span class="ngb-dcmt-ttle">Close</span>&lt;/ngb-button&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-primary']"</span> <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"ngb-btn-spce"</span>&gt;<span class="ngb-dcmt-ttle">Save changes</span>&lt;/ngb-button&gt;<br>
                 &lt;/div&gt;<br>
                 &lt;/ngb-modal&gt;
             <br>
         </code>
             <hr>
             <code>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">(clck)</span>="lgModal.tgle()"&gt;<span class="code-black">Large modal</span>&lt;/ngb-button&gt;
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-primary']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="lgModal.tgle()"&gt;<span class="ngb-dcmt-ttle">Large modal</span>&lt;/ngb-button&gt;
                 <br><br>
-                &lt;ngb-modal <span class="code-blue">#lgModal </span> <span class="code-gray">[clss]</span>=<span class="code-blue">"['modal-lg']"</span>&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-header"</span>&gt;<br>
-                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"modal-title"</span>&gt;<span class="code-black">Large modal</span>&lt;/h5&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn-close']"</span> <span class="code-gray">(clck)</span>="lgModal.tgle()"&gt;<br>
+                &lt;ngb-modal <span class="ngb-dcmt-drtv-vlue">#lgModal </span> <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['modal-lg']"</span>&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-header"</span>&gt;<br>
+                &lt;h5 <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-title"</span>&gt;<span class="ngb-dcmt-ttle">Large modal</span>&lt;/h5&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn-close']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="lgModal.tgle()"&gt;<br>
                 &lt;/ngb-button&gt;<br>
                 &lt;/div&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-body"</span>&gt;<span class="code-black"> ...</span>&lt;/div&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-footer"</span>&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-secondary']"</span> <span class="code-gray">(clck)</span>="lgModal.tgle()" &gt;<span class="code-black">Close</span>&lt;/ngb-button&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">class</span>=<span class="code-blue">"example-button"</span>&gt;<span class="code-black">Save changes</span>&lt;/ngb-button&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-body"</span>&gt;<span class="ngb-dcmt-ttle"> ...</span>&lt;/div&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-footer"</span>&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-secondary']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="lgModal.tgle()" &gt;<span class="ngb-dcmt-ttle">Close</span>&lt;/ngb-button&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-primary']"</span> <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"ngb-btn-spce"</span>&gt;<span class="ngb-dcmt-ttle">Save changes</span>&lt;/ngb-button&gt;<br>
                 &lt;/div&gt;<br>
                 &lt;/ngb-modal&gt;
                 <br>
             </code>
             <hr>
             <code>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">(clck)</span>="smModal.tgle()"&gt;<span class="code-black">Small modal</span>&lt;/ngb-button&gt;
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-primary']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="smModal.tgle()"&gt;<span class="ngb-dcmt-ttle">Small modal</span>&lt;/ngb-button&gt;
                 <br><br>
-                &lt;ngb-modal <span class="code-blue">#smModal </span> <span class="code-gray">[clss]</span>=<span class="code-blue">"['modal-sm']"</span>&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-header"</span>&gt;<br>
-                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"modal-title"</span>&gt;<span class="code-black">Small modal</span>&lt;/h5&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn-close']"</span> <span class="code-gray">(clck)</span>="smModal.tgle()"&gt;<br>
+                &lt;ngb-modal <span class="ngb-dcmt-drtv-vlue">#smModal </span> <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['modal-sm']"</span>&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-header"</span>&gt;<br>
+                &lt;h5 <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-title"</span>&gt;<span class="ngb-dcmt-ttle">Small modal</span>&lt;/h5&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn-close']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="smModal.tgle()"&gt;<br>
                 &lt;/ngb-button&gt;<br>
                 &lt;/div&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-body"</span>&gt;<span class="code-black"> ...</span>&lt;/div&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-footer"</span>&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-secondary']"</span> <span class="code-gray">(clck)</span>="smModal.tgle()" &gt;<span class="code-black">Close</span>&lt;/ngb-button&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">class</span>=<span class="code-blue">"example-button"</span>&gt;<span class="code-black">Save changes</span>&lt;/ngb-button&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-body"</span>&gt;<span class="ngb-dcmt-ttle"> ...</span>&lt;/div&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-footer"</span>&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-secondary']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="smModal.tgle()" &gt;<span class="ngb-dcmt-ttle">Close</span>&lt;/ngb-button&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-primary']"</span> <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"ngb-btn-spce"</span>&gt;<span class="ngb-dcmt-ttle">Save changes</span>&lt;/ngb-button&gt;<br>
                 &lt;/div&gt;<br>
                 &lt;/ngb-modal&gt;
                 <br>
             </code>
             <hr>
             <code>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">(clck)</span>="fxModal.tgle()"&gt;<span class="code-black">Full screen modal</span>&lt;/ngb-button&gt;
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-primary']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="fxModal.tgle()"&gt;<span class="ngb-dcmt-ttle">Full screen modal</span>&lt;/ngb-button&gt;
                 <br><br>
-                &lt;ngb-modal <span class="code-blue">#fxModal </span> <span class="code-gray">[clss]</span>=<span class="code-blue">"['modal-fullscreen']"</span>&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-header"</span>&gt;<br>
-                &lt;h5 <span class="code-gray">class</span>=<span class="code-blue">"modal-title"</span>&gt;<span class="code-black">Full screen modal</span>&lt;/h5&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn-close']"</span> <span class="code-gray">(clck)</span>="fxModal.tgle()"&gt;<br>
+                &lt;ngb-modal <span class="ngb-dcmt-drtv-vlue">#fxModal </span> <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['modal-fullscreen']"</span>&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-header"</span>&gt;<br>
+                &lt;h5 <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-title"</span>&gt;<span class="ngb-dcmt-ttle">Full screen modal</span>&lt;/h5&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn-close']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="fxModal.tgle()"&gt;<br>
                 &lt;/ngb-button&gt;<br>
                 &lt;/div&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-body"</span>&gt;<span class="code-black"> ...</span>&lt;/div&gt;<br>
-                &lt;div <span class="code-gray">class</span>=<span class="code-blue">"modal-footer"</span>&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-secondary']"</span> <span class="code-gray">(clck)</span>="fxModal.tgle()" &gt;<span class="code-black">Close</span>&lt;/ngb-button&gt;<br>
-                &lt;ngb-button <span class="code-gray">[clss]</span>=<span class="code-blue">"['btn', 'btn-primary']"</span> <span class="code-gray">class</span>=<span class="code-blue">"example-button"</span>&gt;<span class="code-black">Save changes</span>&lt;/ngb-button&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-body"</span>&gt;<span class="ngb-dcmt-ttle"> ...</span>&lt;/div&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"modal-footer"</span>&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-secondary']"</span> <span class="ngb-dcmt-drtv">(clck)</span>="fxModal.tgle()" &gt;<span class="ngb-dcmt-ttle">Close</span>&lt;/ngb-button&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn', 'btn-primary']"</span> <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"ngb-btn-spce"</span>&gt;<span class="ngb-dcmt-ttle">Save changes</span>&lt;/ngb-button&gt;<br>
                 &lt;/div&gt;<br>
                 &lt;/ngb-modal&gt;
                 <br>

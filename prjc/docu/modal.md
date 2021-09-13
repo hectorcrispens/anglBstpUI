@@ -105,7 +105,7 @@ Un boton puede abrir y cerrar el modal
 El modal tiene un único input que es un array de string en el que admite solamente valores propios de `.modal-dialog`
 
 ```htm
-[dlog]="['modal-dialog-scrollable','modal-dialog-centered']"
+[c]="['modal-dialog-scrollable','modal-dialog-centered']"
 ```
 
 

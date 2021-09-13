@@ -13,6 +13,9 @@ import { CardComponent } from './card/card.component';
 import { CardPageComponent } from './pages/card-page/card.page';
 import { ButtonPageComponent } from './pages/button-page/button.page';
 import { ModalPageComponent } from './pages/modal-page/modal.page';
+import { TabComponent } from './tab/tab.component';
+import { TabPageComponent } from './pages/tab-page/tab.page';
+import { TabPanelComponent } from './tab-panel/tab-panel.component';
 //endregion Pages
 
 
@@ -24,7 +27,10 @@ import { ModalPageComponent } from './pages/modal-page/modal.page';
     CardComponent,
     CardPageComponent,
     ButtonPageComponent,
-    ModalPageComponent
+    ModalPageComponent,
+    TabComponent,
+    TabPageComponent,
+    TabPanelComponent
   ],
   imports: [
     CommonModule,
@@ -35,6 +41,7 @@ import { ModalPageComponent } from './pages/modal-page/modal.page';
     ButtonComponent,
     ModalComponent,
     CardComponent,
+    TabComponent
   ]
 })
 export class AnglBstpUIModule { }
