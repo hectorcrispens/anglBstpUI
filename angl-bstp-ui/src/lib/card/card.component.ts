@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { bgType, brdrType, mrgnType } from '../types/baseType';
-type cardType = brdrType | bgType | mrgnType
+import { bgType, brdrType, mrgnType, textColrType } from '../types/baseType';
+type cardType = brdrType | bgType | mrgnType | textColrType
 @Component({
   selector: 'ngb-card',
   templateUrl: './card.component.html',

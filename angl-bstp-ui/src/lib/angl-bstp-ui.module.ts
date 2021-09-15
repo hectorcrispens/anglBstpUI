@@ -16,6 +16,8 @@ import { ModalPageComponent } from './pages/modal-page/modal.page';
 import { TabComponent } from './tab/tab.component';
 import { TabPageComponent } from './pages/tab-page/tab.page';
 import { TabPanelComponent } from './tab-panel/tab-panel.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { NavbarPageComponent} from './pages/navbar-page/navbar.page';
 //endregion Pages
 
 
@@ -30,7 +32,9 @@ import { TabPanelComponent } from './tab-panel/tab-panel.component';
     ModalPageComponent,
     TabComponent,
     TabPageComponent,
-    TabPanelComponent
+    TabPanelComponent,
+    NavbarComponent,
+    NavbarPageComponent
   ],
   imports: [
     CommonModule,
