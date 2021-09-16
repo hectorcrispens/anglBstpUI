@@ -2744,19 +2744,6 @@ height:100%}
 .ratio-21x9{
 --bs-aspect-ratio:calc(9 / 21 * 100%)}
 
-.fixed-top{
-position:fixed;
-top:0;
-right:0;
-left:0;
-z-index:1030}
-
-.fixed-bottom{
-position:fixed;
-right:0;
-bottom:0;
-left:0;
-z-index:1030}
 
 .sticky-top{
 position:-webkit-sticky;
