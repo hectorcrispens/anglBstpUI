@@ -47,7 +47,9 @@ import { CollapseComponent } from './collapse/collapse.component';
     ButtonComponent,
     ModalComponent,
     CardComponent,
-    TabComponent
+    TabComponent,
+    TabPanelComponent,
+    NavbarComponent
   ]
 })
 export class AnglBstpUIModule { }

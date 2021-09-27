@@ -371,6 +371,119 @@
         "sergrida",
         "hcrispen"
       ]
+    },
+    {
+      "titl": "Creación de componente TAB.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "desarrollar un componente para un TAB."
+      },
+      "stht": {
+        "eses": "pueda ser utilizado en cualquier vista utilizando solo el selector <ngb-tab>."
+      },
+      "apcr": {
+        "eses": [
+          "El componente acepte el nombre de la clase de boostrap.",
+          "El componente acepte una lista de links con los cuales se inicializará.",
+          "El componente emita un evento evnt hacia el componente padre indicando cual fue el tab clickeado."
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de componente TAB PANEL.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "desarrollar un componente para un TAB PANEL."
+      },
+      "stht": {
+        "eses": "pueda ser utilizado en cualquier vista utilizando solo el selector <ngb-tab-panel>."
+      },
+      "apcr": {
+        "eses": [
+          "El componente se inicialize con un tablink",
+          "Cuando se clickee el tab, el panel se mostrará según corresponda."
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de una página TAB.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear una página que muestre los distintos tipos de TAB y forma de usarlo"
+      },
+      "stht": {
+        "eses": "el usuario de la librería sepa como usar el componente TAB"
+      },
+      "apcr": {
+        "eses": [
+          "que se muestren los distintos tipos de TAB",
+          "el código de los TAB que se muestran"
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de un documento sobre componente TAB.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear un documento que explique de forma detallada todas las características del componente TAB"
+      },
+      "stht": {
+        "eses": "documentar los aspectos técnicos de cada componente"
+      },
+      "apcr": {
+        "eses": [
+          "dbe",
+          "debe contener una imagen ilustrativa",
+          "debe contener una imagen de la estructura de cajas",
+          "debe contener una descripcion del template",
+          "una especificación completa del uso",
+          "un detalle de los Inputs, Outputs y Métodos del componente"
+        ]
+      },
+      "itrt": 2,
+      "stts": "todo",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
     }
   ]
 }
