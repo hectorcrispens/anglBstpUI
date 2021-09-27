@@ -94,13 +94,21 @@ Se detallan a continuación los **types** definidos:
 
 
 
+## FxedType
+
+`fxedType` o mejor dicho *fixed-type* permite que un elemento se quede pegado arriba o abajo de la pantalla.
+
+```css
+'fixed-bottom', 'fixed-top'
+```
+
 
 
 ```
 .align-items-start
-    .align-items-end
-    .align-items-center
-    .align-items-baseline
+.align-items-end
+.align-items-center
+.align-items-baseline
     .align-items-stretch
     .align-items-sm-start
     .align-items-sm-end
@@ -130,32 +138,3 @@ Se detallan a continuación los **types** definidos:
 ```
 
 
-460                     <ngb-card [clss]="['text-dark', 'border-warning', 'mb-3']">         
-                                                                          ~~~~~~            
-                                                                                            
-  projects/angl-bstp-ui/src/lib/pages/card-page/card.page.ts:5:16                           
-    5   templateUrl: './card.page.html',                                                    
-                     ~~~~~~~~~~~~~~~~~~                                                     
-    Error occurs in the template of component CardPageComponent.                            
-                                                                                            
-                                                                                            
-Error: projects/angl-bstp-ui/src/lib/pages/card-page/card.page.html:470:40 - error TS2322: Type '"text-dark"' is not assignable to type 'cardType'.                                     
-                                                                                            
-470                     <ngb-card [clss]="['text-dark', 'border-info', 'mb-3']">            
-                                           ~~~~~~~~~~~                                      
-                                                                                            
-  projects/angl-bstp-ui/src/lib/pages/card-page/card.page.ts:5:16                           
-    5   templateUrl: './card.page.html',                                                    
-                     ~~~~~~~~~~~~~~~~~~                                                     
-    Error occurs in the template of component CardPageComponent.                            
-                                                                                            
-                                                                                            
-Error: projects/angl-bstp-ui/src/lib/pages/card-page/card.page.html:470:68 - error TS2322: Type '"mb-3"' is not assignable to type 'cardType'.                                          
-                                                                                            
-470                     <ngb-card [clss]="['text-dark', 'border-info', 'mb-3']">            
-                                                                       ~~~~~~               
-                                                                                            
-  projects/angl-bstp-ui/src/lib/pages/card-page/card.page.ts:5:16                           
-    5   templateUrl: './card.page.html',                                                    
-                     ~~~~~~~~~~~~~~~~~~                                                     
-    Error occurs in the template of component CardPageComponent.        

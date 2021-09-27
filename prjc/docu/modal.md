@@ -104,8 +104,8 @@ Un boton puede abrir y cerrar el modal
 
 El modal tiene un único input que es un array de string en el que admite solamente valores propios de `.modal-dialog`
 
-```htm
-[c]="['modal-dialog-scrollable','modal-dialog-centered']"
+```jsx
+[clss]="['modal-dialog-scrollable','modal-dialog-centered']"
 ```
 
 
@@ -114,7 +114,7 @@ El modal tiene un único input que es un array de string en el que admite solame
 
 El modal tiene un único output en el que informa su estado, los valores posibles son *open* y *close* respectivamente y lo hace en el output **stat**.
 
-```html
+```jsx
 (stat)="funcion($event)"
 ```
 

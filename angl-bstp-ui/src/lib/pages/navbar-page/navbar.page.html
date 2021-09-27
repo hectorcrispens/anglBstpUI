@@ -1,1 +1,251 @@
-<p>navbar.page works!</p>
+<!--
+Documentation and examples for Bootstrap’s powerful, responsive navigation header, the navbar. 
+Includes support for branding, navigation, and more, including support for our collapse plugin.
+-->
+<div class="row text-left">
+    <h2>Navbar</h2>
+    <hr>
+</div>
+
+<!-- navbar brand e image -->
+<div class="row">
+    <ngb-card>
+        <div class="card-body">
+            <h5 class="card-title"> Brand e Image</h5>
+            <div class="row g-2">
+                <div class="col">
+
+                    <ngb-navbar [side]="'right'" [clss]="['navbar-expand-lg', 'navbar-light', 'bg-light']" [brnd]="{text: 'Navbar', clss:['h1', 'mb-0'], imag: 'https://simpleicons.org/icons/bootstrap.svg'}">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link disabled">Disabled</a>
+                            </li>
+                          </ul>
+                          <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                          </form>
+                    </ngb-navbar>
+
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <code>
+              &lt;ngb-navbar <span class="ngb-dcmt-drtv">
+                <br>[side]</span>="'right'" <span class="ngb-dcmt-drtv">
+                <br>[clss]</span>="['navbar-expand-lg', 'navbar-light', 'bg-light']" <span class="ngb-dcmt-drtv">
+                <br>[brnd]</span>="&lcub;text: 'Navbar', clss:['h1', 'mb-0'], imag: 'https://simpleicons.org/icons/bootstrap.svg'&rcub;"&gt;<br>
+              &lt;ul <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"navbar-nav me-auto mb-2 mb-lg-0"</span>&gt;<br>
+              &lt;li <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"nav-item"</span>&gt;<br>
+              &lt;a <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"nav-link active"</span> aria-current=<span class="ngb-dcmt-drtv-vlue">"page"</span> <span class="ngb-dcmt-drtv">href</span>="#"&gt;<span class="ngb-dcmt-ttle">Home</span>&lt;/a&gt;<br>
+              &lt;/li&gt;<br>
+              &lt;li <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"nav-item"</span>&gt;<br>
+              &lt;a <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"nav-link"</span> <span class="ngb-dcmt-drtv">href</span>="#"&gt;<span class="ngb-dcmt-ttle">Link</span>&lt;/a&gt;<br>
+              &lt;/li&gt;<br>
+              &lt;li <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"nav-item"</span>&gt;<br>
+              &lt;a <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"nav-link disabled"</span>&gt;<span class="ngb-dcmt-ttle">Disabled</span>&lt;/a&gt;<br>
+              &lt;/li&gt;<br>
+              &lt;/ul&gt;<br>
+              &lt;form <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"d-flex"</span>&gt;<br>
+              &lt;input <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"form-control me-2"</span> <span class="ngb-dcmt-drtv">type</span>=<span class="ngb-dcmt-drtv-vlue">"search"</span> <span class="ngb-dcmt-drtv">placeholder</span>="<span class="ngb-dcmt-ttle">Search</span>" aria-label="<span class="ngb-dcmt-ttle">Search</span>"&gt;<br>
+              &lt;button <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"btn btn-outline-success"</span> <span class="ngb-dcmt-drtv">type</span>=<span class="ngb-dcmt-drtv-vlue">"submit"</span>&gt;<span class="ngb-dcmt-ttle">Search</span>&lt;/button&gt;<br>
+              &lt;/form&gt;<br>
+              &lt;/ngb-navbar&gt;
+            <br></code>
+
+        </div>
+    </ngb-card>
+</div>
+<!-- #end navbar brand e image-->
+<br>
+
+<!-- navbar color -->
+<div class="row">
+  <ngb-card>
+      <div class="card-body">
+          <h5 class="card-title"> Navbar Color</h5>
+          <div class="row g-2">
+              <div class="col">
+
+                  <ngb-navbar [side]="'right'" [clss]="['navbar-expand-lg', 'navbar-dark', 'bg-dark']" [brnd]="{text: 'Navbar', clss:[], imag: ''}">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                  </ngb-navbar>
+                  <ngb-navbar [side]="'right'" [clss]="['navbar-expand-lg', 'navbar-dark', 'bg-primary', 'mt-2']" [brnd]="{text: 'Navbar', clss:[], imag: ''}">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled">Disabled</a>
+                        </li>
+                      </ul>
+                      <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                </ngb-navbar>
+                <ngb-navbar 
+                [side]="'right'" 
+                [clss]="['navbar-expand-lg', 'navbar-light', 'mt-2']" 
+                [brnd]="{text: 'Navbar', clss:[], imag: ''}"
+                [prpt]="{'background-color': '#e3f2fd'}"
+                >
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+              </ngb-navbar>
+
+              </div>
+          </div>
+      </div>
+      <div class="card-footer">
+          <code>
+            &lt;ngb-navbar <span class="ngb-dcmt-drtv">
+              <br>[side]</span>="'right'" <span class="ngb-dcmt-drtv">
+              <br>[clss]</span>="['navbar-expand-lg','navbar-dark','bg-dark']" <span class="ngb-dcmt-drtv">
+              <br>[brnd]</span>="&lcub;text: 'Navbar', clss:[], imag: ''&rcub;"&gt;<span class="ngb-dcmt-ttle">
+              <br>...</span>
+              <br>&lt;/ngb-navbar&gt;
+          <br><br></code>
+<code>
+  &lt;ngb-navbar <span class="ngb-dcmt-drtv">
+    <br>[side]</span>="'right'" <span class="ngb-dcmt-drtv">
+      <br>[clss]</span>="['navbar-expand-lg', 'navbar-dark', 'bg-primary', 'mt-2']" <span class="ngb-dcmt-drtv">
+        <br>[brnd]</span>="&lcub;text: 'Navbar', clss:[], imag: ''&rcub;"&gt;<span class="ngb-dcmt-ttle">
+          <br>...</span>
+          <br>&lt;/ngb-navbar&gt;
+  <br></code><br>
+  <code>
+    &lt;ngb-navbar <span class="ngb-dcmt-drtv">
+      <br>[side]</span>="'right'" <span class="ngb-dcmt-drtv">
+        <br>[clss]</span>="['navbar-expand-lg', 'navbar-light', 'mt-2']" <span class="ngb-dcmt-drtv">
+          <br>[brnd]</span>="&lcub;text: 'Navbar', clss:[], imag: ''&rcub;"<span class="ngb-dcmt-drtv">
+            <br>[prpt]</span>="&lcub;'background-color': '#e3f2fd'&rcub;"&gt;<span class="ngb-dcmt-ttle">
+              <br>...
+            <br></span>&lt;/ngb-navbar&gt;
+    <br>
+  </code>
+      </div>
+  </ngb-card>
+</div>
+<!-- #end navbar color-->
+<br>
+
+<!-- navbar placement -->
+<div class="row">
+  <ngb-card>
+      <div class="card-body">
+          <h5 class="card-title"> Navbar Position</h5>
+          <div class="row g-2">
+              <div class="col" style="padding: 1.5rem; border: 1px solid gray; position: relative; height: 8rem;">
+
+                  <ngb-navbar [side]="'right'" 
+                  [clss]="['navbar-expand-lg', 'navbar-light', 'bg-light']" 
+                  [brnd]="{text: 'Navbar', clss:[], imag: ''}"
+                   style="position: absolute; top: 0px; left: 0px; right: 0px;">
+                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                          </li>
+                        </ul>
+                        <form class="d-flex">
+                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                          <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                  </ngb-navbar>
+
+              </div>
+              
+          </div>
+          <div class="row g-2 mt-1">
+            <div class="col" style="padding: 1.5rem; border: 1px solid gray; position: relative; height: 8rem;">
+
+                <ngb-navbar 
+                [side]="'right'" 
+                [clss]="['navbar-expand-lg', 'navbar-light', 'bg-light']" 
+                [brnd]="{text: 'Navbar', clss:[], imag: ''}"
+                 style="position: absolute; bottom: 0px; left: 0px; right: 0px;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled">Disabled</a>
+                        </li>
+                      </ul>
+                      <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                </ngb-navbar>
+
+            </div>
+            
+        </div>
+      </div>
+      <div class="card-footer">
+          <code>
+            &lt;ngb-navbar <span class="ngb-dcmt-drtv">
+              <br>[side]</span>="'right'" <span class="ngb-dcmt-drtv">
+              <br>[clss]</span>="['navbar-expand-lg','navbar-light','bg-light', 'fixed-top']" <span class="ngb-dcmt-drtv">
+              <br>[brnd]</span>="&lcub;text: 'Navbar', clss:[], imag: ''&rcub;"&gt;<span class="ngb-dcmt-ttle">
+              <br>...</span>
+              <br>&lt;/ngb-navbar&gt;
+          <br><br></code>
+          <code>
+            &lt;ngb-navbar <span class="ngb-dcmt-drtv">
+              <br>[side]</span>="'right'" <span class="ngb-dcmt-drtv">
+              <br>[clss]</span>="['navbar-expand-lg','navbar-light,'bg-light', 'fixed-bottom']" <span class="ngb-dcmt-drtv">
+              <br>[brnd]</span>="&lcub;text: 'Navbar', clss:[], imag: ''&rcub;"&gt;<span class="ngb-dcmt-ttle">
+              <br>...</span>
+              <br>&lt;/ngb-navbar&gt;
+          <br><br></code>
+
+      </div>
+  </ngb-card>
+</div>

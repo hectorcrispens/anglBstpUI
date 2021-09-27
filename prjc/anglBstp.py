@@ -1,12 +1,12 @@
 import re
 
-tags ='<div class="d-flex align-items-start"><ngb-tab [lnks]="flex" [clss]="[flex-column, nav-pills]"></ngb-tab>'
+tags ='<ngb-navbar [side]="??right??" [clss]="[??navbar-expand-lg??, ??navbar-light??, ??mt-2??]" [brnd]="{text: ??Navbar??, clss:[], imag: ????}"[prpt]="{??background-color??: ??#e3f2fd??}">...</ngb-navbar>'
 
 
 
 # Reemplazar mayor y menor
 tags=tags.replace('<', '&lt;').replace('>','&gt;')
-
+tags = tags.replace('{', '&lcub;').replace('}', '&rcub;')
 # Obtener los value de los elementos
 ttle = re.findall(r'\&gt;[a-zA-Z-.\s0-9]+\&lt;', tags)
 ttle = [x.replace('&lt;','').replace('&gt;','') for x in ttle]

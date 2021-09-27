@@ -1,6 +1,20 @@
 # Tab
 
-
+## Tabla de contenido
+- [Tab](#tab)
+  - [Tabla de contenido](#tabla-de-contenido)
+  - [Ilustración](#ilustración)
+  - [Estructura de Cajas](#estructura-de-cajas)
+  - [Template de Angular](#template-de-angular)
+      - [tab Component](#tab-component)
+      - [tab-panel Component](#tab-panel-component)
+      - [tab-service](#tab-service)
+      - [tablink](#tablink)
+  - [Clases](#clases)
+  - [Uso del Tab](#uso-del-tab)
+  - [Inputs](#inputs)
+  - [Outputs](#outputs)
+  - [Métodos](#métodos)
 
 ## Ilustración
 

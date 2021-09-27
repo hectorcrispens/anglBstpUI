@@ -18,6 +18,7 @@ import { TabPageComponent } from './pages/tab-page/tab.page';
 import { TabPanelComponent } from './tab-panel/tab-panel.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarPageComponent} from './pages/navbar-page/navbar.page';
+import { CollapseComponent } from './collapse/collapse.component';
 //endregion Pages
 
 
@@ -34,7 +35,8 @@ import { NavbarPageComponent} from './pages/navbar-page/navbar.page';
     TabPageComponent,
     TabPanelComponent,
     NavbarComponent,
-    NavbarPageComponent
+    NavbarPageComponent,
+    CollapseComponent
   ],
   imports: [
     CommonModule,

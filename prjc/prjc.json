@@ -11,14 +11,14 @@
         "eses": "desarrollador de angular."
       },
       "iwnt": {
-        "eses": "un proyecto de libreria de angular."
+        "eses": "un proyecto de librería de angular."
       },
       "stht": {
         "eses": "el desarrollo de componentes basados en el css de boostrap."
       },
       "apcr": {
         "eses": [
-          "Una carpeta de proyecto de libreria en estado limpio",
+          "Una carpeta de proyecto de librería en estado limpio",
           "Documentación inicial con la descripción general del proyecto.",
           "Documentación para desarrolladores."
         ]
@@ -96,16 +96,15 @@
         "eses": "crear un documento que explique de forma detallada todas las características del componente button"
       },
       "stht": {
-        "eses": "documentar los aspectos tecnicos de cada componente"
+        "eses": "documentar los aspectos técnicos de cada componente"
       },
       "apcr": {
         "eses": [
-          "dbe",
           "debe contener una imagen ilustrativa",
           "debe contener una imagen de la estructura de cajas",
-          "debe contener una descripcion del template",
-          "una especificacion completa del uso",
-          "un detalle de los Inputs, Outputs y Metodos del componente"
+          "debe contener una descripción del template",
+          "una especificación completa del uso",
+          "un detalle de los Inputs, Outputs y Métodos del componente"
         ]
       },
       "itrt": 2,
@@ -127,19 +126,247 @@
         "eses": "desarrollar un componente para un modal."
       },
       "stht": {
-        "eses": "siempre que se requiera pueda ser utilizado usando el selector <ngb-modal>."
+        "eses": "pueda ser utilizado en cualquier vista utilizando solo el selector <ngb-modal>."
       },
       "apcr": {
         "eses": [
-          "El componente hacer las transiciones de forma animada.",
-          "El contenido del modal debe quedar a criterio del usuario, se acepta solo el contenedor."
+          "El componente acepte el nombre de la clase de boostrap.",
+          "El componente emita un evento stat hacia el componente padre."
         ]
       },
       "itrt": 2,
       "stts": "done",
       "prrt": "high",
-      "stmt": 4,
-      "ffrt": 4,
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de una página MODAL.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear una página que muestre los distintos tipos de modal y forma de usarlo"
+      },
+      "stht": {
+        "eses": "el usuario de la librería sepa como usar el componente modal"
+      },
+      "apcr": {
+        "eses": [
+          "que se muestren los distintos tipos de modal",
+          "el codigo de los modal que se muestran"
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de un documento sobre componente MODAL.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear un documento que explique de forma detallada todas las características del componente modal"
+      },
+      "stht": {
+        "eses": "documentar los aspectos técnicos de cada componente"
+      },
+      "apcr": {
+        "eses": [
+          "debe contener una imagen ilustrativa",
+          "debe contener una imagen de la estructura de cajas",
+          "debe contener una descripción del template",
+          "una especificación completa del uso",
+          "un detalle de los Inputs, Outputs y Métodos del componente"
+        ]
+      },
+      "itrt": 2,
+      "stts": "todo",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de componente CARD.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "desarrollar un componente para un CARD."
+      },
+      "stht": {
+        "eses": "pueda ser utilizado en cualquier vista utilizando solo el selector <ngb-card>."
+      },
+      "apcr": {
+        "eses": [
+          "El componente acepte el nombre de la clase de boostrap."
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de una página CARD.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear una página que muestre los distintos tipos de CARD y forma de usarlas"
+      },
+      "stht": {
+        "eses": "el usuario de la librería sepa como usar el componente card"
+      },
+      "apcr": {
+        "eses": [
+          "que se muestren los distintos tipos de CARD",
+          "el código de los CARD que se muestran"
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de un documento sobre componente CARD.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear un documento que explique de forma detallada todas las características del componente CARD"
+      },
+      "stht": {
+        "eses": "documentar los aspectos tÉcnicos de cada componente"
+      },
+      "apcr": {
+        "eses": [
+          "dbe",
+          "debe contener una imagen ilustrativa",
+          "debe contener una imagen de la estructura de cajas",
+          "debe contener una descripcion del template",
+          "una especificación completa del uso",
+          "un detalle de los Inputs del componente"
+        ]
+      },
+      "itrt": 2,
+      "stts": "todo",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de componente NAVBAR.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "desarrollar un componente para un NAVBAR."
+      },
+      "stht": {
+        "eses": "pueda ser utilizado en cualquier vista utilizando solo el selector <ngb-NAVBAR>."
+      },
+      "apcr": {
+        "eses": [
+          "El componente acepte el nombre de la clase de boostrap.",
+          "El componente acepte un valor que indique si el botón toggler estará a la derecha o izquierda.",
+          "El componente debe permitir una image en el brand.",
+          "El componente debe permitir agregar otros estilos como el color de fondo."
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de una página NAVBAR.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear una página que muestre los distintos tipos de NAVBAR y forma de usarlo"
+      },
+      "stht": {
+        "eses": "el usuario de la librería sepa como usar el componente NAVBAR"
+      },
+      "apcr": {
+        "eses": [
+          "que se muestren los distintos tipos de NAVBAR",
+          "el código de los NAVBAR que se muestran"
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de un documento sobre componente NAVBAR.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear un documento que explique de forma detallada todas las características del componente NAVBAR"
+      },
+      "stht": {
+        "eses": "documentar los aspectos técnicos de cada componente"
+      },
+      "apcr": {
+        "eses": [
+          "dbe",
+          "debe contener una imagen ilustrativa",
+          "debe contener una imagen de la estructura de cajas",
+          "debe contener una descripcion del template",
+          "una especificación completa del uso",
+          "un detalle de los Inputs del componente"
+        ]
+      },
+      "itrt": 2,
+      "stts": "todo",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
       "auth": [
         "sergrida",
         "hcrispen"

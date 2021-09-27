@@ -1,5 +1,24 @@
-<nav [ngClass]="clss!=undefined ? ['navbar'].concat(clss) : ['navbar']">
-    <div class="container-fluid">
+<nav [ngClass]="clss==undefined? ['navbar'] : ['navbar'].concat(clss)" [ngStyle]="styl != undefined? styl: {}">
+  <div class="container-fluid">
+    <!-- conditional div -->
+ <div *ngIf="side == 'left'">
+  <button class="navbar-toggler" id="leftbtn" type="button" (click)="tgle()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+ </div>
+
+
+    <a [ngClass]="brnd.clss==undefined || brnd.clss.length == 0 ? ['navbar-brand'] : ['navbar-brand'].concat(brnd.clss)" href="#" #brndCntr></a>
+
+    <div *ngIf="side == 'right'">
+      <button class="navbar-toggler" id="rightbtn" type="button" (click)="tgle()">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+     </div>
+
+    <div [ngClass]="{'collapse': clps, 'navbar-collapse':true}">
       <ng-content></ng-content>
     </div>
-  </nav>
+
+  </div>
+</nav>
