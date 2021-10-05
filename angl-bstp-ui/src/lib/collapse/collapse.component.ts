@@ -1,36 +1,62 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Component, Input, OnInit } from '@angular/core';
-
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+type drtnType = 'hrzn' | 'vrtl'
 @Component({
   selector: 'ngb-collapse',
   templateUrl: './collapse.component.html',
   styleUrls: ['./collapse.component.css'],
   animations: [
-    trigger('state',
+    trigger('triggerCollapse',
       [
-        state('hide', style({
-          maxHeight: '0px',
+        state('vhide', style({
+          maxHeight: '0px'
         })),
-        state('show', style({
-          maxHeight: '150px',
+        state('hhide', style({
+          maxWidth: '0px',
+          height: 'auto'
+   
         })),
-        transition('show => hide', animate('0.35s 100ms ease-out')),
-        transition('hide => show', animate('0.35s 100ms ease-in'))
-        
+        state('vshow', style({
+          maxHeight: '{{ maxvh }}vh'
+        }), {params: {maxvh: 100}}),
+        state('hshow', style({
+          maxWidth: '{{ maxvw }}vw'
+        }), {params:{maxvw: 100}}),
+        transition('vhide => vshow',animate('{{ timer }}s cubic-bezier(.71,.05,.34,.96)'), {params:{timer: 2}}),
+        transition('vshow => vhide',animate('{{ timer }}s cubic-bezier(.71,.05,.34,.96)'), {params:{timer: 2}}),
+        transition('hhide => hshow',animate('{{ timer }}s cubic-bezier(.71,.05,.34,.96)'), {params:{timer: 2}}),
+        transition('hshow => hhide',animate('{{ timer }}s cubic-bezier(.71,.05,.34,.96)'), {params:{timer: 2}})
+               
       ])
   ]
 })
 export class CollapseComponent implements OnInit {
-  
-  estd = 'hide'
-  stt = false
+  @Input('drtn') drtn:drtnType = 'hrzn'
+  @Input('time') time: number = 1
+  @Input('max-vh') maxvh: number = 100
+  @Input('max-vw') maxvw: number = 100
+  @Output() stte = new EventEmitter();
 
+  stateClps:string = 'vhide'
   constructor() { }
 
   ngOnInit(): void {
   }
+  ngAfterContentInit(){
+    this.stateClps = this.drtn=='hrzn'? 'hhide' : 'vhide'
+  }
+  ngAfterViewInit(){
 
-  clpsTgle(){
-   this.estd = this.estd === 'show' ? 'hide': 'show';
+  }
+ tgle(){
+   if(this.drtn=='hrzn')
+   {
+     this.stateClps = this.stateClps=='hhide' ? 'hshow' : 'hhide'
+   }
+   else
+   {
+    this.stateClps = this.stateClps=='vhide' ? 'vshow' : 'vhide'
+   }
+   this.stte.emit(this.stateClps.slice(1));
   }
 }

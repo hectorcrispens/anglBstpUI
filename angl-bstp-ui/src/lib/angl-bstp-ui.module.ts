@@ -7,18 +7,19 @@ import { AnglBstpUIComponent } from './angl-bstp-ui.component';
 import { ButtonComponent } from './button/button.component';
 import { ModalComponent } from './modal/modal.component';
 import { CardComponent } from './card/card.component';
+import { TabComponent } from './tab/tab.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { TabPanelComponent } from './tab-panel/tab-panel.component';
+import { CollapseComponent } from './collapse/collapse.component';
 //endregion Components
 
 //region Pages
 import { CardPageComponent } from './pages/card-page/card.page';
 import { ButtonPageComponent } from './pages/button-page/button.page';
 import { ModalPageComponent } from './pages/modal-page/modal.page';
-import { TabComponent } from './tab/tab.component';
 import { TabPageComponent } from './pages/tab-page/tab.page';
-import { TabPanelComponent } from './tab-panel/tab-panel.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { NavbarPageComponent} from './pages/navbar-page/navbar.page';
-import { CollapseComponent } from './collapse/collapse.component';
+import { CollapsePageComponent } from './pages/collapse-page/collapse.page';
 //endregion Pages
 
 
@@ -36,7 +37,8 @@ import { CollapseComponent } from './collapse/collapse.component';
     TabPanelComponent,
     NavbarComponent,
     NavbarPageComponent,
-    CollapseComponent
+    CollapseComponent,
+    CollapsePageComponent
   ],
   imports: [
     CommonModule,

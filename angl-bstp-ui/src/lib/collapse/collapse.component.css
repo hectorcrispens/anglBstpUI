@@ -1,7 +1,14 @@
 .collapse:not(.show) {
     display: none
 }
-
+.abcollapse {
+    overflow: hidden;
+    position: relative;
+}
+.collapsenn:nth-child(1) {
+    overflow: hidden;
+    white-space: nowrap;
+}
 .collapsing {
     height: 0;
     overflow: hidden;

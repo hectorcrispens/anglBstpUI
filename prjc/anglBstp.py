@@ -1,7 +1,15 @@
 import re
+import pyperclip as clipboard
 
-tags ='<ngb-navbar [side]="??right??" [clss]="[??navbar-expand-lg??, ??navbar-light??, ??mt-2??]" [brnd]="{text: ??Navbar??, clss:[], imag: ????}"[prpt]="{??background-color??: ??#e3f2fd??}">...</ngb-navbar>'
+clip =  clipboard.paste()
+clip = clip.replace("'", "??").replace("  ", "").replace("\n", "")
+print("clip:\n"+clip)
 
+tags ='<div class="col"><ngb-collapse [max-vh]="90" [time]="1" [drtn]="??vrtl??"><ngb-card> <div class="card card-body" style="width: 300px; word-wrap: break-word;">This is some placeholder content for a horizontal collapse. It is hidden by default and shown when triggered.</div></ngb-card></ngb-collapse></div>'
+print("tags: \n" +tags)
+
+#Limpieza
+tags = re.sub(r'>\s+<', '><', tags)
 
 
 # Reemplazar mayor y menor

@@ -1,0 +1,164 @@
+<!--
+Collapse
+Toggle the visibility of content across your project with a few classes and our JavaScript plugins.
+-->
+<div class="row text-left">
+    <h2>Collapse</h2>
+    <hr>
+</div>
+
+<!-- Collapse Vertical-->
+<div class="row">
+    <ngb-card>
+        <div class="card-body">
+            <h5 class="card-title">Collapse Vertical</h5>
+            <div class="float-end">{{cl1}}</div>
+            <div class="row g-2">
+                <ngb-button [clss]="['btn', 'btn-primary']" (clck)="collapseVertical.tgle()">Toggle height collapse</ngb-button>
+
+                <div style="height: 150px;">
+                    <ngb-collapse #collapseVertical [drtn]="'vrtl'" [max-vh]="20" [time]="0.5" (stte)="fresh1($event)">
+                        <div class="col-6">
+                         <ngb-card style="overflow: hidden;">
+                             <div class="card card-body" style="width: 300px; word-wrap: break-word;">
+                                 This is some placeholder content for a horizontal collapse. 
+                                 It's hidden by default and shown when triggered. 
+                               </div>
+                            </ngb-card>
+                        </div>
+                    </ngb-collapse>
+                 </div>
+
+            </div>
+
+        </div>
+        <div class="card-footer">
+            <p>footer</p>
+            <code>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>="['btn', 'btn-primary']" <span class="ngb-dcmt-drtv">(clck)</span>="collapseVertical.tgle()"&gt;<span class="ngb-dcmt-ttle">Toggle height collapse</span>&lt;/ngb-button&gt;
+                <br><br>
+                &lt;ngb-collapse <span class="ngb-dcmt-drtv">#collapseVertical [drtn]</span>="'vrtl'" [max-vh]=<span class="ngb-dcmt-drtv-vlue">"20"</span> <span class="ngb-dcmt-drtv">[time]</span>="0.5"&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"col-4"</span>&gt;<br>
+                &lt;ngb-card <span class="ngb-dcmt-drtv">style</span>=<span class="ngb-dcmt-drtv-vlue">"overflow: hidden;"</span>&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"card card-body"</span> <span class="ngb-dcmt-drtv">style</span>=<span class="ngb-dcmt-drtv-vlue">"width: 300px; word-wrap: break-word;"</span>&gt;<span class="ngb-dcmt-ttle">This is some placeholder content for a horizontal collapse. It is hidden by default and shown when triggered. </span>&lt;/div&gt;<br>
+                &lt;/ngb-card&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-collapse&gt;
+                &lt;/div&gt;
+            <br></code>
+            
+        </div>
+    </ngb-card>
+</div>
+<!-- #end collapse Vertical-->
+<br>
+<!-- Collapse Horizontal-->
+<div class="row">
+    <ngb-card>
+        <div class="card-body">
+            <h5 class="card-title">Collapse Horizontal</h5>
+            <div class="float-end">{{cl2}}</div>
+            <div class="row g-2">
+                <ngb-button [clss]="['btn', 'btn-primary']" (clck)="collapseHorizontal.tgle()" >Toggle width collapse</ngb-button>
+                <div style="height: 150px;">
+               <ngb-collapse #collapseHorizontal [max-vw]="90" [time]="0.5" (stte)="fresh2($event)">
+                   <div class="col-6" style="overflow: hidden;">
+                    <ngb-card>
+                        <div class="card card-body" style="width: 300px; word-wrap: break-word;">
+                            This is some placeholder content for a horizontal collapse. 
+                            It's hidden by default and shown when triggered. 
+                          </div>
+                       </ngb-card>
+                   </div>
+               </ngb-collapse>
+            </div>
+            </div>
+
+        </div>
+        <div class="card-footer">
+            <p>footer</p>
+            <code>     
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>="['btn', 'btn-primary']" <span class="ngb-dcmt-drtv">(clck)</span>="collapseHorizontal.tgle()"&gt;<span class="ngb-dcmt-ttle">Toggle width collapse</span>&lt;/ngb-button&gt;
+                <br><br>
+                &lt;ngb-collapse <span class="ngb-dcmt-drtv">#collapseHorizontal [drtn]</span>="'hrzn'" [max-vw]=<span class="ngb-dcmt-drtv-vlue">"90"</span> <span class="ngb-dcmt-drtv">[time]</span>="0.5"&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"col-4"</span>&gt;<br>
+                &lt;ngb-card <span class="ngb-dcmt-drtv">style</span>=<span class="ngb-dcmt-drtv-vlue">"overflow: hidden;"</span>&gt;<br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"card card-body"</span> <span class="ngb-dcmt-drtv">style</span>=<span class="ngb-dcmt-drtv-vlue">"width: 300px; word-wrap: break-word;"</span>&gt;<span class="ngb-dcmt-ttle">This is some placeholder content for a horizontal collapse. It is hidden by default and shown when triggered. </span>&lt;/div&gt;<br>
+                &lt;/ngb-card&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/ngb-collapse&gt;
+                &lt;/div&gt;
+            <br></code>
+            
+        </div>
+    </ngb-card>
+</div>
+<!-- #end collapse Horizontal-->
+<br>
+<!-- Collapse Multiples target-->
+<div class="row">
+    <ngb-card>
+        <div class="card-body">
+            <h5 class="card-title">Collapse Multiple targets</h5>
+            <div class="float-end">{{cl3}}-{{cl4}}</div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="collapseM1.tgle()">Toggle first element</ngb-button>
+                    <ngb-button [clss]="['btn', 'btn-primary', 'mx-2']" (clck)="collapseM2.tgle()">Toggle second element</ngb-button>
+                    <ngb-button [clss]="['btn', 'btn-danger']" (clck)="collapseM1.tgle()" (clck)="collapseM2.tgle()">Toggle both elements</ngb-button>
+                </div>
+
+            </div>
+
+            <div class="row g-2 mt-2">
+                <div class="col">
+                    <ngb-collapse #collapseM1 [max-vh]="90" [time]="1" [drtn]="'vrtl'" (stte)="fresh3($event)">
+                         <ngb-card>
+                             <div class="card card-body" style="width: 300px; word-wrap: break-word;">
+                                 This is some placeholder content for a horizontal collapse.
+                                 It's hidden by default and shown when triggered.</div>
+                            </ngb-card>
+                    </ngb-collapse>
+                </div>
+                <div class="col">
+                    <ngb-collapse #collapseM2 [max-vh]="90" [time]="1" [drtn]="'vrtl'" (stte)="fresh4($event)">
+                         <ngb-card>
+                             <div class="card card-body" style="width: 300px; word-wrap: break-word;">
+                                 This is some placeholder content for a horizontal collapse.
+                                 It's hidden by default and shown when triggered. 
+                               </div>
+                            </ngb-card>
+                    </ngb-collapse>
+                </div>
+            </div>
+
+            
+        </div>
+        <div class="card-footer">
+            <p>footer</p>
+            <code>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"col-lg-12"</span>&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>="['btn', 'btn-primary']" <span class="ngb-dcmt-drtv">(clck)</span>="collapseM1.tgle()"&gt;<span class="ngb-dcmt-ttle">Toggle first element</span>&lt;/ngb-button&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>="['btn', 'btn-primary', 'mx-2']" <span class="ngb-dcmt-drtv">(clck)</span>="collapseM2.tgle()"&gt;<span class="ngb-dcmt-ttle">Toggle second element</span>&lt;/ngb-button&gt;<br>
+                &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>="['btn', 'btn-danger']" <span class="ngb-dcmt-drtv">(clck)</span>="collapseM1.tgle()" <span class="ngb-dcmt-drtv">(clck)</span>="collapseM2.tgle()"&gt;<span class="ngb-dcmt-ttle">Toggle both elements</span>&lt;/ngb-button&gt;<br>
+                &lt;/div&gt;
+                <br><br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"col"</span>&gt;<br>
+                &lt;ngb-collapse <span class="ngb-dcmt-drtv">#collapseM1 [max-vh]</span>=<span class="ngb-dcmt-drtv-vlue">"90"</span> <span class="ngb-dcmt-drtv"> [time]</span>=<span class="ngb-dcmt-drtv-vlue">"1"</span> <span class="ngb-dcmt-drtv"> [drtn]</span>="'vrtl'"&gt;<br>
+                &lt;ngb-carddiv <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"card card-body" </span> <span class="ngb-dcmt-drtv">style</span>=<span class="ngb-dcmt-drtv-vlue">"width: 300px; word-wrap: break-word;"</span>&gt;<span class="ngb-dcmt-ttle">This is some placeholder content for a horizontal collapse. It is hidden by default and shown when triggered.</span>&lt;/div&gt;<br>
+                &lt;/ngb-card&gt;<br>
+                &lt;/ngb-collapse&gt;<br>
+                &lt;/div&gt;
+                <br> <br>
+                &lt;div <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"col"</span>&gt;<br>
+                &lt;ngb-collapse <span class="ngb-dcmt-drtv">#collapseM2 [max-vh]</span>=<span class="ngb-dcmt-drtv-vlue">"90"</span> <span class="ngb-dcmt-drtv"> [time]</span>=<span class="ngb-dcmt-drtv-vlue">"1"</span> <span class="ngb-dcmt-drtv"> [drtn]</span>="'vrtl'"&gt;<br>
+                &lt;ngb-carddiv <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"card card-body" </span> <span class="ngb-dcmt-drtv">style</span>=<span class="ngb-dcmt-drtv-vlue">"width: 300px; word-wrap: break-word;"</span>&gt;<span class="ngb-dcmt-ttle">This is some placeholder content for a horizontal collapse. It is hidden by default and shown when triggered.</span>&lt;/div&gt;<br>
+                &lt;/ngb-card&gt;<br>
+                &lt;/ngb-collapse&gt;<br>
+                &lt;/div&gt;
+            <br></code>
+            <hr>
+        </div>
+    </ngb-card>
+</div>
+<!-- #end collapse Multiples target -->
