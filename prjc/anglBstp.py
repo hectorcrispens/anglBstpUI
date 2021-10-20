@@ -5,7 +5,7 @@ clip =  clipboard.paste()
 clip = clip.replace("'", "??").replace("  ", "").replace("\n", "")
 print("clip:\n"+clip)
 
-tags ='<div class="col"><ngb-collapse [max-vh]="90" [time]="1" [drtn]="??vrtl??"><ngb-card> <div class="card card-body" style="width: 300px; word-wrap: break-word;">This is some placeholder content for a horizontal collapse. It is hidden by default and shown when triggered.</div></ngb-card></ngb-collapse></div>'
+tags ='<ngb-offcanvas #offstart [clss]="??offcanvas-start??"><div class="offcanvas-header"><h5 class="offcanvas-title">Offcanvas title</h5><ngb-button [clss]="[??btn-close??]" (click)="offstart.tgle()"></ngb-button></div><div class="offcanvas-body"><div>Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,lists, etc.</div></div></ngb-offcanvas>'
 print("tags: \n" +tags)
 
 #Limpieza
@@ -16,7 +16,7 @@ tags = re.sub(r'>\s+<', '><', tags)
 tags=tags.replace('<', '&lt;').replace('>','&gt;')
 tags = tags.replace('{', '&lcub;').replace('}', '&rcub;')
 # Obtener los value de los elementos
-ttle = re.findall(r'\&gt;[a-zA-Z-.\s0-9]+\&lt;', tags)
+ttle = re.findall(r'\&gt;[a-zA-Z-.,\s0-9]+\&lt;', tags)
 ttle = [x.replace('&lt;','').replace('&gt;','') for x in ttle]
 ttle = list(set(ttle))
 
@@ -43,4 +43,5 @@ for y in inpt+drtv:
 
 tags= tags.replace('#356', 'class')
 tags = tags.replace('&gt;&lt;', '&gt;<br>\n&lt;')
+print("#"*50)
 print(tags)

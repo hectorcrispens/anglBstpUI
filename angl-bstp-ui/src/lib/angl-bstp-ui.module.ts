@@ -11,6 +11,7 @@ import { TabComponent } from './tab/tab.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TabPanelComponent } from './tab-panel/tab-panel.component';
 import { CollapseComponent } from './collapse/collapse.component';
+import { OffcanvasComponent } from './offcanvas/offcanvas.component';
 //endregion Components
 
 //region Pages
@@ -20,6 +21,7 @@ import { ModalPageComponent } from './pages/modal-page/modal.page';
 import { TabPageComponent } from './pages/tab-page/tab.page';
 import { NavbarPageComponent} from './pages/navbar-page/navbar.page';
 import { CollapsePageComponent } from './pages/collapse-page/collapse.page';
+import { OffcanvasPageComponent } from './pages/offcanvas-page/offcanvas-page';
 //endregion Pages
 
 
@@ -38,7 +40,9 @@ import { CollapsePageComponent } from './pages/collapse-page/collapse.page';
     NavbarComponent,
     NavbarPageComponent,
     CollapseComponent,
-    CollapsePageComponent
+    CollapsePageComponent,
+    OffcanvasComponent,
+    OffcanvasPageComponent
   ],
   imports: [
     CommonModule,
@@ -51,7 +55,8 @@ import { CollapsePageComponent } from './pages/collapse-page/collapse.page';
     CardComponent,
     TabComponent,
     TabPanelComponent,
-    NavbarComponent
+    NavbarComponent,
+    OffcanvasComponent
   ]
 })
 export class AnglBstpUIModule { }

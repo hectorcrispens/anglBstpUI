@@ -1,0 +1,6 @@
+<div [ngClass]="{'offcanvas':true, 'show':show, 'offcanvas-start':offstart, 'offcanvas-end':offend, 'offcanvas-top': offtop, 'offcanvas-bottom':offbottom}" #offcanvas>
+    <ng-content></ng-content>
+</div>
+
+  <div class="offcanvas-backdrop show" *ngIf="show && backdrop"></div>
+
