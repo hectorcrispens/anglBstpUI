@@ -1,13 +1,14 @@
-.collapse:not(.show) {
-    display: none
+.collapse{
+  overflow: hidden;
+  transition: max-height .35s ease, max-width .35s ease;
+  /*transition: max-width 0.2s ease-out;*/
 }
-.abcollapse {
-    overflow: hidden;
-    position: relative;
+.collapse-vertical{
+    max-height: 0px;
 }
-.collapsenn:nth-child(1) {
-    overflow: hidden;
-    white-space: nowrap;
+.collapse-horizontal{
+    max-width: 0px;
+    height: auto;
 }
 .collapsing {
     height: 0;

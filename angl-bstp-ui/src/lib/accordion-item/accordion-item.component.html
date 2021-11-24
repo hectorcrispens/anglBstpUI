@@ -1,0 +1,12 @@
+<div class="accordion-item">
+    <h2 class="accordion-header" >
+      <button [ngClass]="{'accordion-button':true, 'collapsed':!show}" type="button" (click)="chng()">
+       {{ title}}
+      </button>
+    </h2>
+    <div [ngClass]="{'accordion-collapse':true, 'collapse':true, 'fade':true, 'show':true}" #panel>
+      <div class="accordion-body">
+       <ng-content></ng-content>
+      </div>
+    </div>
+  </div>

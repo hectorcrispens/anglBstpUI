@@ -10,10 +10,10 @@
 
 ## Template de angular
 
-El template de angular esta construido por un `div` el cual tiene una animación. En la variable value, recibe el state es decir si debe ser `vshow`, `vhide`, `hshow` u `hhide`, decir que recibe la información de en que estado debe estar como tambien del tipo de collapsable que es. El timer es el tiempo en segundos que dura el collapse para mostrarse u ocultarse. El resto de opciones es el `max-height` y `max-width` respectivamente indicando cuanto es el valor máximo que puede crecer el collapsable.
+El template de angular esta construido por un `div` . Todos los eventos del collapse e incluso la animación estan construidos a partir de animaciones de **css**. La clase `.collapse` es la que contiene las animaciones del panel, por otro lado las clases `.collapse-horizontal` y `.collapse-vertical` aportan información sobre el `max-height` y `max-width` respectivamente y la clase `.show` tiene la responsabilidad de mostrar el  contenedor.
 
 ```html
-<div [@triggerCollapse]="{value:stateClps, params:{timer: time, maxvh: maxvh, maxvw:maxvw}}" class="acollapse">
+<div [ngClass]="{'collapse':true, 'collapse-vertical':!hrzn, 'collapse-horizontal':hrzn,'show':true}" #panel>
    <ng-content></ng-content>
 </div>
 ```
@@ -33,7 +33,7 @@ Colocamos un botón, cuyo evento click llama a la función `tgle()` de la variab
 Colocamos el componente **collapse** y definimos la dirección, el max-vh y el time, aunque estos valores son opcionales.
 
 ```html
-<ngb-collapse #collapse [drtn]="'vrtl'" [max-vh]="20" [time]="0.5" (stte)="fresh1($event)">
+<ngb-collapse #collapse [hrzn]="true">
     <div class="col-6">
        <ngb-card style="overflow: hidden;">
             <div class="card card-body" style="width: 300px; word-wrap: break-word;">
@@ -49,31 +49,21 @@ Colocamos el componente **collapse** y definimos la dirección, el max-vh y el t
 
 ## Inputs
 
-El collapse admite cuatro inputs, el de dirección ya que puede ser horizontal o vertical. El valor máximo que puede crecer el collapse en valores de viewport y el tiempo que demora la animación en unidades de segundos.
+El collapse admite un inputs, para indicar si el collapse será mostrado en dirección horizontal o vertical. Para ello, el input se indica como `[hrzn]` y admite un valor `boolean` para indicar si es true el contenedor se contraerá y desplegará en dirección vertical. El valor por **defecto** es false, es decir que por defecto el panel se muestra en dirección vertical.
 
 ```jsx
-<!-- direction vrtl | hrzn -->
-[drtn]="'vrtl'" 
+<!-- horizontal true | false -->
+[hrzn]="true" 
 
-<!-- valor del viewHeight -->
-[max-vh]="20"
-
-<!-- valor del viewWidth -->
-[max-vw]="20"
-
-<!-- tiempo en segundos de la animación -->
-[time]="0.5"
 ```
 
 
 
 ## Outputs
 
-El único output que tiene es el de `stte` el cual informa el estado 
+No expone **outputs**.
 
-```jsx
-(stte)="fresh1($event)"
-```
+
 
 
 

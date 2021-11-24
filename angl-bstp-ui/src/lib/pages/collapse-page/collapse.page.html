@@ -17,10 +17,10 @@ Toggle the visibility of content across your project with a few classes and our 
                 <ngb-button [clss]="['btn', 'btn-primary']" (clck)="collapseVertical.tgle()">Toggle height collapse</ngb-button>
 
                 <div style="height: 150px;">
-                    <ngb-collapse #collapseVertical [drtn]="'vrtl'" [max-vh]="20" [time]="0.5" (stte)="fresh1($event)">
+                    <ngb-collapse #collapseVertical >
                         <div class="col-6">
                          <ngb-card style="overflow: hidden;">
-                             <div class="card card-body" style="width: 300px; word-wrap: break-word;">
+                             <div class="card card-body">
                                  This is some placeholder content for a horizontal collapse. 
                                  It's hidden by default and shown when triggered. 
                                </div>
@@ -58,18 +58,18 @@ Toggle the visibility of content across your project with a few classes and our 
             <h5 class="card-title">Collapse Horizontal</h5>
             <div class="float-end">{{cl2}}</div>
             <div class="row g-2">
-                <ngb-button [clss]="['btn', 'btn-primary']" (clck)="collapseHorizontal.tgle()" >Toggle width collapse</ngb-button>
+                <ngb-button [clss]="['btn', 'btn-primary']" (click)="collapseHorizontal.tgle()">Toggle width collapse</ngb-button>
                 <div style="height: 150px;">
-               <ngb-collapse #collapseHorizontal [max-vw]="90" [time]="0.5" (stte)="fresh2($event)">
-                   <div class="col-6" style="overflow: hidden;">
-                    <ngb-card>
-                        <div class="card card-body" style="width: 300px; word-wrap: break-word;">
-                            This is some placeholder content for a horizontal collapse. 
-                            It's hidden by default and shown when triggered. 
-                          </div>
-                       </ngb-card>
-                   </div>
-               </ngb-collapse>
+                    <ngb-collapse #collapseHorizontal [hrzn]="true">
+                       
+                            <ngb-card style="overflow: hidden;">
+                                <div class="card card-body" style="width: 450px;">
+                                    This is some placeholder content for a horizontal collapse. 
+                                    It's hidden by default and shown when triggered. 
+                                  </div>
+                               </ngb-card>
+                         
+                    </ngb-collapse>
             </div>
             </div>
 
@@ -102,32 +102,37 @@ Toggle the visibility of content across your project with a few classes and our 
             <div class="float-end">{{cl3}}-{{cl4}}</div>
             <div class="row">
                 <div class="col-lg-12">
-                    <ngb-button [clss]="['btn', 'btn-primary']" (clck)="collapseM1.tgle()">Toggle first element</ngb-button>
-                    <ngb-button [clss]="['btn', 'btn-primary', 'mx-2']" (clck)="collapseM2.tgle()">Toggle second element</ngb-button>
-                    <ngb-button [clss]="['btn', 'btn-danger']" (clck)="collapseM1.tgle()" (clck)="collapseM2.tgle()">Toggle both elements</ngb-button>
+                    <ngb-button [clss]="['btn', 'btn-primary']" (click)="collapseFirst.tgle()">Toggle first element</ngb-button>
+                    <ngb-button [clss]="['btn', 'btn-primary', 'mx-2']" (click)="collapseSecond.tgle()">Toggle second element</ngb-button>
+                    <ngb-button [clss]="['btn', 'btn-danger']" (click)="collapseFirst.tgle()" (click)="collapseSecond.tgle()">Toggle both elements</ngb-button>
                 </div>
 
             </div>
 
             <div class="row g-2 mt-2">
                 <div class="col">
-                    <ngb-collapse #collapseM1 [max-vh]="90" [time]="1" [drtn]="'vrtl'" (stte)="fresh3($event)">
-                         <ngb-card>
-                             <div class="card card-body" style="width: 300px; word-wrap: break-word;">
-                                 This is some placeholder content for a horizontal collapse.
-                                 It's hidden by default and shown when triggered.</div>
-                            </ngb-card>
-                    </ngb-collapse>
+                    <ngb-collapse #collapseFirst>
+                       
+                        <ngb-card style="overflow: hidden;">
+                            <div class="card card-body">
+                                This is some placeholder content for a horizontal collapse. 
+                                It's hidden by default and shown when triggered. 
+                              </div>
+                           </ngb-card>
+                     
+                </ngb-collapse>
                 </div>
                 <div class="col">
-                    <ngb-collapse #collapseM2 [max-vh]="90" [time]="1" [drtn]="'vrtl'" (stte)="fresh4($event)">
-                         <ngb-card>
-                             <div class="card card-body" style="width: 300px; word-wrap: break-word;">
-                                 This is some placeholder content for a horizontal collapse.
-                                 It's hidden by default and shown when triggered. 
-                               </div>
-                            </ngb-card>
-                    </ngb-collapse>
+                    <ngb-collapse #collapseSecond>
+                       
+                        <ngb-card style="overflow: hidden;">
+                            <div class="card card-body">
+                                This is some placeholder content for a horizontal collapse. 
+                                It's hidden by default and shown when triggered. 
+                              </div>
+                           </ngb-card>
+                     
+                </ngb-collapse>
                 </div>
             </div>
 

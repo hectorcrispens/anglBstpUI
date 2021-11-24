@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { TabPanelComponent } from './tab-panel/tab-panel.component';
 import { CollapseComponent } from './collapse/collapse.component';
 import { OffcanvasComponent } from './offcanvas/offcanvas.component';
+import { AccordionComponent } from './accordion/accordion.component';
 //endregion Components
 
 //region Pages
@@ -22,6 +23,8 @@ import { TabPageComponent } from './pages/tab-page/tab.page';
 import { NavbarPageComponent} from './pages/navbar-page/navbar.page';
 import { CollapsePageComponent } from './pages/collapse-page/collapse.page';
 import { OffcanvasPageComponent } from './pages/offcanvas-page/offcanvas-page';
+import { AccordionPageComponent } from './pages/accordion-page/accordion-page';
+import { AccordionItemComponent } from './accordion-item/accordion-item.component';
 //endregion Pages
 
 
@@ -42,7 +45,10 @@ import { OffcanvasPageComponent } from './pages/offcanvas-page/offcanvas-page';
     CollapseComponent,
     CollapsePageComponent,
     OffcanvasComponent,
-    OffcanvasPageComponent
+    OffcanvasPageComponent,
+    AccordionComponent,
+    AccordionPageComponent,
+    AccordionItemComponent
   ],
   imports: [
     CommonModule,
@@ -56,7 +62,8 @@ import { OffcanvasPageComponent } from './pages/offcanvas-page/offcanvas-page';
     TabComponent,
     TabPanelComponent,
     NavbarComponent,
-    OffcanvasComponent
+    OffcanvasComponent,
+    AccordionComponent
   ]
 })
 export class AnglBstpUIModule { }

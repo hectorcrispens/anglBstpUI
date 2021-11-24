@@ -1,62 +1,34 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, OnInit, Output, Renderer2, ViewChild } from '@angular/core';
 type drtnType = 'hrzn' | 'vrtl'
 @Component({
   selector: 'ngb-collapse',
   templateUrl: './collapse.component.html',
-  styleUrls: ['./collapse.component.css'],
-  animations: [
-    trigger('triggerCollapse',
-      [
-        state('vhide', style({
-          maxHeight: '0px'
-        })),
-        state('hhide', style({
-          maxWidth: '0px',
-          height: 'auto'
-   
-        })),
-        state('vshow', style({
-          maxHeight: '{{ maxvh }}vh'
-        }), {params: {maxvh: 100}}),
-        state('hshow', style({
-          maxWidth: '{{ maxvw }}vw'
-        }), {params:{maxvw: 100}}),
-        transition('vhide => vshow',animate('{{ timer }}s cubic-bezier(.71,.05,.34,.96)'), {params:{timer: 2}}),
-        transition('vshow => vhide',animate('{{ timer }}s cubic-bezier(.71,.05,.34,.96)'), {params:{timer: 2}}),
-        transition('hhide => hshow',animate('{{ timer }}s cubic-bezier(.71,.05,.34,.96)'), {params:{timer: 2}}),
-        transition('hshow => hhide',animate('{{ timer }}s cubic-bezier(.71,.05,.34,.96)'), {params:{timer: 2}})
-               
-      ])
-  ]
+  styleUrls: ['./collapse.component.css']
 })
 export class CollapseComponent implements OnInit {
-  @Input('drtn') drtn:drtnType = 'hrzn'
-  @Input('time') time: number = 1
-  @Input('max-vh') maxvh: number = 100
-  @Input('max-vw') maxvw: number = 100
-  @Output() stte = new EventEmitter();
-
-  stateClps:string = 'vhide'
-  constructor() { }
+  @Input("hrzn") hrzn:boolean=false
+  @ViewChild("panel")panel!:ElementRef
+  show:boolean = false
+  constructor(private render: Renderer2) { }
 
   ngOnInit(): void {
   }
-  ngAfterContentInit(){
-    this.stateClps = this.drtn=='hrzn'? 'hhide' : 'vhide'
-  }
-  ngAfterViewInit(){
-
-  }
+ 
  tgle(){
-   if(this.drtn=='hrzn')
+   this.show = !this.show
+   if(this.show)
    {
-     this.stateClps = this.stateClps=='hhide' ? 'hshow' : 'hhide'
+     if(!this.hrzn)
+      this.render.setStyle(this.panel.nativeElement, "maxHeight", this.panel.nativeElement.scrollHeight + "px")
+     else
+      this.render.setStyle(this.panel.nativeElement, "maxWidth", this.panel.nativeElement.scrollWidth + "px")     
    }
    else
    {
-    this.stateClps = this.stateClps=='vhide' ? 'vshow' : 'vhide'
+    if(!this.hrzn)
+    this.render.setStyle(this.panel.nativeElement, "maxHeight", null)
+    else
+    this.render.setStyle(this.panel.nativeElement, "maxWidth", null)
    }
-   this.stte.emit(this.stateClps.slice(1));
-  }
+ }
 }
