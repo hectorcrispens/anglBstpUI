@@ -1,11 +1,11 @@
 import re
 import pyperclip as clipboard
 
-clip =  clipboard.paste()
-clip = clip.replace("'", "??").replace("  ", "").replace("\n", "")
+clip =clipboard.paste()
+clip = clip.replace("'", "??").replace("", "").replace("\n", "")
 print("clip:\n"+clip)
 
-tags ='<ngb-offcanvas #offstart [clss]="??offcanvas-start??"><div class="offcanvas-header"><h5 class="offcanvas-title">Offcanvas title</h5><ngb-button [clss]="[??btn-close??]" (click)="offstart.tgle()"></ngb-button></div><div class="offcanvas-body"><div>Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,lists, etc.</div></div></ngb-offcanvas>'
+tags ='<ngb-accordion><ngb-accordion-item [title]="$$first item$$"><strong>This is the first item--s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It--s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</ngb-accordion-item><ngb-accordion-item [title]="$$second item$$" [show]="true"><strong>This is the second item$$s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It--s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</ngb-accordion-item><ngb-accordion-item [title]="$$three item$$"><strong>This is the third item$$s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It--s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</ngb-accordion-item></ngb-accordion>'
 print("tags: \n" +tags)
 
 #Limpieza
@@ -21,7 +21,7 @@ ttle = [x.replace('&lt;','').replace('&gt;','') for x in ttle]
 ttle = list(set(ttle))
 
 # Obtener los nombres de clases
-clss= re.findall(r'\"[a-z0-9-,\[\]\(\)%;:\s]+\"', tags)
+clss= re.findall(r'\"[a-z0-9-,\[\]\(\)%;:\s$]+\"', tags)
 clss=list(set(clss))
 
 # Obtener los inputs

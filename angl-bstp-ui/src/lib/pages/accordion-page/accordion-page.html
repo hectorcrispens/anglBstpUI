@@ -1,11 +1,84 @@
-<ngb-accordion>
-    <ngb-accordion-item [title]="'first item'">
-        Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
-    </ngb-accordion-item>
-    <ngb-accordion-item [title]="'second item'">
-        Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
-    </ngb-accordion-item>
-    <ngb-accordion-item [title]="'three item'">
-        Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
-    </ngb-accordion-item>
-</ngb-accordion>
+<!--
+The accordion uses collapse internally to make it collapsible. 
+To render an accordion that’s expanded, add the .open class on the .accordion.
+-->
+<div class="row text-left">
+    <h2>Accordion</h2>
+    <hr>
+</div>
+
+<!-- Accordion Example -->
+<div class="row">
+    <ngb-card>
+        <div class="card-body">
+            <h5 class="card-title">Example</h5>
+            <div class="row g-2">
+                <div class="col">
+                    <ngb-accordion>
+                        <ngb-accordion-item [title]="'first item'">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </ngb-accordion-item>
+                        <ngb-accordion-item [title]="'second item'" [show]="true">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </ngb-accordion-item>
+                        <ngb-accordion-item [title]="'three item'">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </ngb-accordion-item>
+                    </ngb-accordion>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <code>
+                &lt;ngb-accordion&gt;<br>
+                &lt;ngb-accordion-item <span class="ngb-dcmt-drtv">[title]</span>=<span class="ngb-dcmt-drtv-vlue">"'first item'"</span>&gt;<br>
+                &lt;strong&gt;<span class="ngb-dcmt-ttle">This is the first item's accordion body.</span>&lt;/strong&gt;<span class="ngb-dcmt-ttle"> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the </span>&lt;code&gt;<span class="ngb-dcmt-ttle">.accordion-body</span>&lt;/code&gt;<span class="ngb-dcmt-ttle">, though the transition does limit overflow.</span><br>&lt;/ngb-accordion-item&gt;<br>
+                &lt;ngb-accordion-item <span class="ngb-dcmt-drtv">[title]</span>=<span class="ngb-dcmt-drtv-vlue">"'second item'"</span> <span class="ngb-dcmt-drtv">[show]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span>&gt;<br>
+                &lt;strong&gt;This is the second item's accordion body.&lt;/strong&gt;<span class="ngb-dcmt-ttle"> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the </span>&lt;code&gt;<span class="ngb-dcmt-ttle">.accordion-body</span>&lt;/code&gt;<span class="ngb-dcmt-ttle">, though the transition does limit overflow.</span><br>&lt;/ngb-accordion-item&gt;<br>
+                &lt;ngb-accordion-item <span class="ngb-dcmt-drtv">[title]</span>=<span class="ngb-dcmt-drtv-vlue">"'three item'"</span>&gt;<br>
+                &lt;strong&gt;This is the third item's accordion body.&lt;/strong&gt;<span class="ngb-dcmt-ttle"> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the </span>&lt;code&gt;<span class="ngb-dcmt-ttle">.accordion-body</span>&lt;/code&gt;<span class="ngb-dcmt-ttle">, though the transition does limit overflow.</span><br>&lt;/ngb-accordion-item&gt;<br>
+                &lt;/ngb-accordion&gt;
+            <br></code>
+
+        </div>
+    </ngb-card>
+</div>
+<!-- #end Accordion example -->
+<br>
+<!-- Accordion Flush -->
+<div class="row">
+    <ngb-card>
+        <div class="card-body">
+            <h5 class="card-title">Flush</h5>
+            <div class="row g-2">
+                <div class="col">
+                    <ngb-accordion [flush]="true">
+                        <ngb-accordion-item [title]="'first item'">
+                            Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        </ngb-accordion-item>
+                        <ngb-accordion-item [title]="'second item'">
+                            Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        </ngb-accordion-item>
+                        <ngb-accordion-item [title]="'three item'">
+                            Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.
+                        </ngb-accordion-item>
+                    </ngb-accordion>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <code>
+                &lt;ngb-accordion <span class="ngb-dcmt-drtv">[flush]</span>=<span class="ngb-dcmt-drtv-vlue">"'true'"</span> &gt;<br>
+                &lt;ngb-accordion-item <span class="ngb-dcmt-drtv">[title]</span>=<span class="ngb-dcmt-drtv-vlue">"'first item'"</span>&gt;<br>
+               <span class="ngb-dcmt-ttle"> Placeholder content for this accordion, which is intended to demonstrate the </span>&lt;code&gt;<span class="ngb-dcmt-ttle">.accordion-flush</span>&lt;/code&gt;<span class="ngb-dcmt-ttle">class. This is the first item's accordion body.</span><br>&lt;/ngb-accordion-item&gt;<br>
+                &lt;ngb-accordion-item <span class="ngb-dcmt-drtv">[title]</span>=<span class="ngb-dcmt-drtv-vlue">"'second item'"</span>&gt;<br>
+               <span class="ngb-dcmt-ttle"> Placeholder content for this accordion, which is intended to demonstrate the  </span>&lt;code&gt;<span class="ngb-dcmt-ttle">.accordion-flush</span>&lt;/code&gt;<span class="ngb-dcmt-ttle">class. This is the first item's accordion body.</span><br>&lt;/ngb-accordion-item&gt;<br>
+                &lt;ngb-accordion-item <span class="ngb-dcmt-drtv">[title]</span>=<span class="ngb-dcmt-drtv-vlue">"'three item'"</span>&gt;<br>
+                <span class="ngb-dcmt-ttle">Placeholder content for this accordion, which is intended to demonstrate the </span>&lt;code&gt;<span class="ngb-dcmt-ttle">.accordion-flush</span>&lt;/code&gt;<span class="ngb-dcmt-ttle">class. This is the first item's accordion body.</span><br>&lt;/ngb-accordion-item&gt;<br>
+                &lt;/ngb-accordion&gt;
+            <br></code>
+
+        </div>
+    </ngb-card>
+</div>
+<!-- #end Accordion example -->

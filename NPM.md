@@ -44,8 +44,14 @@ Copyright (C) 2021.
 
 ## Últimos avances
 
-- Componente button
-- Componente Card
+- ` 19-08-2021` se agregó el componente **button**  
+- `03-09-2021` se agregó el componente **card**  
+- `04-09-2021` se agregó el componente **modal**  
+- `15-09-2021` se agregó el componente **tab**  
+- `27-09-2021` se agregó el componente **navbar**
+- `05-10-2021` se agregó el componente **collapse**
+- `20-10-2021` se agregó el componente **offcanvas**
+- `27-11-2021` se agregó el componente **accordion**
 
 ------
 

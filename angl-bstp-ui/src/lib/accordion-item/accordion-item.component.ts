@@ -12,6 +12,15 @@ export class AccordionItemComponent implements OnInit {
   constructor(private render:Renderer2) { }
 
   ngOnInit(): void {
+    
+  }
+
+  ngAfterViewInit(){
+    if(this.show)
+    {
+      this.show = !this.show
+      this.chng()
+    }
   }
 chng(){
   this.show =!this.show

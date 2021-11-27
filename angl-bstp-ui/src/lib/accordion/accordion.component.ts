@@ -1,4 +1,4 @@
-import { Component, OnInit, QueryList, ViewChildren, ViewEncapsulation } from '@angular/core';
+import { Component, Input, OnInit, QueryList, ViewChildren, ViewEncapsulation } from '@angular/core';
 import { AccordionItemComponent } from '../accordion-item/accordion-item.component';
 
 @Component({
@@ -8,7 +8,7 @@ import { AccordionItemComponent } from '../accordion-item/accordion-item.compone
   encapsulation: ViewEncapsulation.None
 })
 export class AccordionComponent implements OnInit {
-@ViewChildren(AccordionItemComponent) items!:QueryList<AccordionItemComponent>
+@Input("flush") flush:boolean = false
   constructor() { }
 
   ngOnInit(): void {

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="150.55711mm"
+   height="87.828789mm"
+   viewBox="0 0 150.55712 87.828789"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="cajas_accordion.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.979899"
+     inkscape:cx="256.83129"
+     inkscape:cy="162.63456"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:pagecheckerboard="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-41.123234,-17.583328)">
+    <rect
+       style="opacity:1;fill:#7f2aff;fill-opacity:0.781395;stroke:#0f0820;stroke-width:0.645882;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect815"
+       width="149.91122"
+       height="87.182907"
+       x="41.446175"
+       y="17.906269" />
+    <rect
+       y="26.018759"
+       x="48.152092"
+       height="71.470383"
+       width="136.49939"
+       id="rect817"
+       style="opacity:1;fill:#2ad4ff;fill-opacity:0.739535;stroke:#0f0820;stroke-width:0.558018;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       style="fill:#c83771;fill-opacity:0.776744;stroke:#0f0820;stroke-width:0.260287;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect821"
+       width="123.73972"
+       height="17.153479"
+       x="54.705502"
+       y="36.750694" />
+    <rect
+       style="fill:#ff9955;fill-opacity:0.646512;stroke:#0f0820;stroke-width:0.36965;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect825"
+       width="123.63035"
+       height="34.626999"
+       x="54.705502"
+       y="55.491673" />
+    <rect
+       y="66.78009"
+       x="62.500904"
+       height="15.247942"
+       width="107.80492"
+       id="rect823"
+       style="fill:#d35f5f;fill-opacity:0.753488;stroke:#0f0820;stroke-width:0.229058;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       id="text829"
+       y="41.25243"
+       x="59.934387"
+       style="font-style:normal;font-weight:normal;font-size:3.91477px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0978693"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0978693"
+         y="41.25243"
+         x="59.934387"
+         id="tspan827"
+         sodipodi:role="line">.accordion-header</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.91477px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0978693"
+       x="60.93589"
+       y="62.098068"
+       id="text833"><tspan
+         sodipodi:role="line"
+         id="tspan831"
+         x="60.93589"
+         y="62.098068"
+         style="fill:#ffffff;stroke-width:0.0978693">.accordion-collapse</tspan></text>
+    <text
+       id="text837"
+       y="73.906288"
+       x="69.82991"
+       style="font-style:normal;font-weight:normal;font-size:3.91477px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0978693"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0978693"
+         y="73.906288"
+         x="69.82991"
+         id="tspan835"
+         sodipodi:role="line">.accordion-body</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:3.91477px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0978693"
+       x="57.485844"
+       y="31.992998"
+       id="text845"><tspan
+         sodipodi:role="line"
+         id="tspan843"
+         x="57.485844"
+         y="31.992998"
+         style="fill:#ffffff;stroke-width:0.0978693">.accordion-item</tspan></text>
+    <text
+       id="text849"
+       y="23.261745"
+       x="47.280487"
+       style="font-style:normal;font-weight:normal;font-size:3.91477px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0978693"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0978693"
+         y="23.261745"
+         x="47.280487"
+         id="tspan847"
+         sodipodi:role="line">.accordion</tspan></text>
+    <rect
+       y="43.431755"
+       x="60.079945"
+       height="7.1940212"
+       width="112.98585"
+       id="rect14860"
+       style="fill:#c8b7be;fill-opacity:0.753488;stroke:#0f0820;stroke-width:0.161072;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <text
+       id="text15494"
+       y="48.156395"
+       x="66.270554"
+       style="font-style:normal;font-weight:normal;font-size:3.91477px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.0978693"
+       xml:space="preserve"><tspan
+         style="fill:#ffffff;stroke-width:0.0978693"
+         y="48.156395"
+         x="66.270554"
+         id="tspan15492"
+         sodipodi:role="line">.accordion-button</tspan></text>
+  </g>
+</svg>
