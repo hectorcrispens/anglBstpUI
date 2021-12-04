@@ -740,6 +740,91 @@
         "sergrida",
         "hcrispen"
       ]
+    },
+    {
+      "titl": "Creación de componente ALERT.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "desarrollar un componente para un ALERT."
+      },
+      "stht": {
+        "eses": "pueda ser utilizado en cualquier vista utilizando solo el selector <ngb-alert>."
+      },
+      "apcr": {
+        "eses": [
+          "El componente acepte un tipo para indicar si es primary, secondary, success, danger, warning, info, light o dark",
+          "El alerta se pueda cerrar",
+          "Se pueda personalizar para que muestre un icono acorde al tipo de alerta"
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de una página ALERT.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear una página que muestre los distintos tipos de ALERT y forma de usarlo"
+      },
+      "stht": {
+        "eses": "el usuario de la librería sepa como usar el componente ALERT"
+      },
+      "apcr": {
+        "eses": [
+          "que se muestren los distintos tipos de ALERT",
+          "el código de los ALERT que se muestran"
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de un documento sobre componente ALERT.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear un documento que explique de forma detallada todas las características del componente ALERT"
+      },
+      "stht": {
+        "eses": "documentar los aspectos técnicos de cada componente"
+      },
+      "apcr": {
+        "eses": [
+          "debe contener una imagen ilustrativa",
+          "debe contener una imagen de la estructura de cajas",
+          "debe contener una descripcion del template",
+          "una especificación completa del uso",
+          "un detalle de los Inputs, Outputs y Métodos del componente"
+        ]
+      },
+      "itrt": 2,
+      "stts": "todo",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
     }
   ]
 }

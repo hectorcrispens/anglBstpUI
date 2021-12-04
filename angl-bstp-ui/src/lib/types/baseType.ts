@@ -61,3 +61,13 @@ export type pddgType = 'p-0'|'p-1'|'p-2'|'p-3'|'p-4'|'p-5'|'px-0'|'px-1'|'px-2'
 
 /** Fixed type */
 export type fxedType = 'fixed-bottom' | 'fixed-top'
+
+/** Align items type */
+export type algnItemType = 'align-items-start'|'align-items-end'|'align-items-center'|'align-items-baseline'|'align-items-stretch'|'align-content-start'
+                    |'align-content-end'|'align-content-center'|'align-content-between'|'align-content-around'|'align-content-stretch'
+
+/** Align self type */
+export type algnSelfType = 'align-self-auto'|'align-self-start'|'align-self-end'|'align-self-center'|'align-self-baseline'|'align-self-stretch'
+
+/** d-flex type */
+export type flexType = 'd-flex'|'d-inline-flex'|'d-none'

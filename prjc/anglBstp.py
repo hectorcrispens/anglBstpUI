@@ -5,7 +5,8 @@ clip =clipboard.paste()
 clip = clip.replace("'", "??").replace("", "").replace("\n", "")
 print("clip:\n"+clip)
 
-tags ='<ngb-accordion><ngb-accordion-item [title]="$$first item$$"><strong>This is the first item--s accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It--s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</ngb-accordion-item><ngb-accordion-item [title]="$$second item$$" [show]="true"><strong>This is the second item$$s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It--s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</ngb-accordion-item><ngb-accordion-item [title]="$$three item$$"><strong>This is the third item$$s accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It--s also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</ngb-accordion-item></ngb-accordion>'
+tags ='<ngb-alert [type]="alerttype" [diss]="alertdiss" [icon]="alerticon" (closed)="closeAlert(alert)">An example primary alert with an icon</ngb-alert>'
+
 print("tags: \n" +tags)
 
 #Limpieza
@@ -15,6 +16,7 @@ tags = re.sub(r'>\s+<', '><', tags)
 # Reemplazar mayor y menor
 tags=tags.replace('<', '&lt;').replace('>','&gt;')
 tags = tags.replace('{', '&lcub;').replace('}', '&rcub;')
+
 # Obtener los value de los elementos
 ttle = re.findall(r'\&gt;[a-zA-Z-.,\s0-9]+\&lt;', tags)
 ttle = [x.replace('&lt;','').replace('&gt;','') for x in ttle]
@@ -24,7 +26,7 @@ ttle = list(set(ttle))
 clss= re.findall(r'\"[a-z0-9-,\[\]\(\)%;:\s$]+\"', tags)
 clss=list(set(clss))
 
-# Obtener los inputs
+# Obtener los inputs de angular
 inpt=re.findall(r'\[[a-z]+\]|\([a-z]+\)', tags)
 inpt = list(set(inpt))
 

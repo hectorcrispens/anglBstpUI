@@ -1,0 +1,167 @@
+<!--
+    Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+-->
+<div class="row text-left">
+  <h2>Alerts</h2>
+  <hr>
+</div>
+
+<!-- alert Link color-->
+<div class="row">
+  <ngb-card>
+    <div class="card-body">
+      <h5 class="card-title">Link color</h5>
+      <div class="row">
+        <span *ngFor="let alert of alertsl">
+          <ngb-alert [type]="alert.type" [diss]="alert.diss" [icon]="alert.icon">{{ alert.mssg }} <a href="#"
+              class="alert-link">an example link</a>. Give it a click if you like.</ngb-alert>
+        </span>
+      </div>
+    </div>
+    <div class="card-footer">
+      <code>
+          &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>="primary"&gt;<span class="ngb-dcmt-ttle">A simple primary alert with</span>
+          &lt;a <span class="ngb-dcmt-drtv">href</span>="#" <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"alert-link"</span>&gt;<span class="ngb-dcmt-ttle">an example link</span>&lt;/a&gt;<br>
+          <span class="ngb-dcmt-ttle">Give it a click if you like.</span>&lt;/ngb-alert&gt;<br>
+          &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>="secondary"&gt;<span class="ngb-dcmt-ttle">A simple secondary alert with </span>
+          &lt;a <span class="ngb-dcmt-drtv">href</span>="#" <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"alert-link"</span>&gt;<span class="ngb-dcmt-ttle">an example link</span>&lt;/a&gt;
+          <span class="ngb-dcmt-ttle">Give it a click if you like.</span>
+          &lt;/ngb-alert&gt;<br>
+          &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>="success"&gt;<span class="ngb-dcmt-ttle">A simple success alert with </span>
+          &lt;a <span class="ngb-dcmt-drtv">href</span>="#" <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"alert-link"</span>&gt;<span class="ngb-dcmt-ttle">an example link</span>&lt;/a&gt;<br>
+          <span class="ngb-dcmt-ttle">Give it a click if you like.</span>&lt;/ngb-alert&gt;<br>
+          &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>="danger"&gt;<span class="ngb-dcmt-ttle">A simple danger alert with </span>
+          &lt;a <span class="ngb-dcmt-drtv">href</span>="#" <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"alert-link"</span>&gt;<span class="ngb-dcmt-ttle">an example link</span>&lt;/a&gt;<br>
+          <span class="ngb-dcmt-ttle">. Give it a click if you like.</span>
+          &lt;/ngb-alert&gt;<br>
+          &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>="warning"&gt;<span class="ngb-dcmt-ttle">A simple warning alert with </span>
+          &lt;a <span class="ngb-dcmt-drtv">href</span>="#" <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"alert-link"</span>&gt;<span class="ngb-dcmt-ttle">an example link</span>&lt;/a&gt;<br>
+          <span class="ngb-dcmt-ttle">Give it a click if you like.</span>
+          &lt;/ngb-alert&gt;<br>
+          &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>="info"&gt;<span class="ngb-dcmt-ttle">A simple info alert with </span>
+          &lt;a <span class="ngb-dcmt-drtv">href</span>="#" <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"alert-link"</span>&gt;<span class="ngb-dcmt-ttle">an example link</span>&lt;/a&gt;<br>
+          <span class="ngb-dcmt-ttle">Give it a click if you like.</span>
+          &lt;/ngb-alert&gt;<br>
+          &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>="light"&gt;<span class="ngb-dcmt-ttle">A simple light alert with </span>
+          &lt;a <span class="ngb-dcmt-drtv">href</span>="#" <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"alert-link"</span>&gt;<span class="ngb-dcmt-ttle">an example link</span>&lt;/a&gt;<br>
+          <span class="ngb-dcmt-ttle">Give it a click if you like.</span>
+          &lt;/ngb-alert&gt;<br>
+          &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>="dark"&gt;<span class="ngb-dcmt-ttle">A simple dark alert with </span>
+          &lt;a <span class="ngb-dcmt-drtv">href</span>="#" <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"alert-link"</span>&gt;<span class="ngb-dcmt-ttle">an example link</span>&lt;/a&gt;<br>
+          <span class="ngb-dcmt-ttle">Give it a click if you like.</span>
+          &lt;/ngb-alert&gt;
+
+          <br></code>
+      <hr>
+
+    </div>
+  </ngb-card>
+</div>
+<!-- #end alert link color-->
+<br>
+<!-- alert additional content-->
+<div class="row">
+  <ngb-card>
+    <div class="card-body">
+      <h5 class="card-title">Additional content</h5>
+      <div class="row">
+
+        <ngb-alert [type]="'success'">
+          <h4 class="alert-heading">Well done!</h4>
+          <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit
+            longer so that you can see how spacing within an alert works with this kind of content.</p>
+          <hr>
+          <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+        </ngb-alert>
+
+      </div>
+    </div>
+    <div class="card-footer">
+      <code>
+        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"success"</span>&gt;<br>
+        &lt;h4 <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"alert-heading"</span>&gt;Well done!&lt;/h4&gt;<br>
+        &lt;p&gt;<span class="ngb-dcmt-ttle">Aww yeah, you successfully read this important alert message. This example text is going to run a bitlonger so that you can see how spacing within an alert works with this kind of content.</span>&lt;/p&gt;<br>
+        &lt;hr&gt;<br>
+        &lt;p <span class="ngb-dcmt-drtv">class</span>=<span class="ngb-dcmt-drtv-vlue">"mb-0"</span>&gt;<span class="ngb-dcmt-ttle">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</span>&lt;/p&gt;<br>
+        &lt;/ngb-alert&gt;
+      <br></code>
+    </div>
+  </ngb-card>
+</div>
+<!-- #end alert additional content-->
+<br>
+<!-- alert icon-->
+<div class="row">
+  <ngb-card>
+    <div class="card-body">
+      <h5 class="card-title">Icon</h5>
+      <div class="row">
+        <span *ngFor="let alert of alertsI">
+          <ngb-alert [type]="alert.type" [diss]="alert.diss" [icon]="alert.icon">{{ alert.mssg }}</ngb-alert>
+        </span>
+      </div>
+    </div>
+    <div class="card-footer">
+      <code>
+        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'primary'"</span> <span class="ngb-dcmt-drtv"> [diss]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv"> [icon]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span>&gt;<span class="ngb-dcmt-ttle">An example primary alert with an icon</span>&lt;/ngb-alert&gt;
+        <br>
+        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'success'"</span> <span class="ngb-dcmt-drtv"> [diss]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv"> [icon]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span>&gt;<span class="ngb-dcmt-ttle">An example succes alert with an icon</span>&lt;/ngb-alert&gt;
+        <br>
+        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'danger'"</span> <span class="ngb-dcmt-drtv"> [diss]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv"> [icon]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span>&gt;<span class="ngb-dcmt-ttle">An example danger alert with an icon</span>&lt;/ngb-alert&gt;
+        <br>
+        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'warning'"</span> <span class="ngb-dcmt-drtv"> [diss]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv"> [icon]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span>&gt;<span class="ngb-dcmt-ttle">An example warning alert with an icon</span>&lt;/ngb-alert&gt;
+      </code>
+    </div>
+  </ngb-card>
+</div>
+<!-- #end alert icon-->
+<br>
+<!-- alert dissmisible-->
+<div class="row">
+  <ngb-card>
+    <div class="card-body">
+      <h5 class="card-title">Dissmisible</h5>
+      <div class="row">
+        <span *ngFor="let alert of alertsd">
+          <ngb-alert [type]="alert.type" [diss]="alert.diss" [icon]="alert.icon" (closed)="closeAlert(alert)"><strong>Holy guacamole!</strong> You should check in on some of those fields below.</ngb-alert>
+        </span>
+      </div>
+    </div>
+    <div class="card-footer">
+      <code>
+        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'primary'"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv">(closed)</span>=<span class="ngb-dcmt-drtv-vlue">"closeAlert(alert)"</span>&gt;
+        &lt;strong&gt;<span class="ngb-dcmt-ttle">Holy guacamole!</span>&lt;/strong&gt; <span class="ngb-dcmt-ttle">You should check in on some of those fields below.</span>
+        &lt;/ngb-alert&gt;<br>
+
+        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'secondary'"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv">(closed)</span>=<span class="ngb-dcmt-drtv-vlue">"closeAlert(alert)"</span>&gt;
+        &lt;strong&gt;<span class="ngb-dcmt-ttle">Holy guacamole!</span>&lt;/strong&gt; <span class="ngb-dcmt-ttle">You should check in on some of those fields below.</span>
+        &lt;/ngb-alert&gt;<br>
+
+        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'success'"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv">(closed)</span>=<span class="ngb-dcmt-drtv-vlue">"closeAlert(alert)"</span>&gt;
+        &lt;strong&gt;<span class="ngb-dcmt-ttle">Holy guacamole!</span>&lt;/strong&gt; <span class="ngb-dcmt-ttle">You should check in on some of those fields below.</span>
+        &lt;/ngb-alert&gt;<br>
+
+        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'danger'"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv">(closed)</span>=<span class="ngb-dcmt-drtv-vlue">"closeAlert(alert)"</span>&gt;
+        &lt;strong&gt;<span class="ngb-dcmt-ttle">Holy guacamole!</span>&lt;/strong&gt; <span class="ngb-dcmt-ttle">You should check in on some of those fields below.</span>
+        &lt;/ngb-alert&gt;<br>
+
+        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'warning'"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv">(closed)</span>=<span class="ngb-dcmt-drtv-vlue">"closeAlert(alert)"</span>&gt;
+        &lt;strong&gt;<span class="ngb-dcmt-ttle">Holy guacamole!</span>&lt;/strong&gt; <span class="ngb-dcmt-ttle">You should check in on some of those fields below.</span>
+        &lt;/ngb-alert&gt;<br>
+
+        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'info'"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv">(closed)</span>=<span class="ngb-dcmt-drtv-vlue">"closeAlert(alert)"</span>&gt;
+        &lt;strong&gt;<span class="ngb-dcmt-ttle">Holy guacamole!</span>&lt;/strong&gt; <span class="ngb-dcmt-ttle">You should check in on some of those fields below.</span>
+        &lt;/ngb-alert&gt;<br>
+      
+        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'light'"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv">(closed)</span>=<span class="ngb-dcmt-drtv-vlue">"closeAlert(alert)"</span>&gt;
+        &lt;strong&gt;<span class="ngb-dcmt-ttle">Holy guacamole!</span>&lt;/strong&gt; <span class="ngb-dcmt-ttle">You should check in on some of those fields below.</span>
+        &lt;/ngb-alert&gt;<br>
+
+        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'dark'"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv">(closed)</span>=<span class="ngb-dcmt-drtv-vlue">"closeAlert(alert)"</span>&gt;
+        &lt;strong&gt;<span class="ngb-dcmt-ttle">Holy guacamole!</span>&lt;/strong&gt; <span class="ngb-dcmt-ttle">You should check in on some of those fields below.</span>
+        &lt;/ngb-alert&gt;<br>
+      </code>
+    </div>
+  </ngb-card>
+</div>
+<!-- #end alert dissmisible-->

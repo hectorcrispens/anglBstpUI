@@ -15,6 +15,11 @@ export * from './lib/modal/modal.component';
 export * from './lib/tab/tab.component';
 export * from './lib/tab-panel/tab-panel.component';
 export * from './lib/navbar/navbar.component';
+export * from './lib/accordion/accordion.component';
+export * from './lib/accordion-item/accordion-item.component';
+export * from './lib/offcanvas/offcanvas.component';
+export * from './lib/alert/alert.component';
+
 
 /**
  * Public Types
