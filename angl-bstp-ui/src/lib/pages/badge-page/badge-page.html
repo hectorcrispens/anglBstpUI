@@ -1,0 +1,181 @@
+
+<!--
+   Badges scale to match the size of the immediate parent element by using relative font sizing and em units. 
+   As of v5, badges no longer have focus or hover styles for links.
+-->
+<div class="row text-left">
+    <h2>Badge</h2>
+    <hr>
+  </div>
+  
+  <!-- badge heading-->
+  <div class="row">
+    <ngb-card>
+      <div class="card-body">
+        <h5 class="card-title">Headings</h5>
+        <div class="row">
+            <h1>Example heading <ngb-badge [clss]="['bg-secondary']">New</ngb-badge></h1>
+            <h2>Example heading <ngb-badge [clss]="['bg-secondary']">New</ngb-badge></h2>
+            <h3>Example heading <ngb-badge [clss]="['bg-secondary']">New</ngb-badge></h3>
+            <h4>Example heading <ngb-badge [clss]="['bg-secondary']">New</ngb-badge></h4>
+            <h5>Example heading <ngb-badge [clss]="['bg-secondary']">New</ngb-badge></h5>
+            <h6>Example heading <ngb-badge [clss]="['bg-secondary']">New</ngb-badge></h6>
+        </div>
+      </div>
+      <div class="card-footer">
+        <code>
+            &lt;h1&gt;<span class="ngb-dcmt-ttle">Example heading </span>&lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-secondary']"</span>&gt;<span class="ngb-dcmt-ttle">New</span>&lt;/ngb-badge&gt;&lt;/h1&gt;<br>
+
+            &lt;h2&gt;<span class="ngb-dcmt-ttle">Example heading </span>&lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-secondary']"</span>&gt;<span class="ngb-dcmt-ttle">New</span>&lt;/ngb-badge&gt;&lt;/h2&gt;<br>
+
+            &lt;h3&gt;<span class="ngb-dcmt-ttle">Example heading </span>&lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-secondary']"</span>&gt;<span class="ngb-dcmt-ttle">New</span>&lt;/ngb-badge&gt;&lt;/h3&gt;<br>
+
+            &lt;h4&gt;<span class="ngb-dcmt-ttle">Example heading </span>&lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-secondary']"</span>&gt;<span class="ngb-dcmt-ttle">New</span>&lt;/ngb-badge&gt;&lt;/h4&gt;<br>
+
+            &lt;h5&gt;<span class="ngb-dcmt-ttle">Example heading </span>&lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-secondary']"</span>&gt;<span class="ngb-dcmt-ttle">New</span>&lt;/ngb-badge&gt;&lt;/h5&gt;<br>
+
+            &lt;h6&gt;<span class="ngb-dcmt-ttle">Example heading </span>&lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-secondary']"</span>&gt;<span class="ngb-dcmt-ttle">New</span>&lt;/ngb-badge&gt;&lt;/h6&gt;<br>
+        <br></code>
+        <hr>
+  
+      </div>
+    </ngb-card>
+  </div>
+  <!-- #end badge heading -->
+  <br>
+  <!-- badge buttons-->
+  <div class="row">
+    <ngb-card>
+      <div class="card-body">
+        <h5 class="card-title">Buttons</h5>
+        <div class="row">
+            <ngb-button [clss]="['btn', 'btn-primary']">
+                Notifications <ngb-badge [clss]="['bg-secondary']">4</ngb-badge>
+            </ngb-button>
+        </div>
+      </div>
+      <div class="card-footer">
+        <code>
+            &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn','btn-primary']"</span>&gt;<span class="ngb-dcmt-ttle">Notifications </span>&lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-secondary']"</span>&gt;<span class="ngb-dcmt-ttle">4</span>&lt;/ngb-badge&gt;&lt;/ngb-button&gt;
+        <br></code>
+        <hr>
+  
+      </div>
+    </ngb-card>
+  </div>
+  <!-- #end badge buttons -->
+
+<br>
+
+  <!-- badge Positioned-->
+  <div class="row">
+    <ngb-card>
+      <div class="card-body">
+        <h5 class="card-title">Positioned</h5>
+        <div class="row">
+            
+    <ngb-button [clss]="['btn','btn-primary', 'position-relative']">
+        Inbox
+        <ngb-badge [clss]="['position-absolute', 'top-0', 'start-100', 'translate-middle', 'rounded-pill', 'bg-danger']">
+          99+
+        </ngb-badge>
+      </ngb-button>
+      
+      <ngb-button [clss]="['btn', 'btn-primary', 'position-relative', 'mt-2']">
+        Profile
+        <ngb-badge [clss]="['position-absolute', 'top-0', 'p-2', 'start-100', 'border', 'border-light', 'translate-middle', 'rounded-circle', 'bg-danger']">
+            <span class="visually-hidden">New alerts</span>
+        </ngb-badge>
+      </ngb-button>
+
+        </div>
+      </div>
+      <div class="card-footer">
+        <code>
+            &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn','btn-primary', 'position-relative']"</span>&gt;<span class="ngb-dcmt-ttle">Inbox </span>&lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['position-absolute', 'top-0', 'start-100', 'translate-middle', 'rounded-pill', 'bg-danger']"</span>&gt;<span class="ngb-dcmt-ttle">99+</span>&lt;/ngb-badge&gt;&lt;/ngb-button&gt;
+            <br>
+            &lt;ngb-button <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['btn','btn-primary', 'position-relative', 'mt-2']"</span>&gt;<span class="ngb-dcmt-ttle">Profile </span>&lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['position-absolute', 'top-0', 'p-2', 'start-100', 'border', 'border-light', 'translate-middle', 'rounded-circle', 'bg-danger']"</span>&gt;<span class="ngb-dcmt-ttle"></span>&lt;/ngb-badge&gt;&lt;/ngb-button&gt;
+        <br></code>
+        <hr>
+  
+      </div>
+    </ngb-card>
+  </div>
+  <!-- #end badge Positioned -->
+<br>
+  
+<!-- badge Background colors-->
+<div class="row">
+    <ngb-card>
+      <div class="card-body">
+        <h5 class="card-title">Background colors</h5>
+        <div class="row">
+            <div class="col-lg-12">   
+                <ngb-badge [clss]="['bg-primary']">Primary</ngb-badge>
+                <ngb-badge [clss]="['bg-secondary', 'ms-1']">Secondary</ngb-badge>
+                <ngb-badge [clss]="['bg-success', 'ms-1']">Success</ngb-badge>
+                <ngb-badge [clss]="['bg-danger', 'ms-1']">Danger</ngb-badge>
+                <ngb-badge [clss]="['bg-warning', 'ms-1', 'text-dark']">Warning</ngb-badge>
+                <ngb-badge [clss]="['bg-info', 'ms-1', 'text-dark']">Info</ngb-badge>
+                <ngb-badge [clss]="['bg-light', 'ms-1', 'text-dark']">Light</ngb-badge>
+                <ngb-badge [clss]="['bg-dark', 'ms-1']">Dark</ngb-badge>            
+            </div>
+
+        </div>
+      </div>
+      <div class="card-footer">
+        <code>
+            &lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-primary']"</span>&gt;<span class="ngb-dcmt-ttle">Primary</span>&lt;/ngb-badge&gt;<br>
+            &lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-secondary', 'ms-1']"</span>&gt;<span class="ngb-dcmt-ttle">Secondary</span>&lt;/ngb-badge&gt;<br>
+            &lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-success', 'ms-1']"</span>&gt;<span class="ngb-dcmt-ttle">Success</span>&lt;/ngb-badge&gt;<br>
+            &lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-danger', 'ms-1']"</span>&gt;<span class="ngb-dcmt-ttle">Danger</span>&lt;/ngb-badge&gt;<br>
+            &lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-warning', 'ms-1', 'text-dark']"</span>&gt;<span class="ngb-dcmt-ttle">Warning</span>&lt;/ngb-badge&gt;<br>
+            &lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-info', 'ms-1', 'text-dark']"</span>&gt;<span class="ngb-dcmt-ttle">Info</span>&lt;/ngb-badge&gt;<br>
+            &lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-light', 'ms-1', 'text-dark']"</span>&gt;<span class="ngb-dcmt-ttle">Light</span>&lt;/ngb-badge&gt;<br>
+            &lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-dark', 'ms-1']"</span>&gt;<span class="ngb-dcmt-ttle">Dark</span>&lt;/ngb-badge&gt;
+        <br></code>
+        <hr>
+  
+      </div>
+    </ngb-card>
+  </div>
+  <!-- #end badge Background colors -->
+
+<br>
+     
+<!-- badge Pill badges-->
+<div class="row">
+    <ngb-card>
+      <div class="card-body">
+        <h5 class="card-title">Pill badges</h5>
+        <div class="row">
+            <div class="col-lg-12">   
+                <ngb-badge [clss]="['bg-primary', 'rounded-pill']">Primary</ngb-badge>
+                <ngb-badge [clss]="['bg-secondary', 'ms-1', 'rounded-pill']">Secondary</ngb-badge>
+                <ngb-badge [clss]="['bg-success', 'ms-1', 'rounded-pill']">Success</ngb-badge>
+                <ngb-badge [clss]="['bg-danger', 'ms-1', 'rounded-pill']">Danger</ngb-badge>
+                <ngb-badge [clss]="['bg-warning', 'ms-1', 'text-dark', 'rounded-pill']">Warning</ngb-badge>
+                <ngb-badge [clss]="['bg-info', 'ms-1', 'text-dark', 'rounded-pill']">Info</ngb-badge>
+                <ngb-badge [clss]="['bg-light', 'ms-1', 'text-dark', 'rounded-pill']">Light</ngb-badge>
+                <ngb-badge [clss]="['bg-dark', 'ms-1', 'rounded-pill']">Dark</ngb-badge>            
+            </div>
+
+        </div>
+      </div>
+      <div class="card-footer">
+        <code>
+            &lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-primary', 'rounded-pill']"</span>&gt;<span class="ngb-dcmt-ttle">Primary</span>&lt;/ngb-badge&gt;<br>
+            &lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-secondary', 'ms-1', 'rounded-pill']"</span>&gt;<span class="ngb-dcmt-ttle">Secondary</span>&lt;/ngb-badge&gt;<br>
+            &lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-success', 'ms-1', 'rounded-pill']"</span>&gt;<span class="ngb-dcmt-ttle">Success</span>&lt;/ngb-badge&gt;<br>
+            &lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-danger', 'ms-1', 'rounded-pill']"</span>&gt;<span class="ngb-dcmt-ttle">Danger</span>&lt;/ngb-badge&gt;<br>
+            &lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-warning', 'ms-1', 'text-dark', 'rounded-pill']"</span>&gt;<span class="ngb-dcmt-ttle">Warning</span>&lt;/ngb-badge&gt;<br>
+            &lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-info', 'ms-1', 'text-dark', 'rounded-pill']"</span>&gt;<span class="ngb-dcmt-ttle">Info</span>&lt;/ngb-badge&gt;<br>
+            &lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-light', 'ms-1', 'text-dark', 'rounded-pill']"</span>&gt;<span class="ngb-dcmt-ttle">Light</span>&lt;/ngb-badge&gt;<br>
+            &lt;ngb-badge <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['bg-dark', 'ms-1', 'rounded-pill']"</span>&gt;<span class="ngb-dcmt-ttle">Dark</span>&lt;/ngb-badge&gt;
+        <br></code>
+        <hr>
+  
+      </div>
+    </ngb-card>
+  </div>
+  <!-- #end badge Pill badges -->

@@ -825,6 +825,89 @@
         "sergrida",
         "hcrispen"
       ]
+    },
+    {
+      "titl": "Creación de componente BADGE.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "desarrollar un componente para un BADGE."
+      },
+      "stht": {
+        "eses": "pueda ser utilizado en cualquier vista utilizando solo el selector <ngb-badge>."
+      },
+      "apcr": {
+        "eses": [
+          "El componente acepte el nombre de la clase de boostrap."
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 1,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de una página BADGE.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear una página que muestre los distintos tipos de BADGE y forma de usarlo"
+      },
+      "stht": {
+        "eses": "el usuario de la librería sepa como usar el componente BADGE"
+      },
+      "apcr": {
+        "eses": [
+          "que se muestren los distintos tipos de BADGE",
+          "el código de los BADGE que se muestran"
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 1,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de un documento sobre componente BADGE.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear un documento que explique de forma detallada todas las características del componente BADGE"
+      },
+      "stht": {
+        "eses": "documentar los aspectos técnicos de cada componente"
+      },
+      "apcr": {
+        "eses": [
+          "debe contener una imagen ilustrativa",
+          "debe contener una imagen de la estructura de cajas",
+          "debe contener una descripcion del template",
+          "una especificación completa del uso",
+          "un detalle de los Inputs, Outputs y Métodos del componente"
+        ]
+      },
+      "itrt": 2,
+      "stts": "todo",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 1,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
     }
   ]
 }

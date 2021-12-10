@@ -3,8 +3,7 @@ import { tablink } from '../../tab/tab.component';
 
 @Component({
   selector: 'ngb-tab-page',
-  templateUrl: './tab.page.html',
-  styleUrls: ['./tab.page.css']
+  templateUrl: './tab-page.html'
 })
 export class TabPageComponent implements OnInit {
 

@@ -71,3 +71,17 @@ export type algnSelfType = 'align-self-auto'|'align-self-start'|'align-self-end'
 
 /** d-flex type */
 export type flexType = 'd-flex'|'d-inline-flex'|'d-none'
+
+/** position type */
+export type pstnType = 'position-static' | 'position-relative' | 'position-absolute' | 'position-fixed' | 'position-sticky'
+
+/** moviment type */
+export type mvmnType = 'top-0' | 'top-50' | 'top-100' | 'bottom-0' | 'bottom-50' | 'bottom-100' | 'start-0' | 'start-50' | 'start-100' | 'end-0' | 'end-50' | 'end-100'
+
+/** rounded type */
+export type rnddType = 'rounded'|'rounded-0'|'rounded-1'|'rounded-2'|'rounded-3'|'rounded-circle'|'rounded-pill'|'rounded-top'|'rounded-end'|'rounded-bottom'
+                        |'rounded-start'
+
+/** translate type */
+export type trltType = 'translate-middle' | 'translate-middle-x' | 'translate-middle-y'
+

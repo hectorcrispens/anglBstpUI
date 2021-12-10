@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ngb-collapse-page',
-  templateUrl: './collapse.page.html',
+  templateUrl: './collapse-page.html',
   styles:[]
 })
 export class CollapsePageComponent implements OnInit {

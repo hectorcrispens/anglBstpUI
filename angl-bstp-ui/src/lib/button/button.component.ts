@@ -1,9 +1,10 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { mrgnType } from '../types/baseType';
+import { mrgnType, pstnType } from '../types/baseType';
 
 type btnclss = 'btn'|'btn-close'|'btn-lg'|'btn-sm'|'btn-outline-light'|'btn-outline-dark'
                     |'btn-primary'|'btn-secondary'|'btn-success'|'btn-danger'|'btn-warning'|'btn-info'|'btn-light'|'btn-dark'|'btn-link'
-                    |'btn-outline-primary'|'btn-outline-secondary'|'btn-outline-success'|'btn-outline-danger'|'btn-outline-warning'|'btn-outline-info' | mrgnType;
+                    |'btn-outline-primary'|'btn-outline-secondary'|'btn-outline-success'|'btn-outline-danger'|'btn-outline-warning'
+                    |'btn-outline-info' | mrgnType | pstnType;
                     
 
 @Component({

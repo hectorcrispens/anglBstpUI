@@ -5,7 +5,7 @@ clip =clipboard.paste()
 clip = clip.replace("'", "??").replace("", "").replace("\n", "")
 print("clip:\n"+clip)
 
-tags ='<ngb-alert [type]="alerttype" [diss]="alertdiss" [icon]="alerticon" (closed)="closeAlert(alert)">An example primary alert with an icon</ngb-alert>'
+tags ='<ngb-badge [clss]="[$$bg-primary$$]">Primary</ngb-badge>'
 
 print("tags: \n" +tags)
 

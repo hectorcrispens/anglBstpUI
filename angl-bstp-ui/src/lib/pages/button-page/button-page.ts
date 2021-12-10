@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'ngb-button-page',
-  templateUrl: './button.page.html',
+  templateUrl: './button-page.html',
   styles: [`
 
   `]

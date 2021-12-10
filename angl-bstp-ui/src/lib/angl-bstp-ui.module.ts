@@ -15,18 +15,20 @@ import { OffcanvasComponent } from './offcanvas/offcanvas.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { AccordionItemComponent } from './accordion-item/accordion-item.component';
 import { AlertComponent} from './alert/alert.component';
+import { BadgeComponent } from './badge/badge.component';
 //endregion Components
 
 //region Pages
-import { CardPageComponent } from './pages/card-page/card.page';
-import { ButtonPageComponent } from './pages/button-page/button.page';
-import { ModalPageComponent } from './pages/modal-page/modal.page';
-import { TabPageComponent } from './pages/tab-page/tab.page';
-import { NavbarPageComponent} from './pages/navbar-page/navbar.page';
-import { CollapsePageComponent } from './pages/collapse-page/collapse.page';
+import { CardPageComponent } from './pages/card-page/card-page';
+import { ButtonPageComponent } from './pages/button-page/button-page';
+import { ModalPageComponent } from './pages/modal-page/modal-page';
+import { TabPageComponent } from './pages/tab-page/tab-page';
+import { NavbarPageComponent} from './pages/navbar-page/navbar-page';
+import { CollapsePageComponent } from './pages/collapse-page/collapse-page';
 import { OffcanvasPageComponent } from './pages/offcanvas-page/offcanvas-page';
 import { AccordionPageComponent } from './pages/accordion-page/accordion-page';
 import { AlertPageComponent } from './pages/alert-page/alert-page';
+import { BadgePageComponent } from './pages/badge-page/badge-page';
 
 
 //endregion Pages
@@ -54,7 +56,9 @@ import { AlertPageComponent } from './pages/alert-page/alert-page';
     AccordionPageComponent,
     AccordionItemComponent,
     AlertPageComponent,
-    AlertComponent
+    AlertComponent,
+    BadgeComponent,
+    BadgePageComponent
   ],
   imports: [
     CommonModule,
@@ -71,7 +75,8 @@ import { AlertPageComponent } from './pages/alert-page/alert-page';
     OffcanvasComponent,
     AccordionComponent,
     AccordionItemComponent,
-    AlertComponent
+    AlertComponent,
+    BadgeComponent
   ],
 })
 export class AnglBstpUIModule { }
