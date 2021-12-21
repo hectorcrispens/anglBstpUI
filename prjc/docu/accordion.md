@@ -1,5 +1,17 @@
 # Accordión
 
+## Tabla de contenido
+- [Accordión](#accordión)
+  - [Tabla de contenido](#tabla-de-contenido)
+  - [Ilustración](#ilustración)
+  - [Estructura de cajas](#estructura-de-cajas)
+  - [Template de angular](#template-de-angular)
+  - [Clases](#clases)
+  - [Uso del accordión](#uso-del-accordión)
+  - [Inputs](#inputs)
+  - [Outputs](#outputs)
+  - [Métodos](#métodos)
+
 ## Ilustración
 
 ![accordion](Images/accordion.png)

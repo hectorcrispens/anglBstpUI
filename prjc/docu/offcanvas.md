@@ -1,5 +1,18 @@
 # Offcanvas
 
+## Tabla de contenido
+- [Offcanvas](#offcanvas)
+  - [Tabla de contenido](#tabla-de-contenido)
+  - [Ilustración](#ilustración)
+  - [Estructura de cajas](#estructura-de-cajas)
+  - [Template de angular](#template-de-angular)
+  - [clases](#clases)
+  - [uso del offcanvas](#uso-del-offcanvas)
+  - [Inputs](#inputs)
+  - [Output](#output)
+  - [Métodos](#métodos)
+
+
 ## Ilustración
 
 ![modal](Images/offcanvas.png)

@@ -19,6 +19,7 @@ export * from './lib/accordion/accordion.component';
 export * from './lib/accordion-item/accordion-item.component';
 export * from './lib/offcanvas/offcanvas.component';
 export * from './lib/alert/alert.component';
+export * from './lib/badge/badge.component';
 
 
 /**

@@ -1,5 +1,18 @@
 # Alert
 
+## Tabla de contenido
+- [Alert](#alert)
+  - [Tabla de contenido](#tabla-de-contenido)
+  - [Ilustración](#ilustración)
+  - [Estructura de cajas](#estructura-de-cajas)
+  - [Template de angular](#template-de-angular)
+  - [Clases](#clases)
+  - [Uso del alert](#uso-del-alert)
+  - [Inputs](#inputs)
+  - [Outputs](#outputs)
+  - [Métodos](#métodos)
+
+
 ## Ilustración
 
 ![alert](Images/alert.png)

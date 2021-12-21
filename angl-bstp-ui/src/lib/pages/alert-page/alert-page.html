@@ -128,39 +128,190 @@
       </div>
     </div>
     <div class="card-footer">
-      <code>
-        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'primary'"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv">(closed)</span>=<span class="ngb-dcmt-drtv-vlue">"closeAlert(alert)"</span>&gt;
-        &lt;strong&gt;<span class="ngb-dcmt-ttle">Holy guacamole!</span>&lt;/strong&gt; <span class="ngb-dcmt-ttle">You should check in on some of those fields below.</span>
-        &lt;/ngb-alert&gt;<br>
+      <ngb-tab [lnks]="dvdr" [clss]="['nav-tabs']" ></ngb-tab>
+            <ngb-tab-panel [init]="dvdr[0]">
+              <code>
+                &lt;span *ngFor=<span class="ngb-dcmt-drtv-vlue">"let alert of alertsl"</span>&gt;<br>
+                &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"alert.type"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"alert.diss"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"alert.icon"</span>&gt;<span class="ngb-dcmt-ttle">&#123; &#123; alert.mssg &#125; &#125;</span>&lt;a <span class="ngb-dcmt-drtv">href</span>="#"class=<span class="ngb-dcmt-drtv-vlue">"alert-link"</span>&gt;<span class="ngb-dcmt-ttle">an example link</span>&lt;/a&gt;<span class="ngb-dcmt-ttle">. Give it a click if you like.</span>&lt;/ngb-alert&gt;<br>
+                &lt;/span&gt;<br>
+              </code>
+ 
+            </ngb-tab-panel>
 
-        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'secondary'"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv">(closed)</span>=<span class="ngb-dcmt-drtv-vlue">"closeAlert(alert)"</span>&gt;
-        &lt;strong&gt;<span class="ngb-dcmt-ttle">Holy guacamole!</span>&lt;/strong&gt; <span class="ngb-dcmt-ttle">You should check in on some of those fields below.</span>
-        &lt;/ngb-alert&gt;<br>
+            <ngb-tab-panel [init]="dvdr[1]">
+              <span class="ngb-js-var">alertsl</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-cla">Alert</span>
+              <span class="ngb-js-sig">[</span>
+              <span class="ngb-js-sig">]</span>
+              <span class="ngb-js-sig"> = </span>
+              <span class="ngb-js-sig">[</span><br>
+              <span class="ngb-js-sig">&#123;</span>
+              <span class="ngb-js-var">type</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-tex">"primary"</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">diss</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-boo">false</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">icon</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-boo">false</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">mssg</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-tex">"A simple primary alert with"</span>
+              <span class="ngb-js-sig">&#125;</span>
+              <span class="ngb-js-sig">, </span><br>
+              <span class="ngb-js-sig">&#123;</span>
+              <span class="ngb-js-var">type</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-tex">"secondary"</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">diss</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-boo">false</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">icon</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-boo">false</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">mssg</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-tex">"A simple secondary alert with"</span>
+              <span class="ngb-js-sig">&#125;</span>
+              <span class="ngb-js-sig">, </span><br>
+              <span class="ngb-js-sig">&#123;</span>
+              <span class="ngb-js-var">type</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-tex">"success"</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">diss</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-boo">false</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">icon</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-boo">false</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">mssg</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-tex">"A simple success alert with"</span>
+              <span class="ngb-js-sig">&#125;</span>
+              <span class="ngb-js-sig">, </span><br>
+              <span class="ngb-js-sig">&#123;</span>
+              <span class="ngb-js-var">type</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-tex">"danger"</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">diss</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-boo">false</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">icon</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-boo">false</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">mssg</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-tex">"A simple danger alert with"</span>
+              <span class="ngb-js-sig">&#125;</span>
+              <span class="ngb-js-sig">, </span><br>
+              <span class="ngb-js-sig">&#123;</span>
+              <span class="ngb-js-var">type</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-tex">"warning"</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">diss</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-boo">false</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">icon</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-boo">false</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">mssg</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-tex">"A simple warning alert with"</span>
+              <span class="ngb-js-sig">&#125;</span>
+              <span class="ngb-js-sig">, </span><br>
+              <span class="ngb-js-sig">&#123;</span>
+              <span class="ngb-js-var">type</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-tex">"info"</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">diss</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-boo">false</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">icon</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-boo">false</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">mssg</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-tex">"A simple info alert with"</span>
+              <span class="ngb-js-sig">&#125;</span>
+              <span class="ngb-js-sig">, </span><br>
+              <span class="ngb-js-sig">&#123;</span>
+              <span class="ngb-js-var">type</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-tex">"light"</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">diss</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-boo">false</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">icon</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-boo">false</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">mssg</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-tex">"A simple light alert with"</span>
+              <span class="ngb-js-sig">&#125;</span>
+              <span class="ngb-js-sig">, </span><br>
+              <span class="ngb-js-sig">&#123;</span>
+              <span class="ngb-js-var">type</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-tex">"dark"</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">diss</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-boo">false</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">icon</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-boo">false</span>
+              <span class="ngb-js-sig">, </span>
+              <span class="ngb-js-var">mssg</span>
+              <span class="ngb-js-sig">: </span>
+              <span class="ngb-js-tex">"A simple dark alert with"</span>
+              <span class="ngb-js-sig">&#125;</span><br>
+              <span class="ngb-js-sig">]</span>
 
-        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'success'"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv">(closed)</span>=<span class="ngb-dcmt-drtv-vlue">"closeAlert(alert)"</span>&gt;
-        &lt;strong&gt;<span class="ngb-dcmt-ttle">Holy guacamole!</span>&lt;/strong&gt; <span class="ngb-dcmt-ttle">You should check in on some of those fields below.</span>
-        &lt;/ngb-alert&gt;<br>
+              <br><br>
 
-        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'danger'"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv">(closed)</span>=<span class="ngb-dcmt-drtv-vlue">"closeAlert(alert)"</span>&gt;
-        &lt;strong&gt;<span class="ngb-dcmt-ttle">Holy guacamole!</span>&lt;/strong&gt; <span class="ngb-dcmt-ttle">You should check in on some of those fields below.</span>
-        &lt;/ngb-alert&gt;<br>
+              <span class="ngb-js-fun">closeAlert</span>
+              (<span class="ngb-js-var">alert</span>
+              <span class="ngb-js-sig">: </span>
+              Alert)<span class="ngb-js-sig">&#123;</span>
+              <span class="ngb-js-boo">this</span>
+              .<span class="ngb-js-var">alert</span>
+              sd.<span class="ngb-js-fun">splice</span>
+              (<span class="ngb-js-boo">this</span>
+              .<span class="ngb-js-var">alert</span>
+              sd.<span class="ngb-js-fun">indexOf</span>
+              (<span class="ngb-js-var">alert</span>
+              )<span class="ngb-js-sig">, </span>
+              <span class="ngb-js-num">1</span>
+              )<span class="ngb-js-sig">;</span>
+              <span class="ngb-js-sig">&#125;</span>
+              
 
-        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'warning'"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv">(closed)</span>=<span class="ngb-dcmt-drtv-vlue">"closeAlert(alert)"</span>&gt;
-        &lt;strong&gt;<span class="ngb-dcmt-ttle">Holy guacamole!</span>&lt;/strong&gt; <span class="ngb-dcmt-ttle">You should check in on some of those fields below.</span>
-        &lt;/ngb-alert&gt;<br>
-
-        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'info'"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv">(closed)</span>=<span class="ngb-dcmt-drtv-vlue">"closeAlert(alert)"</span>&gt;
-        &lt;strong&gt;<span class="ngb-dcmt-ttle">Holy guacamole!</span>&lt;/strong&gt; <span class="ngb-dcmt-ttle">You should check in on some of those fields below.</span>
-        &lt;/ngb-alert&gt;<br>
+            </ngb-tab-panel>
       
-        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'light'"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv">(closed)</span>=<span class="ngb-dcmt-drtv-vlue">"closeAlert(alert)"</span>&gt;
-        &lt;strong&gt;<span class="ngb-dcmt-ttle">Holy guacamole!</span>&lt;/strong&gt; <span class="ngb-dcmt-ttle">You should check in on some of those fields below.</span>
-        &lt;/ngb-alert&gt;<br>
-
-        &lt;ngb-alert <span class="ngb-dcmt-drtv">[type]</span>=<span class="ngb-dcmt-drtv-vlue">"'dark'"</span> <span class="ngb-dcmt-drtv">[diss]</span>=<span class="ngb-dcmt-drtv-vlue">"true"</span> <span class="ngb-dcmt-drtv">[icon]</span>=<span class="ngb-dcmt-drtv-vlue">"false"</span> <span class="ngb-dcmt-drtv">(closed)</span>=<span class="ngb-dcmt-drtv-vlue">"closeAlert(alert)"</span>&gt;
-        &lt;strong&gt;<span class="ngb-dcmt-ttle">Holy guacamole!</span>&lt;/strong&gt; <span class="ngb-dcmt-ttle">You should check in on some of those fields below.</span>
-        &lt;/ngb-alert&gt;<br>
-      </code>
     </div>
   </ngb-card>
 </div>

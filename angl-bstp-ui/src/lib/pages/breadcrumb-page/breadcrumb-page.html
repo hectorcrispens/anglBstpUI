@@ -1,0 +1,255 @@
+<!--
+Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.
+-->
+<div class="row text-left">
+    <h2>Breadcrumb</h2>
+    <hr>
+</div>
+
+<!-- breadcrumb Example -->
+<div class="row">
+    <ngb-card>
+        <div class="card-body">
+            <h5 class="card-title"> Example</h5>
+            <div class="row">
+                <ngb-breadcrumb [itms]="frst" [dvdr]="bar"></ngb-breadcrumb> 
+                <ngb-breadcrumb [itms]="scnd" [dvdr]="bar"></ngb-breadcrumb>
+                <ngb-breadcrumb [itms]="tree" [dvdr]="bar"></ngb-breadcrumb> 
+            </div>
+        </div>
+        <div class="card-footer">
+            <ngb-tab [lnks]="xmpl" [clss]="['nav-tabs']" ></ngb-tab>
+            <ngb-tab-panel [init]="xmpl[0]">
+                <code>
+                    &lt;ngb-breadcrumb <span class="ngb-dcmt-drtv">[itms]</span>=<span class="ngb-dcmt-drtv-vlue">"frst"</span> <span class="ngb-dcmt-drtv">[dvdr]</span>=<span class="ngb-dcmt-drtv-vlue">"bar"</span>&gt;
+                    &lt;/ngb-breadcrumb&gt;<br>
+                    &lt;ngb-breadcrumb <span class="ngb-dcmt-drtv">[itms]</span>=<span class="ngb-dcmt-drtv-vlue">"scnd"</span> <span class="ngb-dcmt-drtv">[dvdr]</span>=<span class="ngb-dcmt-drtv-vlue">"bar"</span>&gt;
+                    &lt;/ngb-breadcrumb&gt; <br>
+                    &lt;ngb-breadcrumb <span class="ngb-dcmt-drtv">[itms]</span>=<span class="ngb-dcmt-drtv-vlue">"tree"</span> <span class="ngb-dcmt-drtv">[dvdr]</span>=<span class="ngb-dcmt-drtv-vlue">"bar"</span>&gt;
+                    &lt;/ngb-breadcrumb&gt; 
+
+                <br></code>
+            </ngb-tab-panel>
+
+            <ngb-tab-panel [init]="xmpl[1]">
+
+                <code>
+                    <span class="ngb-js-var">bar</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-cla">DividerEnum</span>
+                    <span class="ngb-js-sig"> = </span>
+                    <span class="ngb-js-cla">DividerEnum</span>
+                    <span class="ngb-js-var">.BAR</span><br><br>
+
+                    <span class="ngb-js-var">frst</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-cla">brdcitem</span>
+                    <span class="ngb-js-sig">[</span>
+                    <span class="ngb-js-sig">]</span>
+                    <span class="ngb-js-sig"> = </span>
+                    <span class="ngb-js-sig">[</span>
+                    <span class="ngb-js-sig">&#123;</span>
+                    <span class="ngb-js-var">text</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"Home"</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">active</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-boo">true</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">link</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"#"</span>
+                    <span class="ngb-js-sig">&#125;</span>
+                    <span class="ngb-js-sig">]</span><br>
+                    <span class="ngb-js-var">scnd</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-cla">brdcitem</span>
+                    <span class="ngb-js-sig">[</span>
+                    <span class="ngb-js-sig">]</span>
+                    <span class="ngb-js-sig"> = </span>
+                    <span class="ngb-js-sig">[</span>
+                    <span class="ngb-js-sig">&#123;</span>
+                    <span class="ngb-js-var">text</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"Home"</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">active</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-boo">false</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">link</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"#"</span>
+                    <span class="ngb-js-sig">&#125;</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-sig">&#123;</span>
+                    <span class="ngb-js-var">text</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"Library"</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">active</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-boo">true</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">link</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"#"</span>
+                    <span class="ngb-js-sig">&#125;</span>
+                    <span class="ngb-js-sig">]</span><br>
+                    <span class="ngb-js-var">tree</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-cla">brdcitem</span>
+                    <span class="ngb-js-sig">[</span>
+                    <span class="ngb-js-sig">]</span>
+                    <span class="ngb-js-sig"> = </span>
+                    <span class="ngb-js-sig">[</span>
+                    <span class="ngb-js-sig">&#123;</span>
+                    <span class="ngb-js-var">text</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"Home"</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">active</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-boo">false</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">link</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"#"</span>
+                    <span class="ngb-js-sig">&#125;</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-sig">&#123;</span>
+                    <span class="ngb-js-var">text</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"Library"</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">active</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-boo">false</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">link</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"#"</span>
+                    <span class="ngb-js-sig">&#125;</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-sig">&#123;</span>
+                    <span class="ngb-js-var">text</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"Data"</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">active</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-boo">true</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">link</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"#"</span>
+                    <span class="ngb-js-sig">&#125;</span>
+                    <span class="ngb-js-sig">]</span>
+                
+                </code>
+            </ngb-tab-panel>
+
+
+        </div>
+    </ngb-card>
+</div>
+<!-- #end breadcrumb example-->
+<br>
+<!-- breadcrumb Divider -->
+<div class="row">
+    <ngb-card>
+        <div class="card-body">
+            <h5 class="card-title"> Divider</h5>
+            <div class="row">
+                <ngb-breadcrumb [itms]="tree" [dvdr]="quote"></ngb-breadcrumb> 
+                <ngb-breadcrumb [itms]="tree" [dvdr]="none"></ngb-breadcrumb>
+            </div>
+        </div>
+        <div class="card-footer">
+            <ngb-tab [lnks]="dvdr" [clss]="['nav-tabs']" ></ngb-tab>
+            <ngb-tab-panel [init]="dvdr[0]">
+                <code>
+                    &lt;ngb-breadcrumb <span class="ngb-dcmt-drtv">[itms]</span>=<span class="ngb-dcmt-drtv-vlue">"tree"</span> <span class="ngb-dcmt-drtv">[dvdr]</span>=<span class="ngb-dcmt-drtv-vlue">"quote"</span>&gt;
+                    &lt;/ngb-breadcrumb&gt; <br>
+                    &lt;ngb-breadcrumb <span class="ngb-dcmt-drtv">[itms]</span>=<span class="ngb-dcmt-drtv-vlue">"tree"</span> <span class="ngb-dcmt-drtv">[dvdr]</span>=<span class="ngb-dcmt-drtv-vlue">"none"</span>&gt;
+                    &lt;/ngb-breadcrumb&gt; 
+                <br></code>
+            </ngb-tab-panel>
+
+            <ngb-tab-panel [init]="dvdr[1]">
+
+                <code>
+                    <span class="ngb-js-var">quote</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-cla">DividerEnum</span>
+                    <span class="ngb-js-sig"> = </span>
+                    <span class="ngb-js-cla">DividerEnum</span>
+                    <span class="ngb-js-var">.QUOTE</span><br>
+                    <span class="ngb-js-var">none</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-cla">DividerEnum</span>
+                    <span class="ngb-js-sig"> = </span>
+                    <span class="ngb-js-cla">DividerEnum</span>
+                    <span class="ngb-js-var">.NONE</span><br><br>
+
+                    
+                    <span class="ngb-js-var">tree</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-cla">brdcitem</span>
+                    <span class="ngb-js-sig">[</span>
+                    <span class="ngb-js-sig">]</span>
+                    <span class="ngb-js-sig"> = </span>
+                    <span class="ngb-js-sig">[</span>
+                    <span class="ngb-js-sig">&#123;</span>
+                    <span class="ngb-js-var">text</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"Home"</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">active</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-boo">false</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">link</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"#"</span>
+                    <span class="ngb-js-sig">&#125;</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-sig">&#123;</span>
+                    <span class="ngb-js-var">text</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"Library"</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">active</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-boo">false</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">link</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"#"</span>
+                    <span class="ngb-js-sig">&#125;</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-sig">&#123;</span>
+                    <span class="ngb-js-var">text</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"Data"</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">active</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-boo">true</span>
+                    <span class="ngb-js-sig">,</span>
+                    <span class="ngb-js-var">link</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-tex">"#"</span>
+                    <span class="ngb-js-sig">&#125;</span>
+                    <span class="ngb-js-sig">]</span>
+                
+                </code>
+            </ngb-tab-panel>
+
+
+        </div>
+    </ngb-card>
+</div>
+<!-- #end breadcrumb example-->
+

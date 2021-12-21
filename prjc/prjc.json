@@ -908,6 +908,90 @@
         "sergrida",
         "hcrispen"
       ]
+    },
+    {
+      "titl": "Creación de componente BREADCRUMB.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "desarrollar un componente para un BREADCRUMB."
+      },
+      "stht": {
+        "eses": "pueda ser utilizado en cualquier vista utilizando solo el selector <ngb-breadcrumb>."
+      },
+      "apcr": {
+        "eses": [
+          "El componente acepte un listado de Items que renderizará",
+          "Se pueda personalizar el divider, entre una barra, un quote o ninguno"
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de una página BREADCRUMB.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear una página que muestre los distintos tipos de BREADCRUMB y forma de usarlo"
+      },
+      "stht": {
+        "eses": "el usuario de la librería sepa como usar el componente BREADCRUMB"
+      },
+      "apcr": {
+        "eses": [
+          "que se muestren los distintos tipos de BREADCRUMB",
+          "el código de los BREADCRUMB que se muestran"
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de un documento sobre componente BREADCRUMB.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear un documento que explique de forma detallada todas las características del componente BREADCRUMB"
+      },
+      "stht": {
+        "eses": "documentar los aspectos técnicos de cada componente"
+      },
+      "apcr": {
+        "eses": [
+          "debe contener una imagen ilustrativa",
+          "debe contener una imagen de la estructura de cajas",
+          "debe contener una descripcion del template",
+          "una especificación completa del uso",
+          "un detalle de los Inputs, Outputs y Métodos del componente"
+        ]
+      },
+      "itrt": 2,
+      "stts": "todo",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
     }
   ]
 }

@@ -1,5 +1,18 @@
 # Badge
 
+## Tabla de contenido
+- [Badge](#badge)
+  - [Tabla de contenido](#tabla-de-contenido)
+  - [Ilustración](#ilustración)
+  - [Estructuras de cajas](#estructuras-de-cajas)
+  - [Template de angular](#template-de-angular)
+  - [Clases](#clases)
+  - [Modo de uso](#modo-de-uso)
+  - [Inputs](#inputs)
+  - [Outputs](#outputs)
+  - [Metodos](#metodos)
+
+
 ## Ilustración
 ![badge](Images/badge.png)
 

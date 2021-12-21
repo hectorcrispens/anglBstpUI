@@ -1,6 +1,6 @@
-![ang](src/assets/imag/header.svg)
+![ang](https://raw.githubusercontent.com/hectorcrispens/anglBstpUI/bd64e65a6964e585ea661fb0d14dc20c32ea5432/imag/header.svg)
 
-# anglBstpUI
+# anglBstpUI v0.10.0
 
 Libreria de Angular con componentes de bootstrap 5
 
@@ -10,11 +10,13 @@ Libreria de Angular con componentes de bootstrap 5
 
 ## Contributors
 
-[![hector](src/assets/imag/avatar-hector.svg)](https://www.linkedin.com/in/hector-orlando-25124a18a/)  [![sergio](src/assets/imag/avatar-sergio.svg)](https://www.linkedin.com/in/sergio-ridaura/)
+[![hector](https://raw.githubusercontent.com/hectorcrispens/anglBstpUI/bd64e65a6964e585ea661fb0d14dc20c32ea5432/imag/avatar-hector.svg)](https://www.linkedin.com/in/hector-orlando-25124a18a/)  [![sergio](https://raw.githubusercontent.com/hectorcrispens/anglBstpUI/bd64e65a6964e585ea661fb0d14dc20c32ea5432/imag/avatar-sergio.svg)](https://www.linkedin.com/in/sergio-ridaura/)
 
 
 
-Versión 01.08.2021
+Time version 2021.12.10
+
+Semantic version v0.10.0 
 
 Documento léeme
 
@@ -30,22 +32,30 @@ Documento léeme
 
 
 ## Tabla de contenido
-- [anglBstpUI](#anglbstpui)
+- [anglBstpUI v0.10.0](#anglbstpui-v0100)
   - [Contributors](#contributors)
   - [¡Aclaración importante!](#aclaración-importante)
   - [Tabla de contenido](#tabla-de-contenido)
-  - [Avances del proyecto](#avances-del-proyecto)
+  - [Ultimos avances del proyecto](#ultimos-avances-del-proyecto)
   - [Descripción](#descripción)
   - [Guía de instalación](#guía-de-instalación)
       - [Creación de un proyecto de Angular](#creación-de-un-proyecto-de-angular)
       - [Instalación de la librería](#instalación-de-la-librería)
   - [Guía de uso](#guía-de-uso)
 
-## Avances del proyecto
+## Ultimos avances del proyecto
 
-- ` 19-08-2021` se agrego el componente **button** 
-- `03-09-2021` se agrego el componente **card**
-- `04-09-2021` se agrego el componente **modal**
+  - `10-12-2021` se agregó el componente badge
+  - `04-12-2021` se agregó el componente alert
+  - `27-11-2021` se agregó el componente accordion
+  - `20-10-2021` se agregó el componente offcanvas
+  - `05-10-2021` se agregó el componente collapse
+  - `27-09-2021` se agregó el componente navbar
+  - `15-09-2021` se agregó el componente tab
+  - `04-09-2021` se agregó el componente modal
+  - `03-09-2021` se agregó el componente card
+  - `19-08-2021` se agregó el componente button
+
 
 ------
 
@@ -55,7 +65,9 @@ Documento léeme
 
 Esta es una librería de **Angular**, creada a partir de la versión 12.2.0. Esta librería esta construida a partir del `css` de **Bootstrap** en su versión 5.1.0 y se ha separado el mismo en distintos componentes. Por tanto ahora los componentes de boostrap han sido separados en componentes de angular con los cuales es mas facil trabajar. ¿Que se intenta decir con esto?, que ahora puedo usar un selector de angular por ejemplo para un card o un modal, y ya dicho componente tendrá consigo todo el css necesario para tener el aspecto que tiene en **Bootstrap**.
 
-La idea es que para crear aplicaciones medianamente rapidas, no haya que andar instalando **Bootstrap** por un lado y por otro creando los componentes, ademas que al instalar solo bootstrap no se tiene control sobre los eventos y demás desde angular ya que todo el `css` y el `javascript` quedan por fuera de nuestros componentes.
+La idea es que para crear aplicaciones medianamente rápidas, no haya que andar instalando **Bootstrap** por un lado y por otro creando los componentes, además que al instalar solo bootstrap no se tiene control sobre los eventos y demás desde angular ya que todo el `css` y el `javascript` quedan por fuera de nuestros componentes.
+
+Otra de las características de esta librería, es que propone ser **100%** auto-documentada, con lo cual al instalarla podrá tener consigo toda la documentación suficiente para su uso.
 
 ------
 
@@ -122,9 +134,7 @@ La linea para agregar los estilos sería la siguiente:
 ```json
 "architect": {
         "build": {
-          ...
           "options": {
-           ...
             "styles": [
               "src/styles.css",
               "node_modules/angl-bstp-ui/src/assets/style/styles.css"

@@ -68,10 +68,37 @@
 .ngb-dcmt-ttle{
 color: var(--bs-dark);
 }
+.ngb-dcmt-vble{
+   color: var(--bs-gray-700); 
+}
 .ngb-btn-spce{
     margin-left:1rem;
 }
 /* #END StyleGuide */
+
+/* AnglBstpUI javascript color code */
+.ngb-js-var{
+    color: var(--bs-gray-dark)
+}
+.ngb-js-cla{
+    color: var(--bs-green)
+}
+.ngb-js-tex{
+    color: var(--bs-orange)
+}
+.ngb-js-boo{
+    color: var(--bs-blue)
+}
+.ngb-js-sig{
+    color: var(--bs-gray-dark)
+}
+.ngb-js-fun{
+    color: var(--bs-yellow);
+}
+.ngb-js-num{
+    color: var(--bs-pink);
+}
+/* #END javascript color code */
 
 
 *, ::after, ::before {

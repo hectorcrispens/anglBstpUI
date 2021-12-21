@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Alert } from '../../alert/alert.component';
+import { tablink } from '../../tab/tab.component';
 
 @Component({
   selector: 'ngb-alert-page',
@@ -35,6 +36,12 @@ export class AlertPageComponent implements OnInit {
     { type: 'light', diss: true, icon: false, mssg: 'A simple light alert with' },
     { type: 'dark', diss: true, icon: false, mssg: 'A simple dark alert with' }
   ]
+
+  dvdr:tablink[] = [
+    {id:1, nmbr:"Html", actv:true, dsbl: false, chnl: 8, href:"#"},
+    {id:2, nmbr:"Javascript", actv:false, dsbl:false, chnl: 8, href:"#"}
+  ]
+  
   ngOnInit(): void {
   }
 

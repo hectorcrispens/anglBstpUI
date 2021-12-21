@@ -5,7 +5,7 @@ clip =clipboard.paste()
 clip = clip.replace("'", "??").replace("", "").replace("\n", "")
 print("clip:\n"+clip)
 
-tags ='<ngb-badge [clss]="[$$bg-primary$$]">Primary</ngb-badge>'
+tags ='<span *ngFor="let alert of alertsl"><ngb-alert [type]="alert.type" [diss]="alert.diss" [icon]="alert.icon">$$ alert.mssg $$<a href="#"class="alert-link">an example link</a>. Give it a click if you like.</ngb-alert></span>'
 
 print("tags: \n" +tags)
 
@@ -18,12 +18,12 @@ tags=tags.replace('<', '&lt;').replace('>','&gt;')
 tags = tags.replace('{', '&lcub;').replace('}', '&rcub;')
 
 # Obtener los value de los elementos
-ttle = re.findall(r'\&gt;[a-zA-Z-.,\s0-9]+\&lt;', tags)
+ttle = re.findall(r'\&gt;[a-zA-Z-.$,\s0-9]+\&lt;', tags)
 ttle = [x.replace('&lt;','').replace('&gt;','') for x in ttle]
 ttle = list(set(ttle))
 
 # Obtener los nombres de clases
-clss= re.findall(r'\"[a-z0-9-,\[\]\(\)%;:\s$]+\"', tags)
+clss= re.findall(r'\"[a-z0-9-,\[\]\(\)%;.:\s$]+\"', tags)
 clss=list(set(clss))
 
 # Obtener los inputs de angular

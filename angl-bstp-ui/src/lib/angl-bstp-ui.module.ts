@@ -16,6 +16,7 @@ import { AccordionComponent } from './accordion/accordion.component';
 import { AccordionItemComponent } from './accordion-item/accordion-item.component';
 import { AlertComponent} from './alert/alert.component';
 import { BadgeComponent } from './badge/badge.component';
+import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 //endregion Components
 
 //region Pages
@@ -29,6 +30,7 @@ import { OffcanvasPageComponent } from './pages/offcanvas-page/offcanvas-page';
 import { AccordionPageComponent } from './pages/accordion-page/accordion-page';
 import { AlertPageComponent } from './pages/alert-page/alert-page';
 import { BadgePageComponent } from './pages/badge-page/badge-page';
+import { BreadcrumbPageComponent } from './pages/breadcrumb-page/breadcrumb-page';
 
 
 //endregion Pages
@@ -58,7 +60,9 @@ import { BadgePageComponent } from './pages/badge-page/badge-page';
     AlertPageComponent,
     AlertComponent,
     BadgeComponent,
-    BadgePageComponent
+    BadgePageComponent,
+    BreadcrumbComponent,
+    BreadcrumbPageComponent
   ],
   imports: [
     CommonModule,
@@ -76,7 +80,7 @@ import { BadgePageComponent } from './pages/badge-page/badge-page';
     AccordionComponent,
     AccordionItemComponent,
     AlertComponent,
-    BadgeComponent
+    BadgeComponent,
   ],
 })
 export class AnglBstpUIModule { }

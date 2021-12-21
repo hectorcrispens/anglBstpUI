@@ -1,5 +1,18 @@
 # Collapse
 
+## Tabla de contenido
+- [Collapse](#collapse)
+  - [Tabla de contenido](#tabla-de-contenido)
+  - [Ilustración](#ilustración)
+  - [Estructura de cajas](#estructura-de-cajas)
+  - [Template de angular](#template-de-angular)
+  - [clases](#clases)
+  - [Uso del collapse](#uso-del-collapse)
+  - [Inputs](#inputs)
+  - [Outputs](#outputs)
+  - [Métodos](#métodos)
+
+
 ## Ilustración
 
 ![collapse](Images/collapse.png)

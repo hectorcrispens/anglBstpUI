@@ -1,0 +1,13 @@
+<nav>
+  <ol class="breadcrumb" >
+    <li [ngClass]="{
+      'breadcrumb-item': true, 
+      'active': item.active, 
+      'breadcrumb-item-bar': bar, 
+      'breadcrumb-item-quote': dvdr==quote,
+      'breadcrumb-item-none': dvdr==none
+    }" *ngFor="let item of items;">
+      <a href="#">{{ item.text }}</a>
+    </li>
+  </ol>
+</nav>
