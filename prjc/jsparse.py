@@ -1,11 +1,11 @@
 import re
 
-text = 'closeAlert(alert: Alert) {  this.alertsd.splice(this.alertsd.indexOf(alert), 1);  }'
+text = 'chngTabs(evnt: tablink){alert("indice" + evnt.id.toString() + "data" + evnt.nmbr)}'
 text = text.replace(" ", "")
 cgui = 61
 
 ## variables
-fvpatt = r'[a-zA-Z]+\s?:|\.[a-zA-Z]\.'
+fvpatt = r'[a-zA-Z]+\s?:|[a-zA-Z]*\.'
 
 vvarl = re.findall(fvpatt, text)
 
@@ -44,7 +44,8 @@ print(ttle+"="*(cgui-len(ttle)))
 print(bdats)
 
 ## text
-tpatt = r'\"[a-zA-Z\s#]*\"'
+tpatt = r'\"[a-zA-Z\s#:,]*\"'
+
 
 ttext = set(re.findall(tpatt, text))
 
@@ -102,7 +103,7 @@ color: var(--bs-gray-dark)
 text = text.replace("=", '<span class="ngb-js-sig"> = </span>\n')
 text = text.replace(":", '<span class="ngb-js-sig">: </span>\n')
 
-for h in ["{", "[", "}", "]", ",", ";"]:
+for h in ["{", "[", "}", "]", ",", ";", "(", ")"]:
     text = text.replace(h, '<span class="ngb-js-sig">' + h + '</span>\n')
 
 for t in ttext:

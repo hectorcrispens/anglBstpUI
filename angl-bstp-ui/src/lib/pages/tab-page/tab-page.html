@@ -24,10 +24,38 @@
             </div>
         </div>
         <div class="card-footer">
-            <code>
-                &lt;ngb-tab <span class="ngb-dcmt-drtv">[lnks]</span>=<span class="ngb-dcmt-drtv-vlue">"base"</span> <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"[]"</span> <span class="ngb-dcmt-drtv">(evnt)</span>="chngTabs($event)"&gt;
-                &lt;/ngb-tab&gt;
-            <br></code>
+            <ngb-tab [lnks]="xmpl1" [clss]="['nav-tabs']" ></ngb-tab>
+            <ngb-tab-panel [init]="xmpl1[0]">
+                <code>
+                    &lt;ngb-tab <span class="ngb-dcmt-drtv">[lnks]</span>=<span class="ngb-dcmt-drtv-vlue">"base"</span> <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"[]"</span> <span class="ngb-dcmt-drtv">(evnt)</span>="chngTabs($event)"&gt;
+                    &lt;/ngb-tab&gt;
+                <br></code>
+            </ngb-tab-panel>
+            <ngb-tab-panel [init]="xmpl1[1]">
+                <code>
+                    <span class="ngb-js-fun">chngTabs</span>
+                    <span class="ngb-js-sig">(</span>
+                    <span class="ngb-js-var">evnt</span>
+                    <span class="ngb-js-sig">: </span>
+                    <span class="ngb-js-cla">tablink</span>
+                    <span class="ngb-js-sig">)</span>
+                    <span class="ngb-js-sig">&#123;</span><br>
+                    <span class="ngb-js-fun ps-3">alert</span>
+                    <span class="ngb-js-sig">(</span>
+                    <span class="ngb-js-tex">"indice: "</span>
+                    + <span class="ngb-js-var">evnt.id.</span>
+                    <span class="ngb-js-fun">toString</span>
+                    <span class="ngb-js-sig">(</span>
+                    <span class="ngb-js-sig">)</span>
+                    + <span class="ngb-js-tex">"data: "</span>
+                    + <span class="ngb-js-var">evnt.nmbr</span>
+                    <span class="ngb-js-sig">)</span><br>
+                    <span class="ngb-js-sig">&#125;</span>
+                    
+                </code>
+            </ngb-tab-panel>
+
+
           
         </div>
     </ngb-card>
@@ -46,10 +74,36 @@
             </div>
         </div>
         <div class="card-footer">
+            <ngb-tab [lnks]="xmpl2" [clss]="['nav-tabs']" ></ngb-tab>
+            <ngb-tab-panel [init]="xmpl2[0]">
             <code>
                 &lt;ngb-tab <span class="ngb-dcmt-drtv">[lnks]</span>=<span class="ngb-dcmt-drtv-vlue">"base"</span> <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['justify-content-center']"</span> <span class="ngb-dcmt-drtv">(evnt)</span>="chngTabs($event)"&gt;
                 &lt;/ngb-tab&gt;
             <br></code>
+        </ngb-tab-panel>
+        <ngb-tab-panel [init]="xmpl2[1]">
+            <code>
+                <span class="ngb-js-fun">chngTabs</span>
+                <span class="ngb-js-sig">(</span>
+                <span class="ngb-js-var">evnt</span>
+                <span class="ngb-js-sig">: </span>
+                <span class="ngb-js-cla">tablink</span>
+                <span class="ngb-js-sig">)</span>
+                <span class="ngb-js-sig">&#123;</span><br>
+                <span class="ngb-js-fun ps-3">alert</span>
+                <span class="ngb-js-sig">(</span>
+                <span class="ngb-js-tex">"indice: "</span>
+                + <span class="ngb-js-var">evnt.id.</span>
+                <span class="ngb-js-fun">toString</span>
+                <span class="ngb-js-sig">(</span>
+                <span class="ngb-js-sig">)</span>
+                + <span class="ngb-js-tex">"data: "</span>
+                + <span class="ngb-js-var">evnt.nmbr</span>
+                <span class="ngb-js-sig">)</span><br>
+                <span class="ngb-js-sig">&#125;</span>
+                
+            </code>
+        </ngb-tab-panel>
           
         </div>
     </ngb-card>
@@ -68,11 +122,36 @@
             </div>
         </div>
         <div class="card-footer">
+            <ngb-tab [lnks]="xmpl3" [clss]="['nav-tabs']" ></ngb-tab>
+            <ngb-tab-panel [init]="xmpl3[0]">
             <code>
                 &lt;ngb-tab <span class="ngb-dcmt-drtv">[lnks]</span>=<span class="ngb-dcmt-drtv-vlue">"base"</span> <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['justify-content-end']"</span> <span class="ngb-dcmt-drtv">(evnt)</span>="chngTabs($event)"&gt;
                 &lt;/ngb-tab&gt;
             <br></code>
-          
+        </ngb-tab-panel>
+        <ngb-tab-panel [init]="xmpl3[1]">
+            <code>
+                <span class="ngb-js-fun">chngTabs</span>
+                <span class="ngb-js-sig">(</span>
+                <span class="ngb-js-var">evnt</span>
+                <span class="ngb-js-sig">: </span>
+                <span class="ngb-js-cla">tablink</span>
+                <span class="ngb-js-sig">)</span>
+                <span class="ngb-js-sig">&#123;</span><br>
+                <span class="ngb-js-fun ps-3">alert</span>
+                <span class="ngb-js-sig">(</span>
+                <span class="ngb-js-tex">"indice: "</span>
+                + <span class="ngb-js-var">evnt.id.</span>
+                <span class="ngb-js-fun">toString</span>
+                <span class="ngb-js-sig">(</span>
+                <span class="ngb-js-sig">)</span>
+                + <span class="ngb-js-tex">"data: "</span>
+                + <span class="ngb-js-var">evnt.nmbr</span>
+                <span class="ngb-js-sig">)</span><br>
+                <span class="ngb-js-sig">&#125;</span>
+                
+            </code>
+        </ngb-tab-panel>
         </div>
     </ngb-card>
 </div>
@@ -90,11 +169,36 @@
             </div>
         </div>
         <div class="card-footer">
+            <ngb-tab [lnks]="xmpl4" [clss]="['nav-tabs']" ></ngb-tab>
+            <ngb-tab-panel [init]="xmpl4[0]">
             <code>
                 &lt;ngb-tab <span class="ngb-dcmt-drtv">[lnks]</span>=<span class="ngb-dcmt-drtv-vlue">"base"</span> <span class="ngb-dcmt-drtv">[clss]</span>=<span class="ngb-dcmt-drtv-vlue">"['flex-column']"</span> <span class="ngb-dcmt-drtv">(evnt)</span>="chngTabs($event)"&gt;
                 &lt;/ngb-tab&gt;
             <br></code>
-          
+        </ngb-tab-panel>
+        <ngb-tab-panel [init]="xmpl4[1]">
+            <code>
+                <span class="ngb-js-fun">chngTabs</span>
+                <span class="ngb-js-sig">(</span>
+                <span class="ngb-js-var">evnt</span>
+                <span class="ngb-js-sig">: </span>
+                <span class="ngb-js-cla">tablink</span>
+                <span class="ngb-js-sig">)</span>
+                <span class="ngb-js-sig">&#123;</span><br>
+                <span class="ngb-js-fun ps-3">alert</span>
+                <span class="ngb-js-sig">(</span>
+                <span class="ngb-js-tex">"indice: "</span>
+                + <span class="ngb-js-var">evnt.id.</span>
+                <span class="ngb-js-fun">toString</span>
+                <span class="ngb-js-sig">(</span>
+                <span class="ngb-js-sig">)</span>
+                + <span class="ngb-js-tex">"data: "</span>
+                + <span class="ngb-js-var">evnt.nmbr</span>
+                <span class="ngb-js-sig">)</span><br>
+                <span class="ngb-js-sig">&#125;</span>
+                
+            </code>
+        </ngb-tab-panel>
         </div>
     </ngb-card>
 </div>

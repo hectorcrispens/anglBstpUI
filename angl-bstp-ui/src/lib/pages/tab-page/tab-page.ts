@@ -34,6 +34,23 @@ export class TabPageComponent implements OnInit {
     {id:7, nmbr:"Other Tab", actv: false, dsbl:false, chnl: 4, href:""},
     {id:8, nmbr:"Disabled", actv:false, dsbl:true, chnl: 4, href:""}
   ]
+
+  xmpl1:tablink[] = [
+    {id:1, nmbr:"Html", actv:true, dsbl: false, chnl: 8, href:"#"},
+    {id:2, nmbr:"Javascript", actv:false, dsbl:false, chnl: 8, href:"#"}
+  ]
+  xmpl2:tablink[] = [
+    {id:1, nmbr:"Html", actv:true, dsbl: false, chnl: 9, href:"#"},
+    {id:2, nmbr:"Javascript", actv:false, dsbl:false, chnl: 9, href:"#"}
+  ]
+  xmpl3:tablink[] = [
+    {id:1, nmbr:"Html", actv:true, dsbl: false, chnl: 10, href:"#"},
+    {id:2, nmbr:"Javascript", actv:false, dsbl:false, chnl: 10, href:"#"}
+  ]
+  xmpl4:tablink[] = [
+    {id:1, nmbr:"Html", actv:true, dsbl: false, chnl: 11, href:"#"},
+    {id:2, nmbr:"Javascript", actv:false, dsbl:false, chnl: 11, href:"#"}
+  ]
   constructor() { }
 
   ngOnInit(): void {
