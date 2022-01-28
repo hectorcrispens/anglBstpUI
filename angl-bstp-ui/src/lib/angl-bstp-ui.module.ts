@@ -31,6 +31,8 @@ import { AccordionPageComponent } from './pages/accordion-page/accordion-page';
 import { AlertPageComponent } from './pages/alert-page/alert-page';
 import { BadgePageComponent } from './pages/badge-page/badge-page';
 import { BreadcrumbPageComponent } from './pages/breadcrumb-page/breadcrumb-page';
+import { ButtonGroupComponent } from './button-group/button-group.component';
+import { ButtongroupPageComponent } from './pages/buttongroup-page/buttongroup-page';
 
 
 //endregion Pages
@@ -62,7 +64,9 @@ import { BreadcrumbPageComponent } from './pages/breadcrumb-page/breadcrumb-page
     BadgeComponent,
     BadgePageComponent,
     BreadcrumbComponent,
-    BreadcrumbPageComponent
+    BreadcrumbPageComponent,
+    ButtonGroupComponent,
+    ButtongroupPageComponent
   ],
   imports: [
     CommonModule,

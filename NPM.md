@@ -1,3 +1,4 @@
+![logo](https://raw.githubusercontent.com/hectorcrispens/anglBstpUI/bd64e65a6964e585ea661fb0d14dc20c32ea5432/imag/header.svg)
 # anglBstpUI
 
 Libreria de Angular con componentes de bootstrap 5
@@ -6,18 +7,20 @@ Libreria de Angular con componentes de bootstrap 5
 
 
 
-Version 21.09.01
- Documento léeme
+Time version 21.12.29
+
+Semantic version v0.11.1
+
+Documento léeme
 
 ------
 
 Copyright (C) 2021.
 
-- Sergio Ridaura, sergrida
-   https://sergioridaura.com - [info@sergioridaura.com](mailto:info@sergioridaura.com)
-- Héctor Orlando, hcrispens
-   [hector.or.cr@gmail.com](mailto:hector.or.cr@gmail.com)
-
+## Contributors
+![[Sergio](https://www.linkedin.com/in/sergio-ridaura/)](https://raw.githubusercontent.com/hectorcrispens/anglBstpUI/bd64e65a6964e585ea661fb0d14dc20c32ea5432/imag/avatar-sergio.svg)
+![[Héctor Orlando, hcrispens](https://www.linkedin.com/in/hector-orlando-25124a18a/)](https://raw.githubusercontent.com/hectorcrispens/anglBstpUI/bd64e65a6964e585ea661fb0d14dc20c32ea5432/imag/avatar-hector.svg)
+  
 
 
 ## ¡Aclaración importante!
@@ -32,7 +35,9 @@ Copyright (C) 2021.
 ## Tabla de contenido
 
 - [anglBstpUI](#anglbstpui)
+  - [Contributors](#contributors)
   - [¡Aclaración importante!](#aclaración-importante)
+  - [Tabla de contenido](#tabla-de-contenido)
   - [Últimos avances](#últimos-avances)
   - [Descripción](#descripción)
   - [Guía de instalación](#guía-de-instalación)
@@ -44,14 +49,18 @@ Copyright (C) 2021.
 
 ## Últimos avances
 
-- ` 19-08-2021` se agregó el componente **button**  
-- `03-09-2021` se agregó el componente **card**  
-- `04-09-2021` se agregó el componente **modal**  
-- `15-09-2021` se agregó el componente **tab**  
-- `27-09-2021` se agregó el componente **navbar**
-- `05-10-2021` se agregó el componente **collapse**
-- `20-10-2021` se agregó el componente **offcanvas**
-- `27-11-2021` se agregó el componente **accordion**
+  - `29-12-2021` se agregó el componente **breadcrumb**
+  - `10-12-2021` se agregó el componente **badge**
+  - `04-12-2021` se agregó el componente **alert**
+  - `27-11-2021` se agregó el componente **accordion**
+  - `20-10-2021` se agregó el componente **offcanvas**
+  - `05-10-2021` se agregó el componente **collapse**
+  - `27-09-2021` se agregó el componente **navbar**
+  - `15-09-2021` se agregó el componente **tab**
+  - `04-09-2021` se agregó el componente **modal**
+  - `03-09-2021` se agregó el componente **card**
+  - `19-08-2021` se agregó el componente **button**
+
 
 ------
 
@@ -62,6 +71,8 @@ Copyright (C) 2021.
 Esta es una librería de **Angular**, creada a partir de la versión 12.2.0. Esta librería esta construida a partir del `css` de **Bootstrap** en su versión 5.1.0 y se ha separado el mismo en distintos componentes. Por tanto ahora los componentes de boostrap han sido separados en componentes de angular con los cuales es mas facil trabajar. ¿Que se intenta decir con esto?, que ahora puedo usar un selector de angular por ejemplo para un card o un modal, y ya dicho componente tendrá consigo todo el css necesario para tener el aspecto que tiene en **Bootstrap**.
 
 La idea es que para crear aplicaciones medianamente rapidas, no haya que andar instalando **Bootstrap** por un lado y por otro creando los componentes, ademas que al instalar solo bootstrap no se tiene control sobre los eventos y demás desde angular ya que todo el `css` y el `javascript` quedan por fuera de nuestros componentes.
+
+Otra de las características de esta librería, es que propone ser 100% auto-documentada, con lo cual al instalarla podrá tener consigo toda la documentación suficiente para su uso.
 
 ------
 
@@ -128,9 +139,7 @@ La linea para agregar los estilos sería la siguiente:
 ```json
 "architect": {
         "build": {
-          ...
           "options": {
-           ...
             "styles": [
               "src/styles.css",
               "node_modules/angl-bstp-ui/src/assets/style/styles.css"

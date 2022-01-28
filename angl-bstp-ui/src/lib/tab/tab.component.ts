@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { flexDrtnType, jstfCntnType } from '../types/baseType';
+import { flexDrtnType, jstfCntnType, textAlgnType } from '../types/baseType';
 
 import { TabService } from './tab.service';
 type tabType = 'nav-tabs' | 'nav-pills' | 'nav-fill' | flexDrtnType | jstfCntnType
@@ -12,6 +12,7 @@ export class TabComponent implements OnInit {
 
   @Input('lnks') links!: tablink[]
   @Input('clss') clss!: tabType[]
+  @Input('algn') algn: textAlgnType = "text-center"
   @Output() evnt= new EventEmitter();
   constructor(private tabsrvc: TabService) {
 

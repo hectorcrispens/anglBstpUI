@@ -992,6 +992,90 @@
         "sergrida",
         "hcrispen"
       ]
+    },
+    {
+      "titl": "Creación de componente BUTTON GROUP.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "desarrollar un componente para un BUTTON GROUP."
+      },
+      "stht": {
+        "eses": "pueda ser utilizado en cualquier vista utilizando solo el selector <ngb-btn-group>."
+      },
+      "apcr": {
+        "eses": [
+          "El componente acepte el nombre de la clase de boostrap.",
+          "El componente pueda configurarse segun tres tipos, el tipo input-group, el tipo btn-group y el tipo vertical."
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de una página BUTTON GROUP.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear una página que muestre los distintos tipos de BUTTON GROUP y forma de usarlo"
+      },
+      "stht": {
+        "eses": "el usuario de la librería sepa como usar el componente BUTTON GROUP"
+      },
+      "apcr": {
+        "eses": [
+          "que se muestren los distintos tipos de BUTTON GROUP",
+          "el código de los BUTTON GROUP que se muestran tanto html como javascript de ser necesario."
+        ]
+      },
+      "itrt": 2,
+      "stts": "done",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
+    },
+    {
+      "titl": "Creación de un documento sobre componente BUTTON GROUP.",
+      "asa_": {
+        "eses": "desarrollador de angular."
+      },
+      "iwnt": {
+        "eses": "crear un documento que explique de forma detallada todas las características del componente BUTTON GROUP"
+      },
+      "stht": {
+        "eses": "documentar los aspectos técnicos de cada componente"
+      },
+      "apcr": {
+        "eses": [
+          "debe contener una imagen ilustrativa",
+          "debe contener una imagen de la estructura de cajas",
+          "debe contener una descripcion del template",
+          "una especificación completa del uso",
+          "un detalle de los Inputs, Outputs y Métodos del componente"
+        ]
+      },
+      "itrt": 2,
+      "stts": "todo",
+      "prrt": "high",
+      "stmt": 1,
+      "ffrt": 2,
+      "auth": [
+        "sergrida",
+        "hcrispen"
+      ]
     }
   ]
 }

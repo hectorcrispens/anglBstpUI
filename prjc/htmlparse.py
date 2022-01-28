@@ -5,7 +5,7 @@ clip =clipboard.paste()
 clip = clip.replace("'", "??").replace("", "").replace("\n", "")
 print("clip:\n"+clip)
 
-tags ='<span *ngFor="let alert of alertsl"><ngb-alert [type]="alert.type" [diss]="alert.diss" [icon]="alert.icon">$$ alert.mssg $$<a href="#"class="alert-link">an example link</a>. Give it a click if you like.</ngb-alert></span>'
+tags ='<ngb-button-group [type]="$$btn-group-vertical$$"><ngb-button [clss]="[$$btn$$, $$btn-dark$$]">Button</ngb-button></ngb-button-group>'
 
 print("tags: \n" +tags)
 

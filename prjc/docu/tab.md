@@ -99,7 +99,7 @@ El componente `tab` admite las siguientes clases, como también admite los sigui
 
 Primero hemos de crear el array de `tablink` que van a formar las `tabs`.
 
-Es posible tener varias tabs en una misma pantalla, pero aunque sean distintos componentes el servicio que redistribuye los estados es el mismo. Esto da pie para explicar el mecanismo de distribucion de la información relativa a las tabs. Dado que cuando se clickea una tab, esta es entregada al servicio y luego todos los tab-panel que estan observando se enteran del evento. Sin embargo un tab panel esta escuchando en un determinado canal, si la tab observada no esta en su canal directamente es ignorada. En cambio si la misma esta en el canal en el cual ha sido configurado el panel este la procesara y segun si el id de la tab clickeada coincide con el suyo cambiara su estado.
+Es posible tener varias tabs en una misma pantalla, pero aunque sean distintos componentes el servicio que redistribuye los estados es el mismo. Esto da pie para explicar el mecanismo de distribución de la información relativa a las tabs. Dado que cuando se clickea una tab, esta es entregada al servicio y luego todos los tab-panel que estan observando se enteran del evento. Sin embargo un tab panel esta escuchando en un determinado canal, si la tab observada no esta en su canal directamente es ignorada. En cambio si la misma esta en el canal en el cual ha sido configurado el panel este la procesara y segun si el id de la tab clickeada coincide con el suyo cambiara su estado.
 
 ```javascript
 base:tablink[] = [
@@ -133,9 +133,10 @@ Una vez creado el array, implementamos el selector
 ## Inputs
 
 ```html
-<!-- Tab: tiene el input para la clase y el array de tablink -->
+<!-- Tab: tiene el input para la clase, el array de tablink y un Input align de tipo textAlgnType-->
 [lnks]="links"
 [clss]="['nav-tabs']" 
+[algn]="'text-start'"
 
 <!-- Tab-Panel: tiene el input init que ese usa para inicializar el tab-panel y es te tipo tablink pero un solo objeto -->
 [init]="links[0]"

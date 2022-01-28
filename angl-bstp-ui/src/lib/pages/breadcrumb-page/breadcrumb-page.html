@@ -1,28 +1,30 @@
 <!--
 Indicate the current page’s location within a navigational hierarchy that automatically adds separators via CSS.
 -->
-<div class="row text-left">
-    <h2>Breadcrumb</h2>
-    <hr>
-</div>
-
+    <div class="row text-left">
+        <h2>Breadcrumbs</h2>
+        <hr>
+    </div>
 <!-- breadcrumb Example -->
-<div class="row">
-    <ngb-card>
-        <div class="card-body">
-            <h5 class="card-title"> Example</h5>
-            <div class="row">
-                <ngb-breadcrumb [itms]="frst" [dvdr]="bar"></ngb-breadcrumb> 
+    <div class="row">
+        <ngb-card style="width: 80vw;">
+            <div class="card-body">
+                <h5 class="card-title">Ejemplos</h5>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ngb-breadcrumb [itms]="frst" [dvdr]="bar"></ngb-breadcrumb> 
                 <ngb-breadcrumb [itms]="scnd" [dvdr]="bar"></ngb-breadcrumb>
                 <ngb-breadcrumb [itms]="tree" [dvdr]="bar"></ngb-breadcrumb> 
+                    </div>
+    
+                </div>
             </div>
-        </div>
-        <div class="card-footer">
-            <ngb-tab [lnks]="xmpl" [clss]="['nav-tabs']" ></ngb-tab>
+            <div class="card-footer">
+                <ngb-tab [lnks]="xmpl" [clss]="['nav-tabs']" ></ngb-tab>
             <ngb-tab-panel [init]="xmpl[0]">
                 <code>
                     &lt;ngb-breadcrumb <span class="ngb-dcmt-drtv">[itms]</span>=<span class="ngb-dcmt-drtv-vlue">"frst"</span> <span class="ngb-dcmt-drtv">[dvdr]</span>=<span class="ngb-dcmt-drtv-vlue">"bar"</span>&gt;
-                    &lt;/ngb-breadcrumb&gt;<br>
+                    &lt;/ngb-breadcrumb&gt;
                     &lt;ngb-breadcrumb <span class="ngb-dcmt-drtv">[itms]</span>=<span class="ngb-dcmt-drtv-vlue">"scnd"</span> <span class="ngb-dcmt-drtv">[dvdr]</span>=<span class="ngb-dcmt-drtv-vlue">"bar"</span>&gt;
                     &lt;/ngb-breadcrumb&gt; <br>
                     &lt;ngb-breadcrumb <span class="ngb-dcmt-drtv">[itms]</span>=<span class="ngb-dcmt-drtv-vlue">"tree"</span> <span class="ngb-dcmt-drtv">[dvdr]</span>=<span class="ngb-dcmt-drtv-vlue">"bar"</span>&gt;
@@ -30,7 +32,6 @@ Indicate the current page’s location within a navigational hierarchy that auto
 
                 <br></code>
             </ngb-tab-panel>
-
             <ngb-tab-panel [init]="xmpl[1]">
 
                 <code>
@@ -149,34 +150,35 @@ Indicate the current page’s location within a navigational hierarchy that auto
                 
                 </code>
             </ngb-tab-panel>
-
-
-        </div>
-    </ngb-card>
-</div>
-<!-- #end breadcrumb example-->
-<br>
-<!-- breadcrumb Divider -->
-<div class="row">
-    <ngb-card>
-        <div class="card-body">
-            <h5 class="card-title"> Divider</h5>
-            <div class="row">
-                <ngb-breadcrumb [itms]="tree" [dvdr]="quote"></ngb-breadcrumb> 
-                <ngb-breadcrumb [itms]="tree" [dvdr]="none"></ngb-breadcrumb>
             </div>
-        </div>
-        <div class="card-footer">
-            <ngb-tab [lnks]="dvdr" [clss]="['nav-tabs']" ></ngb-tab>
+        </ngb-card>
+    </div>
+    <!--#end breadcrumb example-->
+    <br>
+    <!-- breadcrumb Divider  -->
+    <div class="row">
+        <ngb-card style="width: 80vw;">
+            <div class="card-body">
+                <h5 class="card-title">Botones Outlines</h5>
+                <div class="row ">
+                    <div class="col-lg-12">
+                        <ngb-breadcrumb [itms]="tree" [dvdr]="quote"></ngb-breadcrumb> 
+                        <ngb-breadcrumb [itms]="tree" [dvdr]="none"></ngb-breadcrumb>
+                    </div>
+    
+                </div>
+            </div>
+            <div class="card-footer">
+              
+                <ngb-tab [lnks]="dvdr" [clss]="['nav-tabs']" ></ngb-tab>
             <ngb-tab-panel [init]="dvdr[0]">
                 <code>
                     &lt;ngb-breadcrumb <span class="ngb-dcmt-drtv">[itms]</span>=<span class="ngb-dcmt-drtv-vlue">"tree"</span> <span class="ngb-dcmt-drtv">[dvdr]</span>=<span class="ngb-dcmt-drtv-vlue">"quote"</span>&gt;
-                    &lt;/ngb-breadcrumb&gt; <br>
+                    &lt;/ngb-breadcrumb&gt;
                     &lt;ngb-breadcrumb <span class="ngb-dcmt-drtv">[itms]</span>=<span class="ngb-dcmt-drtv-vlue">"tree"</span> <span class="ngb-dcmt-drtv">[dvdr]</span>=<span class="ngb-dcmt-drtv-vlue">"none"</span>&gt;
                     &lt;/ngb-breadcrumb&gt; 
                 <br></code>
             </ngb-tab-panel>
-
             <ngb-tab-panel [init]="dvdr[1]">
 
                 <code>
@@ -246,10 +248,7 @@ Indicate the current page’s location within a navigational hierarchy that auto
                 
                 </code>
             </ngb-tab-panel>
-
-
-        </div>
-    </ngb-card>
-</div>
-<!-- #end breadcrumb example-->
-
+            </div>
+        </ngb-card>
+    </div>
+    <!-- #end breadcrumb example-->

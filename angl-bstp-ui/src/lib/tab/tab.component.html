@@ -1,6 +1,6 @@
 <ul [ngClass]="clss!=undefined ? ['nav'].concat(clss) : ['nav']">
   <li class="nav-item" *ngFor="let link of links; index as indx">
-    <button [ngClass]="{'nav-link':true, 'active': link.actv, 'disabled': link.dsbl}" 
+    <button [ngClass]="{'nav-link':true, 'active': link.actv, 'disabled': link.dsbl, 'text-start': algn == 'text-start','text-end': algn == 'text-end','text-center': algn=='text-center'}" 
     (click)="chng(link.id)" *ngIf="clss.indexOf('nav-tabs') > -1 || clss.indexOf('nav-pills') > -1; else elseBlock">{{ link.nmbr }}</button>
     <ng-template #elseBlock>
       <a href="{{ link.href }}" [ngClass]="{'nav-link':true, 'active': link.actv, 'disabled': link.dsbl}" (click)="chng(link.id)">{{ link.nmbr }}</a>

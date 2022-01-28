@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation } from '@angular/core';
 import { mrgnType, pstnType } from '../types/baseType';
 
 type btnclss = 'btn'|'btn-close'|'btn-lg'|'btn-sm'|'btn-outline-light'|'btn-outline-dark'
@@ -10,7 +10,8 @@ type btnclss = 'btn'|'btn-close'|'btn-lg'|'btn-sm'|'btn-outline-light'|'btn-outl
 @Component({
   selector: 'ngb-button',
   templateUrl: './button.component.html',
-  styleUrls: ['./button.component.css']
+  styleUrls: ['./button.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ButtonComponent implements OnInit {
   /**

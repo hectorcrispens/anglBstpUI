@@ -1,45 +1,64 @@
 <div class="row text-center">
     <h1 class="display-1">anglBstpUI</h1>
 </div>
+<div class="d-flex align-items-start">
+    <ngb-tab [lnks]="tabs" [clss]="['nav-pills', 'flex-column']" [algn]="'text-start'"></ngb-tab>
+    <ngb-tab-panel [init]="tabs[0]">
+        <ngb-accordion-page></ngb-accordion-page>
+    </ngb-tab-panel>
+    <ngb-tab-panel [init]="tabs[1]">
+        <ngb-alert-page></ngb-alert-page>
+    </ngb-tab-panel>
+    <ngb-tab-panel [init]="tabs[2]">
+        <ngb-badge-page></ngb-badge-page>
+    </ngb-tab-panel>
 
-<ngb-breadcrumb-page></ngb-breadcrumb-page>
+    <ngb-tab-panel [init]="tabs[3]">
+        <ngb-breadcrumb-page></ngb-breadcrumb-page>
+    </ngb-tab-panel>
+    <ngb-tab-panel [init]="tabs[4]">
+        <ngb-button-page></ngb-button-page>
+    </ngb-tab-panel>
+    <ngb-tab-panel [init]="tabs[5]">
+        <!-- button group-->
+        <ngb-buttongroup-page></ngb-buttongroup-page>
+    </ngb-tab-panel>
+    <ngb-tab-panel [init]="tabs[6]">
+        <ngb-card-page></ngb-card-page>
+    </ngb-tab-panel>
+    <ngb-tab-panel [init]="tabs[7]">
+        <!-- Carrousel-->
+    </ngb-tab-panel>
+    <ngb-tab-panel [init]="tabs[8]">
+        <!-- Close button -->
+    </ngb-tab-panel>
+    <ngb-tab-panel [init]="tabs[9]">
+        <ngb-collapse-page></ngb-collapse-page>
+    </ngb-tab-panel>
+    <ngb-tab-panel [init]="tabs[10]">
+        <!--Dropdown-->
+    </ngb-tab-panel>
+    <ngb-tab-panel [init]="tabs[11]">
+        <!--List group-->
+    </ngb-tab-panel>
+    <ngb-tab-panel [init]="tabs[12]">
+        <!--Modal-->
+        <ngb-modal-page></ngb-modal-page>
+    </ngb-tab-panel>
+    <ngb-tab-panel [init]="tabs[13]">
+        <!--Navs & tabs-->
+        <ngb-tab-page></ngb-tab-page>
+    </ngb-tab-panel>
+    <ngb-tab-panel [init]="tabs[14]">
+        <!--Navbar-->
+        <ngb-navbar-page></ngb-navbar-page>
+    </ngb-tab-panel>
+    <ngb-tab-panel [init]="tabs[15]">
+        <!--Offcanvas-->
+        <ngb-offcanvas-page></ngb-offcanvas-page>
+    </ngb-tab-panel>
+    <ngb-tab-panel [init]="tabs[16]">
 
-<br><br>
+    </ngb-tab-panel>
 
-<ngb-badge-page></ngb-badge-page>
-
-<br><br>
-
-<ngb-alert-page></ngb-alert-page>
-
-<br><br>
-
-<ngb-accordion-page></ngb-accordion-page>
-
-<br><br>
-
-<ngb-collapse-page></ngb-collapse-page>
-
-<br><br>
-
-<ngb-offcanvas-page></ngb-offcanvas-page>
-
-<br><br>
-
-<ngb-navbar-page></ngb-navbar-page>
-
-<br><br>
-
-<ngb-tab-page></ngb-tab-page>
-
-<br><br>
-
-<ngb-modal-page></ngb-modal-page>
-
-<br><br>
-
-<ngb-button-page></ngb-button-page>
-
-<br><br>
-
-<ngb-card-page></ngb-card-page>
+</div>
