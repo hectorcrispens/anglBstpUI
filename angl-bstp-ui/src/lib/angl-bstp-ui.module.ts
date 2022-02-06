@@ -17,6 +17,7 @@ import { AccordionItemComponent } from './accordion-item/accordion-item.componen
 import { AlertComponent} from './alert/alert.component';
 import { BadgeComponent } from './badge/badge.component';
 import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
+import { CarouselComponent } from './carousel/carousel.component';
 //endregion Components
 
 //region Pages
@@ -33,6 +34,7 @@ import { BadgePageComponent } from './pages/badge-page/badge-page';
 import { BreadcrumbPageComponent } from './pages/breadcrumb-page/breadcrumb-page';
 import { ButtonGroupComponent } from './button-group/button-group.component';
 import { ButtongroupPageComponent } from './pages/buttongroup-page/buttongroup-page';
+import { CarouselPageComponent } from './pages/carousel-page/carousel-page';
 
 
 //endregion Pages
@@ -66,7 +68,9 @@ import { ButtongroupPageComponent } from './pages/buttongroup-page/buttongroup-p
     BreadcrumbComponent,
     BreadcrumbPageComponent,
     ButtonGroupComponent,
-    ButtongroupPageComponent
+    ButtongroupPageComponent,
+    CarouselComponent,
+    CarouselPageComponent
   ],
   imports: [
     CommonModule,
@@ -74,17 +78,21 @@ import { ButtongroupPageComponent } from './pages/buttongroup-page/buttongroup-p
   ],
   exports: [
     AnglBstpUIComponent,
-    ButtonComponent,
-    ModalComponent,
-    CardComponent,
-    TabComponent,
-    TabPanelComponent,
-    NavbarComponent,
-    OffcanvasComponent,
     AccordionComponent,
     AccordionItemComponent,
     AlertComponent,
     BadgeComponent,
+    BreadcrumbComponent,
+    ButtonComponent,
+    ButtonGroupComponent,
+    CardComponent,
+    CarouselComponent,
+    CollapseComponent,
+    ModalComponent,
+    NavbarComponent,
+    OffcanvasComponent,
+    TabComponent,
+    TabPanelComponent
   ],
 })
 export class AnglBstpUIModule { }

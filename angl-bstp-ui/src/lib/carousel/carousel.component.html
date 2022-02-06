@@ -1,0 +1,83 @@
+<div class="carousel-container">
+  <h2 style="color:crimson; width: 100%; text-align: center;">{{ title }}</h2>
+  <!-- TRANSLATE -->
+  <div *ngIf="tipo == 'slide'" class="carousel my-carousel carousel--translate">
+    <!-- activators -->
+    <input class="carousel__activator" type="radio" 
+    *ngFor="let slide of slides; index as i; first as isFirst" 
+    [id]="slide._id" 
+    [name]="'carousel'" 
+    [checked]="slide.chk"/>
+
+
+    <!-- controls -->
+    <div class="carousel__controls" *ngFor="let slide of slides; index as i; first as isFirst; last as isLast">
+      <label [ngClass]="{'carousel__control':true, 'carousel__control--backward':true, 'dark': style == 'dark'}" *ngIf="isFirst" [for]="slides[slides.length - 1]._id"></label>
+      <label [ngClass]="{'carousel__control':true, 'carousel__control--backward':true, 'dark': style == 'dark'}" *ngIf="!isFirst" [for]="slides[i - 1]._id"></label>
+      <label [ngClass]="{'carousel__control':true, 'carousel__control--forward':true, 'dark': style == 'dark'}" *ngIf="isLast" [for]="slides[0]._id"></label>
+      <label [ngClass]="{'carousel__control':true, 'carousel__control--forward':true, 'dark': style == 'dark'}" *ngIf="!isLast" [for]="slides[i + 1]._id"></label>
+    </div>
+    
+
+    <!-- slides -->
+    <div class="carousel__track">
+    <li class="carousel__slide" *ngFor="let slide of slides;" [ngStyle]="{'background-image': 'url(' + slide.src + ')'}">
+      <h1 *ngIf="slide.cpt != undefined && slide.cpt.ttl != undefined" [ngClass]="{'dark': style == 'dark'}">{{ slide.cpt.ttl }}</h1>
+      <h3 *ngIf="slide.cpt != undefined && slide.cpt.sbt != undefined" [ngClass]="{'dark': style == 'dark'}">sdfsdfsd</h3>
+      <p [ngClass]="{'dark': style == 'dark'}">klsdfjklfjklsdfkl</p>
+    </li>
+  </div>
+
+    <!-- indicators -->
+    <div class="carousel__indicators">
+      <label [ngClass]="{'carousel__indicator':true, 'dark': style == 'dark'}" *ngFor="let slide of slides;" [for]="slide._id"></label>
+    </div>
+  </div>
+  <!-- #END TRANSLATE -->
+
+
+    <!-- SCALE FADE THUMB -->
+    <ul *ngIf="tipo != 'slide'" 
+    [ngClass]="{
+      'carousel':true, 
+      'my-carousel':true, 
+      'carousel--thumb':tipo == 'thumb',
+      'carousel--scale': tipo == 'scale'
+    }">
+      <!-- activators -->
+      <input class="carousel__activator" type="radio" 
+      *ngFor="let slide of slides; index as i; first as isFirst" 
+      [id]="slide._id" 
+      [name]="'carousel'" 
+      [checked]="slide.chk"/>
+  
+  
+      <!-- controls -->
+      <div class="carousel__controls" *ngFor="let slide of slides; index as i; first as isFirst; last as isLast">
+        <label [ngClass]="{'carousel__control':true, 'carousel__control--backward':true, 'dark': style == 'dark'}" *ngIf="isFirst" [for]="slides[slides.length - 1]._id"></label>
+        <label [ngClass]="{'carousel__control':true, 'carousel__control--backward':true, 'dark': style == 'dark'}" *ngIf="!isFirst" [for]="slides[i - 1]._id"></label>
+        <label [ngClass]="{'carousel__control':true, 'carousel__control--forward':true, 'dark': style == 'dark'}" *ngIf="isLast" [for]="slides[0]._id"></label>
+        <label [ngClass]="{'carousel__control':true, 'carousel__control--forward':true, 'dark': style == 'dark'}" *ngIf="!isLast" [for]="slides[i + 1]._id"></label>
+      </div>
+      
+  
+      <!-- slides -->
+      <li class="carousel__slide" *ngFor="let slide of slides;" [ngStyle]="{'background-image': 'url(' + slide.src + ')'}">
+        <h1 *ngIf="slide.cpt != undefined && slide.cpt.ttl != undefined" [ngClass]="{'dark': style == 'dark'}">{{ slide.cpt.ttl }}</h1>
+        <h3 *ngIf="slide.cpt != undefined && slide.cpt.sbt != undefined" [ngClass]="{'dark': style == 'dark'}">sdfsdfsd</h3>
+        <p [ngClass]="{'dark': style == 'dark'}">klsdfjklfjklsdfkl</p>
+      </li>
+  
+  
+      <!-- indicators -->
+      <div class="carousel__indicators" *ngIf="tipo != 'thumb'">
+        <label [ngClass]="{'carousel__indicator':true, 'dark': style == 'dark'}" *ngFor="let slide of slides;" [for]="slide._id"></label>
+      </div>
+      <div class="carousel__indicators" *ngIf="tipo == 'thumb'">
+        <label [ngClass]="{'carousel__indicator':true, 'dark': style == 'dark'}" *ngFor="let slide of slides;" [for]="slide._id" [ngStyle]="{'background-image': 'url(' + slide.src + ')'}"></label>
+      </div>
+    </ul>
+    <!-- #END SCALE FADE THUMB -->
+
+</div>
+  

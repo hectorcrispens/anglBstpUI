@@ -1,211 +1,169 @@
-![ang](imag/header.svg)
-
+![logo](https://raw.githubusercontent.com/hectorcrispens/anglBstpUI/bd64e65a6964e585ea661fb0d14dc20c32ea5432/imag/header.svg)
 # anglBstpUI
+
 Libreria de Angular con componentes de bootstrap 5
 
-[![](https://img.shields.io/badge/angular-12.2.0-red?style=flat-square&logo=angular)](https://angular.io/) [![](https://img.shields.io/badge/bootstrap-5.1.0-green?style=flat-square&logo=bootstrap)](https://getbootstrap.com/) [![](https://img.shields.io/badge/npm-6.14.13-cb3837?style=flat-square&logo=npm)](https://nodejs.org/en/about/releases/)
+[![](https://img.shields.io/badge/angular-12.2.0-red?style=flat-square&logo=angular)](https://angular.io/) [![](https://img.shields.io/badge/bootstrap-5.1.0-green?style=flat-square&logo=bootstrap)](https://getbootstrap.com/) ![](https://img.shields.io/badge/npm-6.14.13-cb3837?style=flat-square&logo=npm)
 
 
 
-## Contributors
+Time version 22.01.28
 
-[![hector](imag/avatar-hector.svg)](https://www.linkedin.com/in/hector-orlando-25124a18a/)  [![sergio](imag/avatar-sergio.svg)](https://www.linkedin.com/in/sergio-ridaura/)
-
-
-
-Versión 01.08.2021
+Semantic version v0.12.0
 
 Documento léeme
 
+------
+
+Copyright (C) 2021.
+
+## Contributors
+![[Sergio](https://www.linkedin.com/in/sergio-ridaura/)](https://raw.githubusercontent.com/hectorcrispens/anglBstpUI/bd64e65a6964e585ea661fb0d14dc20c32ea5432/imag/avatar-sergio.svg)
+![[Héctor Orlando, hcrispens](https://www.linkedin.com/in/hector-orlando-25124a18a/)](https://raw.githubusercontent.com/hectorcrispens/anglBstpUI/bd64e65a6964e585ea661fb0d14dc20c32ea5432/imag/avatar-hector.svg)
+  
 
 
 ## ¡Aclaración importante!
 
-> De momento este proyecto se encuentra aún en vías de desarrollo, aunque ya este disponible para la descarga en **NPM** no es posible utilizar esta librería
+> De momento este proyecto se encuentra aún en vías de desarrollo, aunque ya este disponible para la descarga en **NPM** su desarrollo es parcial, no obstante es posible seguir los avances a través de las publicaciones incrementales sobre el proyecto.
 >
-> Al momento que esta leyenda desaparezca, la librería estara disponible para su uso, como también un documento de como implementarla. 
 
-## ¡Últimas novedades!
+------
 
-> De momento este proyecto se encuentra aún en vías de desarrollo, aunque ya este disponible para la descarga en **NPM** no es posible utilizar esta librería
->
-> Al momento que esta leyenda desaparezca, la librería estara disponible para su uso, como también un documento de como implementarla. 
+
+
+## Tabla de contenido
+
+- [anglBstpUI](#anglbstpui)
+  - [Contributors](#contributors)
+  - [¡Aclaración importante!](#aclaración-importante)
+  - [Tabla de contenido](#tabla-de-contenido)
+  - [Últimos avances](#últimos-avances)
+  - [Descripción](#descripción)
+  - [Guía de instalación](#guía-de-instalación)
+      - [Creación de un proyecto de Angular](#creación-de-un-proyecto-de-angular)
+      - [Instalación de la librería](#instalación-de-la-librería)
+  - [Guía de uso](#guía-de-uso)
+
+
+
+## Últimos avances
+
+  - `28-01-2022` se agregó el componente **button group**
+  - `29-12-2021` se agregó el componente **breadcrumb**
+  - `10-12-2021` se agregó el componente **badge**
+  - `04-12-2021` se agregó el componente **alert**
+  - `27-11-2021` se agregó el componente **accordion**
+  - `20-10-2021` se agregó el componente **offcanvas**
+  - `05-10-2021` se agregó el componente **collapse**
+  - `27-09-2021` se agregó el componente **navbar**
+  - `15-09-2021` se agregó el componente **tab**
+  - `04-09-2021` se agregó el componente **modal**
+  - `03-09-2021` se agregó el componente **card**
+  - `19-08-2021` se agregó el componente **button**
+
+
+------
 
 
 
 ## Descripción
 
-Este proyecto tiene como proposito la construcción de una librería de **Angular** cuya finalidad es la de construir una serie de componentes que faciliten el desarrollo visual de aplicaciones basados en las hojas de estilo de **Boostrap**.
+Esta es una librería de **Angular**, creada a partir de la versión 12.2.0. Esta librería esta construida a partir del `css` de **Bootstrap** en su versión 5.1.0 y se ha separado el mismo en distintos componentes. Por tanto ahora los componentes de boostrap han sido separados en componentes de angular con los cuales es mas facil trabajar. ¿Que se intenta decir con esto?, que ahora puedo usar un selector de angular por ejemplo para un card o un modal, y ya dicho componente tendrá consigo todo el css necesario para tener el aspecto que tiene en **Bootstrap**.
 
-Esta es una librería creada con **Angular** v12.2.0, la misma incluye el documento de hoja de estilos de  **Boostrap** v5.1.0. Más especificamente el documento *boostrap.min.css*, el cual ha sido parseado y separado en diferentes componentes para que puedan ser utilizados estos estilos en proyectos de angular.
+La idea es que para crear aplicaciones medianamente rapidas, no haya que andar instalando **Bootstrap** por un lado y por otro creando los componentes, ademas que al instalar solo bootstrap no se tiene control sobre los eventos y demás desde angular ya que todo el `css` y el `javascript` quedan por fuera de nuestros componentes.
 
-En cuanto al **javascript** no fue posible su reutilización dado el paradigma de desarrollo del proyecto **Boostrap**.
+Otra de las características de esta librería, es que propone ser 100% auto-documentada, con lo cual al instalarla podrá tener consigo toda la documentación suficiente para su uso.
 
-##  Guia de instalación 
-
-Este proyecto esta disponible para su instalación en, puede ser descargado siguiendo las instrucciónes de instalación en el siguiente [enlace](https://www.npmjs.com/package/angl-bstp-ui).
-
-Sin embargo si desea trabajar con el proyecto sin compilar, es posible clonar este proyecto y trabajar directamente sobre los componentes.
-
-A continuación se muestra una guía de instalación desde github, teniendo presente que ya cuenta con una aplicación de angular creada con `ng new <name>`.
-
-#### Crear la carpeta projects
-
-El primer paso es crear una carpeta llamada *projects* en la raiz del proyecto. Debería quedar la siguiente estructura.
-
-```
-├── node_modules
-├── projects
-├── src
-├── angular.json
-├── karma.conf.js
-├── package-lock.json
-├── package.json
-├── README.md
-├── tsconfig.app.json
-├── tsconfig.json
-└── tsconfig.spec.json
-```
+------
 
 
 
-#### Clonar el proyecto
+## Guía de instalación
 
-Ingresar al directorio *projects* y clonar el proyecto ahi dentro.
+Para instalar esta librería es necesario tener un proyecto de angular el cual hará uso de la misma.
+
+#### Creación de un proyecto de Angular
+
+Para la creación de un proyecto de **Angular** es necesario tener instalados, [Node](https://nodejs.org/es/) el cual incluye el paquete de [npm](https://www.npmjs.com/) que es el manejador de paquetes.
+
+Una vez instalados estos programas es necesario instalar [angular/cli](https://angular.io/cli) que es el conjunto de herramientas de linea de comando de angular, la misma es muy util a la hora de trabajar con **angular**. Nos permite desde crear proyectos, agregar componentes, instalar paquetes, etc.
+
+Para instalar `angular/cli` abrir una terminal/consola y ejecutar el siguiente comando:
 
 ```bash
-cd projects
-git clone https://github.com/hectorcrispens/anglBstpUI.git
+npm install -g @angular/cli
 ```
 
+A partir de entonces tendremos disponible el comando `ng`
 
+Para crear un primer proyecto, compilarlo y levantar un servidor de testing ejecutar los siguientes comandos:
 
-#### Agregar el proyecto al angular.json
-
-Con esto ya está disponible la libreria para ser importada desde el directorio *projects*, lo siguiente es importar el proyecto en el `angular.json`.
-
-```json
-"projects":{
-    "BootUI": {
-      "projectType": "library",
-      "root": "projects/angl-bstp-ui",
-      "sourceRoot": "projects/angl-bstp-ui/src",
-      "prefix": "btUI",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "project": "projects/angl-bstp-ui/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/angl-bstp-ui/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "projects/angl-bstp-ui/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/angl-bstp-ui/src/test.ts",
-            "tsConfig": "projects/angl-bstp-ui/tsconfig.spec.json",
-            "karmaConfig": "projects/angl-bstp-ui/karma.conf.js"
-          }
-        }
-      }
-    }
-}
+```bash
+ng new nombre-proyecto
+cd nombre-proyecto
+ng serve
 ```
 
-También se requiere agregar un archivo de estilos para  aquellos componentes de **Bootstrap** que no tienen un componente específico de **Angular**, como por ejemplo el sistema de grillas.
+Con esto ya puede visualizar, en este caso una pantalla de presentación de angular en su navegador web en la dirección [http://localhost:4200/ ](http://localhost:4200/ ).
 
-Para ello en el archivo `angular.json` dentro del proyecto principal y en la parte de architect/ build/styles se debe agregar el mismo.
+Otra forma de trabajar con angular, si no desea instalar node y npm en su computadora local, es hacerlo a través de contenedores de docker, que permiten crear maquinas virtuales muy pequeñas donde estan encapsuladas todas las dependencias necesarias para trabajar, en este caso puede descargar de **docker hub** un contenedor con node y npm incluidos. Si desea saber más puede consultar este [enlace](https://hub.docker.com/r/hectorcrispens/angl-cli) donde encontrará un contenedor ideal para dicho propósito.
+
+
+
+#### Instalación de la librería
+
+La idea es que esta librería se autodocumente por si misma, de manera que su uso sea de la mayor sencillez posible. Igualmente puede consultar documentación adicional en el repositorio del proyecto haciendo click [aqui](https://github.com/hectorcrispens/anglBstpUI).
+
+Lo primero para utilizar la librería es descargarla de **npm**. para ello ejecutar el siguiente comando:
+
+```bash
+npm i angl-bstp-ui
+```
+
+Esto descargará la librería compilada y la colocará dentro de la carpeta `node_modules`, lo siguiente es importar la librería en el `app.module.ts` .
+
+```bash
+import { AnglBstpUIModule } from 'angl-bstp-ui';
+
+imports: [
+   AnglBstpUIModule
+ ]
+```
+
+Con esto la librería ya está lista para ser usada en el proyecto principal. Sin embargo no todo el código `css`de **bootstrap** está encapsulado dentro de componentes, por ejemplo aquellas clases para los contenedores o la creación de grillas, por ejemplo la clase `.container-fluid` `col-md-6`, etc.
+
+Para incorporar estos estilos globales que son transversales a todos los componentes es necesario incorporar el archivo `styles.css` dentro del archivo `angular.json`en la parte de estilos de nuestro proyecto principal.
+
+La linea para agregar los estilos sería la siguiente:
 
 ```json
-"projects": {
-    "angl": {
-      ...
-      "architect": {
+"architect": {
         "build": {
-          ...
           "options": {
-              ...          
             "styles": [
               "src/styles.css",
-              "projects/angl-bstp-ui/styles.css"
+              "node_modules/angl-bstp-ui/src/assets/style/styles.css"
+            ],
+            "scripts": [
             ]
           }
         }
-      }
-    }
 }
 ```
 
+Ahora si ya estaría instalada la librería y lista para ser utilizada en nuestro proyecto.
 
-
-#### Instalar ng-packagr
-
-Es importante tambien tener instalado el paquete de node `ng-packagr`.
-
-```bash
-npm install -D ng-packagr
-```
-
-la opción `-D` le indica a npm que ng-package se instalará como una dependencia de desarrollo (lo cual esta bien) y no como una dependencia de producción.
+------
 
 
 
-#### app.module.ts
+## Guía de uso
 
-El último paso para utilizar la libreria es importar `AnglBstpUIModule` en el `AppModule` desde la `public-api`. Para ello en el **app.module.json**:
-
-```tsx
-import { AnglBstpUIModule } from 'projects/angl-bstp-ui/src/public-api';
-...
-imports: [
-    AnglBstpUIModule
-  ],
-```
-
-Con esto ya estaría diponible para ser utlizada sin compilar desde **github**.
-
-
-
-## Modo de uso
-
-#### Button
+Para usar la librería es fácil, solo basta utilizar el siguiente selector en el `app.component.html`:
 
 ```html
-<ngb-button [class]="['btn', 'btn-success']" (clickEvent)="sendToConsole($event)">hola mundo</ngb-button>
+<ngb-anglBstpUI></ngb-anglBstpUI>
 ```
 
-
-
-```javascript
-
-  }
-```
-
-
-
-
-
-## Licencia
-
-Copyright (C) 2021.
-
-- Sergio Ridaura,
-  - [![linkedin](https://img.shields.io/badge/LinkedIn--0a66c2?style=social&logo=linkedin)](https://www.linkedin.com/in/sergio-ridaura/) [![GitHub](https://img.shields.io/badge/GitHub--0a66c2?style=social&logo=GitHub)](https://github.com/sergrida) [![Correo](https://img.shields.io/badge/Info-info@sergioridaura.com-0a66c2?style=social&logo=Mail.Ru)](mailto:info@sergioridaura.com) [![Site](https://img.shields.io/badge/Site-https://sergioridaura.com-ff7139?style=social&logo=FirefoxBrowser)](https://sergioridaura.com/)
-- Héctor Orlando,
-  - [![linkedin](https://img.shields.io/badge/LinkedIn--0a66c2?style=social&logo=linkedin)](https://www.linkedin.com/in/hector-orlando-25124a18a/) [![linkedin](https://img.shields.io/badge/GitHub--0a66c2?style=social&logo=GitHub)](https://github.com/hectorcrispens) [![linkedin](https://img.shields.io/badge/Gmail--0a66c2?style=social&logo=Gmail)](mailto:hector.or.cr@gmail.com)
-
-### GNU General Public License
-
-Este programa es software gratuito: puedes redistribuirlo y/o modificar bajo los términos de la Licencia Pública General GNU tal como se publicó por la Free Software Foundation, ya sea la versión 3 de la Licencia, o cualquier versión posterior.
-
-Este programa se distribuye con la esperanza de que sea de utilidad, pero SIN NINGUNA GARANTÍA; sin siquiera la garantía implícita de COMERCIABILIDAD o APTITUD PARA UN PROPÓSITO PARTICULAR. Ver el Licencia pública general GNU para más detalles.
-
-Debería haber recibido una copia de la Licencia Pública General GNU junto con este programa, en [LICENSE.md](http://license.md/) o https://www.gnu.org/licenses/gpl-3.0.html.en.
+Con ese es suficiente, a continuación verá en la pantalla del navegador una documentación detallada sobre el uso de la librería y de los distintos componentes. Es decir que dentro de la misma tiene toda la documentación necesaria para su utilización.

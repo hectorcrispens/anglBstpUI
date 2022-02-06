@@ -1,0 +1,47 @@
+@mixin slide {
+    transition: opacity 0.5s, transform 0.5s;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+    transform: scale(1);
+}
+@mixin controls {
+    display: block;
+    opacity: 1;
+}
+
+@mixin indicator {
+    opacity: 1;
+}
+
+@mixin translate($index) {
+    transform: translateX(($index - 1) * 100%);
+}
+@mixin translate-negative($index) {
+    transform: translateX(($index - 1) * -100%);
+}
+@for $i from 1 through 13 {
+    .carousel__track .carousel__slide:nth-of-type(#{$i}) {
+        @include translate($i);
+    }
+
+    /* [TRACK] */
+    .carousel__activator:nth-of-type(#{$i}):checked ~ .carousel__track {
+        @include translate-negative($i);
+    }
+
+    /* [ SLIDE] */
+    .carousel__activator:nth-of-type(#{$i}):checked ~ .carousel__slide:nth-of-type(#{$i}) {
+        @include slide();
+    }
+    /* [CONTROLES] */
+    .carousel__activator:nth-of-type(#{$i}):checked ~ .carousel__controls:nth-of-type(#{$i}) {
+        @include controls();
+    }
+
+    /* [ INDICADOR] */
+    .carousel__activator:nth-of-type(#{$i}):checked ~ .carousel__indicators .carousel__indicator:nth-of-type(#{$i}) {
+        opacity: 1;
+    }
+}
